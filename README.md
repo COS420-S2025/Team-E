@@ -1,2 +1,6 @@
 # Team-E
-The homebase for Team E's project, code, plans, and files.
+Team Members:
+- Project Manager: Caramon C.
+- Designer: Steven H.
+- Developer 1: Grace C.
+- Developer 2: Eliot C.
