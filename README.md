@@ -1,4 +1,4 @@
-# Team-E
+# Team Effigy
 Team Members:
 - Project Manager: Caramon C.
 - Designer: Steven H.
