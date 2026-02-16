@@ -15,12 +15,11 @@ Team Members:
 
 **Problem Statement 1 Draft 2 (Unused)**
 
-Consumers have a need that can be accomplished by a computer. 
-They look at computers and choose the one that looks the best, but many of these people return them for not fitting their needs.
-This resulted from a lack of knowledge on what each part of the computer was used for and a restriction of information from the tech store.
-Prior solutions to this are college classes or youtube channels that go through these previous topics. 
-The issue with this is not everybody can afford the classes or can trust the youtube influencers.
-How can we design a web application to help make the knowledge of the computer parts more accessible to people?
+1. Consumers have a need that can be accomplished by a computer. 
+2. They look at computers and choose the one that looks the best, but many of these people return them for not fitting their needs. This resulted from a lack of knowledge on what each part of the computer was used for and a restriction of information from the tech store.
+3. Prior solutions to this are college classes or YouTube channels that go through these previous topics. 
+4. The issue with this is not everybody can afford the classes or can trust the YouTube influencers.
+5. How can we design a web application to help make the knowledge of the computer parts more accessible to people?
 
 
 **Problem Statement 2**:
