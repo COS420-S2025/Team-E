@@ -31,7 +31,7 @@ Team Members:
 
 
 
-# To Run:
+# Build instructions:
 Clone the repo:
 ```bash
 git clone https://github.com/COS420-S2025/Team-E.git
