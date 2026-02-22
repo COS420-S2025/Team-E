@@ -29,3 +29,22 @@ Team Members:
 4. A problem with this feature is that not many Microsoft users know of its existence, and is hard to spot/find, as the user has to open settings and scroll down to the bottom and click a small, easily missable link that says “Get Help.”
 5. How can we design an easily accessible system that provides fast assistance for everyday computer problems?
 
+
+
+# To Run:
+Clone the repo:
+```bash
+git clone https://github.com/COS420-S2025/Team-E.git
+```
+Navigate to the react project folder:
+```bash
+cd Team-E/Code/spec-effect
+```
+Install dependencies:
+```bash
+npm i
+```
+Launch the application:
+```bash
+npm start
+```
