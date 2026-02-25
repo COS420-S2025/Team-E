@@ -11,7 +11,7 @@ function App() {
           glossary/about buttons and search bar here maybe
       </header>
       <p>
-            Grace Cochran, [Insert rest of names here]
+            Grace Cochran, Steven Harrington, [Insert rest of names here]
       </p>
     </div>
   );
