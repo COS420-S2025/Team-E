@@ -1,0 +1,1362 @@
+[
+    {
+        "name": "AMD Ryzen 5 5600H",
+        "clock_speed": null,
+        "num_sockets": 1,
+        "cores": 6,
+        "multithread_benchmark": 16475,
+        "single_thread_benchmark": 2886,
+        "tdp": 45.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "AMD Ryzen 7 5800H",
+        "clock_speed": null,
+        "num_sockets": 1,
+        "cores": 8,
+        "multithread_benchmark": 20620,
+        "single_thread_benchmark": 3003,
+        "tdp": 45.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "AMD Ryzen 5 4600H",
+        "clock_speed": null,
+        "num_sockets": 1,
+        "cores": 6,
+        "multithread_benchmark": 14166,
+        "single_thread_benchmark": 2415,
+        "tdp": 45.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "AMD Ryzen 3 3250U",
+        "clock_speed": null,
+        "num_sockets": 1,
+        "cores": 2,
+        "multithread_benchmark": 3702,
+        "single_thread_benchmark": 1711,
+        "tdp": 15.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "AMD Ryzen 5 5500U",
+        "clock_speed": null,
+        "num_sockets": 1,
+        "cores": 6,
+        "multithread_benchmark": 12697,
+        "single_thread_benchmark": 2402,
+        "tdp": 15.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "AMD Ryzen 3 5300U",
+        "clock_speed": null,
+        "num_sockets": 1,
+        "cores": 4,
+        "multithread_benchmark": 9377,
+        "single_thread_benchmark": 2307,
+        "tdp": 15.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "AMD Ryzen 7 4800H",
+        "clock_speed": null,
+        "num_sockets": 1,
+        "cores": 8,
+        "multithread_benchmark": 17999,
+        "single_thread_benchmark": 2587,
+        "tdp": 45.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "AMD Ryzen 5 7520U",
+        "clock_speed": null,
+        "num_sockets": 1,
+        "cores": 4,
+        "multithread_benchmark": 8991,
+        "single_thread_benchmark": 2391,
+        "tdp": 15.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "AMD Ryzen 5 5625U",
+        "clock_speed": null,
+        "num_sockets": 1,
+        "cores": 6,
+        "multithread_benchmark": 14609,
+        "single_thread_benchmark": 2855,
+        "tdp": 15.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "AMD Ryzen 7 6800H",
+        "clock_speed": null,
+        "num_sockets": 1,
+        "cores": 8,
+        "multithread_benchmark": 22858,
+        "single_thread_benchmark": 3199,
+        "tdp": 45.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "AMD Ryzen 5 3500U",
+        "clock_speed": null,
+        "num_sockets": 1,
+        "cores": 4,
+        "multithread_benchmark": 6824,
+        "single_thread_benchmark": 1917,
+        "tdp": 15.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "AMD Ryzen 7 5700U",
+        "clock_speed": null,
+        "num_sockets": 1,
+        "cores": 8,
+        "multithread_benchmark": 15454,
+        "single_thread_benchmark": 2542,
+        "tdp": 15.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "AMD Ryzen 3 5425U",
+        "clock_speed": null,
+        "num_sockets": 1,
+        "cores": 4,
+        "multithread_benchmark": 11298,
+        "single_thread_benchmark": 2901,
+        "tdp": 15.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "AMD Ryzen 9 5900HX",
+        "clock_speed": null,
+        "num_sockets": 1,
+        "cores": 8,
+        "multithread_benchmark": 22118,
+        "single_thread_benchmark": 3161,
+        "tdp": 45.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "AMD Ryzen 7 5800U",
+        "clock_speed": null,
+        "num_sockets": 1,
+        "cores": 8,
+        "multithread_benchmark": 18041,
+        "single_thread_benchmark": 2994,
+        "tdp": 15.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "AMD Ryzen 7 6800HS",
+        "clock_speed": null,
+        "num_sockets": 1,
+        "cores": 8,
+        "multithread_benchmark": 22532,
+        "single_thread_benchmark": 3150,
+        "tdp": 35.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "AMD Ryzen 9 6900HS",
+        "clock_speed": null,
+        "num_sockets": 1,
+        "cores": 8,
+        "multithread_benchmark": 22972,
+        "single_thread_benchmark": 3221,
+        "tdp": 35.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "AMD Ryzen 5 5600U",
+        "clock_speed": null,
+        "num_sockets": 1,
+        "cores": 6,
+        "multithread_benchmark": 15018,
+        "single_thread_benchmark": 2866,
+        "tdp": 15.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "AMD Ryzen 5 4500U",
+        "clock_speed": null,
+        "num_sockets": 1,
+        "cores": 6,
+        "multithread_benchmark": 10687,
+        "single_thread_benchmark": 2404,
+        "tdp": 15.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "AMD Ryzen 9 6900HX",
+        "clock_speed": null,
+        "num_sockets": 1,
+        "cores": 8,
+        "multithread_benchmark": 24157,
+        "single_thread_benchmark": 3378,
+        "tdp": 45.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "AMD Ryzen 5 6600H",
+        "clock_speed": null,
+        "num_sockets": 1,
+        "cores": 6,
+        "multithread_benchmark": 18390,
+        "single_thread_benchmark": 3155,
+        "tdp": 45.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "AMD Ryzen 5 3450U",
+        "clock_speed": null,
+        "num_sockets": 1,
+        "cores": 4,
+        "multithread_benchmark": 6547,
+        "single_thread_benchmark": 1827,
+        "tdp": 15.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "AMD Ryzen 7 5825U",
+        "clock_speed": null,
+        "num_sockets": 1,
+        "cores": 8,
+        "multithread_benchmark": 17975,
+        "single_thread_benchmark": 3028,
+        "tdp": 15.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "AMD Ryzen 7 6800U",
+        "clock_speed": null,
+        "num_sockets": 1,
+        "cores": 8,
+        "multithread_benchmark": 20748,
+        "single_thread_benchmark": 3208,
+        "tdp": 28.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "AMD Ryzen 5 6600U",
+        "clock_speed": null,
+        "num_sockets": 1,
+        "cores": 6,
+        "multithread_benchmark": 16938,
+        "single_thread_benchmark": 3104,
+        "tdp": 25.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "Intel Core i5-1235U",
+        "clock_speed": null,
+        "num_sockets": 1,
+        "cores": 10,
+        "multithread_benchmark": 12655,
+        "single_thread_benchmark": 3093,
+        "tdp": 15.0,
+        "category": "Laptop, Mobile/Embedded"
+    },
+    {
+        "name": "Intel Core i3-1215U",
+        "clock_speed": null,
+        "num_sockets": 1,
+        "cores": 6,
+        "multithread_benchmark": 10231,
+        "single_thread_benchmark": 3143,
+        "tdp": 15.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "Intel Core i7-12700H",
+        "clock_speed": null,
+        "num_sockets": 1,
+        "cores": 14,
+        "multithread_benchmark": 25247,
+        "single_thread_benchmark": 3504,
+        "tdp": 45.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "Intel Core i7-12650H",
+        "clock_speed": null,
+        "num_sockets": 1,
+        "cores": 10,
+        "multithread_benchmark": 21604,
+        "single_thread_benchmark": 3506,
+        "tdp": 45.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "Intel Core i7-1065G7",
+        "clock_speed": "1.30GHz",
+        "num_sockets": 1,
+        "cores": 4,
+        "multithread_benchmark": 8124,
+        "single_thread_benchmark": 2283,
+        "tdp": 15.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "Intel Core i5-10210U",
+        "clock_speed": "1.60GHz",
+        "num_sockets": 1,
+        "cores": 4,
+        "multithread_benchmark": 6065,
+        "single_thread_benchmark": 2111,
+        "tdp": 15.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "Intel Core i3-1115G4",
+        "clock_speed": "3.00GHz",
+        "num_sockets": 1,
+        "cores": 2,
+        "multithread_benchmark": 5857,
+        "single_thread_benchmark": 2560,
+        "tdp": 15.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "Intel Core i7-11800H",
+        "clock_speed": "2.30GHz",
+        "num_sockets": 1,
+        "cores": 8,
+        "multithread_benchmark": 19747,
+        "single_thread_benchmark": 3022,
+        "tdp": 45.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "Intel Core i5-12450H",
+        "clock_speed": null,
+        "num_sockets": 1,
+        "cores": 8,
+        "multithread_benchmark": 16041,
+        "single_thread_benchmark": 3291,
+        "tdp": 45.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "Intel Core i5-11400H",
+        "clock_speed": "2.70GHz",
+        "num_sockets": 1,
+        "cores": 6,
+        "multithread_benchmark": 15203,
+        "single_thread_benchmark": 2960,
+        "tdp": 45.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "Intel Core i5-12500H",
+        "clock_speed": null,
+        "num_sockets": 1,
+        "cores": 12,
+        "multithread_benchmark": 20439,
+        "single_thread_benchmark": 3391,
+        "tdp": 45.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "Intel Core i5-1155G7",
+        "clock_speed": "2.50GHz",
+        "num_sockets": 1,
+        "cores": 4,
+        "multithread_benchmark": 9634,
+        "single_thread_benchmark": 2801,
+        "tdp": 28.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "Intel Core i7-13700H",
+        "clock_speed": null,
+        "num_sockets": 1,
+        "cores": 14,
+        "multithread_benchmark": 26074,
+        "single_thread_benchmark": 3567,
+        "tdp": 45.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "Intel Core i7-1255U",
+        "clock_speed": null,
+        "num_sockets": 1,
+        "cores": 10,
+        "multithread_benchmark": 13038,
+        "single_thread_benchmark": 3164,
+        "tdp": 15.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "Intel Core i7-1165G7",
+        "clock_speed": "2.80GHz",
+        "num_sockets": 1,
+        "cores": 4,
+        "multithread_benchmark": 9825,
+        "single_thread_benchmark": 2732,
+        "tdp": 15.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "Intel Core i5-11320H",
+        "clock_speed": "3.20GHz",
+        "num_sockets": 1,
+        "cores": 4,
+        "multithread_benchmark": 10826,
+        "single_thread_benchmark": 2917,
+        "tdp": 35.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "Intel Core i5-1135G7",
+        "clock_speed": "2.40GHz",
+        "num_sockets": 1,
+        "cores": 4,
+        "multithread_benchmark": 9389,
+        "single_thread_benchmark": 2615,
+        "tdp": 15.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "AMD Ryzen 7 7735HS",
+        "clock_speed": null,
+        "num_sockets": 1,
+        "cores": 8,
+        "multithread_benchmark": 22621,
+        "single_thread_benchmark": 3263,
+        "tdp": 54.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "AMD Ryzen 5 7530U",
+        "clock_speed": null,
+        "num_sockets": 1,
+        "cores": 6,
+        "multithread_benchmark": 15218,
+        "single_thread_benchmark": 3012,
+        "tdp": 15.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "Intel Core i7-1355U",
+        "clock_speed": null,
+        "num_sockets": 1,
+        "cores": 10,
+        "multithread_benchmark": 14036,
+        "single_thread_benchmark": 3401,
+        "tdp": 15.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "AMD Ryzen 9 7940HS",
+        "clock_speed": null,
+        "num_sockets": 1,
+        "cores": 8,
+        "multithread_benchmark": 29918,
+        "single_thread_benchmark": 3858,
+        "tdp": 54.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "Intel Core i7-13620H",
+        "clock_speed": null,
+        "num_sockets": 1,
+        "cores": 10,
+        "multithread_benchmark": 23546,
+        "single_thread_benchmark": 3554,
+        "tdp": 45.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "Intel Core i9-13900H",
+        "clock_speed": null,
+        "num_sockets": 1,
+        "cores": 14,
+        "multithread_benchmark": 27282,
+        "single_thread_benchmark": 3713,
+        "tdp": 45.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "Intel Core i5-11300H",
+        "clock_speed": "3.10GHz",
+        "num_sockets": 1,
+        "cores": 4,
+        "multithread_benchmark": 10768,
+        "single_thread_benchmark": 2769,
+        "tdp": 35.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "Intel Core i7-12800H",
+        "clock_speed": null,
+        "num_sockets": 1,
+        "cores": 14,
+        "multithread_benchmark": 23909,
+        "single_thread_benchmark": 3381,
+        "tdp": 45.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "AMD Ryzen 7 3700U",
+        "clock_speed": null,
+        "num_sockets": 1,
+        "cores": 4,
+        "multithread_benchmark": 7019,
+        "single_thread_benchmark": 1939,
+        "tdp": 15.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "Intel Core i7-11370H",
+        "clock_speed": "3.30GHz",
+        "num_sockets": 1,
+        "cores": 4,
+        "multithread_benchmark": 11545,
+        "single_thread_benchmark": 2897,
+        "tdp": 35.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "Intel Core i9-13950HX",
+        "clock_speed": null,
+        "num_sockets": 1,
+        "cores": 24,
+        "multithread_benchmark": 40811,
+        "single_thread_benchmark": 3856,
+        "tdp": 55.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "Intel Core i7-1195G7",
+        "clock_speed": "2.90GHz",
+        "num_sockets": 1,
+        "cores": 4,
+        "multithread_benchmark": 10421,
+        "single_thread_benchmark": 2956,
+        "tdp": 28.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "Intel Core i5-1335U",
+        "clock_speed": null,
+        "num_sockets": 1,
+        "cores": 10,
+        "multithread_benchmark": 13987,
+        "single_thread_benchmark": 3276,
+        "tdp": 15.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "Intel Core i9-12900HX",
+        "clock_speed": null,
+        "num_sockets": 1,
+        "cores": 16,
+        "multithread_benchmark": 33158,
+        "single_thread_benchmark": 3756,
+        "tdp": 55.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "AMD Ryzen 3 3250C",
+        "clock_speed": null,
+        "num_sockets": 1,
+        "cores": 2,
+        "multithread_benchmark": 3153,
+        "single_thread_benchmark": 1911,
+        "tdp": 15.0,
+        "category": "Laptop, Mobile/Embedded"
+    },
+    {
+        "name": "AMD Ryzen 5 7535HS",
+        "clock_speed": null,
+        "num_sockets": 1,
+        "cores": 6,
+        "multithread_benchmark": 17750,
+        "single_thread_benchmark": 3109,
+        "tdp": 35.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "Intel Core i7-1360P",
+        "clock_speed": null,
+        "num_sockets": 1,
+        "cores": 12,
+        "multithread_benchmark": 18473,
+        "single_thread_benchmark": 3434,
+        "tdp": 28.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "Intel Core i7-13700HX",
+        "clock_speed": null,
+        "num_sockets": 1,
+        "cores": 16,
+        "multithread_benchmark": 31933,
+        "single_thread_benchmark": 3800,
+        "tdp": 55.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "AMD Ryzen 7 7730U",
+        "clock_speed": null,
+        "num_sockets": 1,
+        "cores": 8,
+        "multithread_benchmark": 17562,
+        "single_thread_benchmark": 2966,
+        "tdp": 15.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "Intel Core i9-12900H",
+        "clock_speed": null,
+        "num_sockets": 1,
+        "cores": 14,
+        "multithread_benchmark": 26856,
+        "single_thread_benchmark": 3673,
+        "tdp": 45.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "Intel Core i7-1260P",
+        "clock_speed": null,
+        "num_sockets": 1,
+        "cores": 12,
+        "multithread_benchmark": 16577,
+        "single_thread_benchmark": 3223,
+        "tdp": 28.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "Intel Core i7-13650HX",
+        "clock_speed": null,
+        "num_sockets": 1,
+        "cores": 14,
+        "multithread_benchmark": 30432,
+        "single_thread_benchmark": 3758,
+        "tdp": 55.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "Intel Core i3-N305",
+        "clock_speed": null,
+        "num_sockets": 1,
+        "cores": 8,
+        "multithread_benchmark": 9563,
+        "single_thread_benchmark": 2081,
+        "tdp": 15.0,
+        "category": "Laptop, Mobile/Embedded"
+    },
+    {
+        "name": "Intel Core i9-13980HX",
+        "clock_speed": null,
+        "num_sockets": 1,
+        "cores": 24,
+        "multithread_benchmark": 45790,
+        "single_thread_benchmark": 4228,
+        "tdp": 55.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "Intel Core i3-10110U",
+        "clock_speed": "2.10GHz",
+        "num_sockets": 1,
+        "cores": 2,
+        "multithread_benchmark": 3835,
+        "single_thread_benchmark": 2130,
+        "tdp": 15.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "Intel Core i5-13500H",
+        "clock_speed": null,
+        "num_sockets": 1,
+        "cores": 12,
+        "multithread_benchmark": 21052,
+        "single_thread_benchmark": 3377,
+        "tdp": 45.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "Intel Core i5-6300U",
+        "clock_speed": "2.40GHz",
+        "num_sockets": 1,
+        "cores": 2,
+        "multithread_benchmark": 3201,
+        "single_thread_benchmark": 1630,
+        "tdp": 15.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "Intel Core i5-1240P",
+        "clock_speed": null,
+        "num_sockets": 1,
+        "cores": 12,
+        "multithread_benchmark": 16058,
+        "single_thread_benchmark": 3191,
+        "tdp": 28.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "Intel Core i7-1280P",
+        "clock_speed": null,
+        "num_sockets": 1,
+        "cores": 14,
+        "multithread_benchmark": 20101,
+        "single_thread_benchmark": 3312,
+        "tdp": 28.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "Intel Core i7-1250U",
+        "clock_speed": null,
+        "num_sockets": 1,
+        "cores": 10,
+        "multithread_benchmark": 11297,
+        "single_thread_benchmark": 2703,
+        "tdp": 9.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "AMD Ryzen 3 7320U",
+        "clock_speed": null,
+        "num_sockets": 1,
+        "cores": 4,
+        "multithread_benchmark": 8571,
+        "single_thread_benchmark": 2318,
+        "tdp": 15.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "Intel Core i5-7300U",
+        "clock_speed": "2.60GHz",
+        "num_sockets": 1,
+        "cores": 2,
+        "multithread_benchmark": 3632,
+        "single_thread_benchmark": 1880,
+        "tdp": 15.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "Intel Core i5-10300H",
+        "clock_speed": "2.50GHz",
+        "num_sockets": 1,
+        "cores": 4,
+        "multithread_benchmark": 8197,
+        "single_thread_benchmark": 2523,
+        "tdp": 45.0,
+        "category": "Desktop, Laptop"
+    },
+    {
+        "name": "Intel Core i3-1005G1",
+        "clock_speed": "1.20GHz",
+        "num_sockets": 1,
+        "cores": 2,
+        "multithread_benchmark": 4816,
+        "single_thread_benchmark": 2146,
+        "tdp": 15.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "AMD Ryzen 9 7945HX",
+        "clock_speed": null,
+        "num_sockets": 1,
+        "cores": 16,
+        "multithread_benchmark": 54205,
+        "single_thread_benchmark": 4025,
+        "tdp": 55.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "Intel Core i5-13420H",
+        "clock_speed": null,
+        "num_sockets": 1,
+        "cores": 8,
+        "multithread_benchmark": 17076,
+        "single_thread_benchmark": 3374,
+        "tdp": 45.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "Intel Core i5-6200U",
+        "clock_speed": "2.30GHz",
+        "num_sockets": 1,
+        "cores": 2,
+        "multithread_benchmark": 2989,
+        "single_thread_benchmark": 1534,
+        "tdp": 15.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "Intel Core i9-13900HX",
+        "clock_speed": null,
+        "num_sockets": 1,
+        "cores": 24,
+        "multithread_benchmark": 42141,
+        "single_thread_benchmark": 4028,
+        "tdp": 55.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "Intel Core i5-8350U",
+        "clock_speed": "1.70GHz",
+        "num_sockets": 1,
+        "cores": 4,
+        "multithread_benchmark": 6102,
+        "single_thread_benchmark": 1987,
+        "tdp": 15.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "AMD Ryzen 3 3200U",
+        "clock_speed": null,
+        "num_sockets": 1,
+        "cores": 2,
+        "multithread_benchmark": 3724,
+        "single_thread_benchmark": 1772,
+        "tdp": 15.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "AMD Ryzen 9 7845HX",
+        "clock_speed": null,
+        "num_sockets": 1,
+        "cores": 12,
+        "multithread_benchmark": 44803,
+        "single_thread_benchmark": 3919,
+        "tdp": 55.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "Intel Core i7-10750H",
+        "clock_speed": "2.60GHz",
+        "num_sockets": 1,
+        "cores": 6,
+        "multithread_benchmark": 11487,
+        "single_thread_benchmark": 2611,
+        "tdp": 45.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "Intel Core i7-10510U",
+        "clock_speed": "1.80GHz",
+        "num_sockets": 1,
+        "cores": 4,
+        "multithread_benchmark": 6384,
+        "single_thread_benchmark": 2210,
+        "tdp": 15.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "Intel Core i5-1230U",
+        "clock_speed": null,
+        "num_sockets": 1,
+        "cores": 10,
+        "multithread_benchmark": 11117,
+        "single_thread_benchmark": 2739,
+        "tdp": 9.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "Intel Core i5-8250U",
+        "clock_speed": "1.60GHz",
+        "num_sockets": 1,
+        "cores": 4,
+        "multithread_benchmark": 5800,
+        "single_thread_benchmark": 1876,
+        "tdp": 15.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "Intel Core i5-4310U",
+        "clock_speed": "2.00GHz",
+        "num_sockets": 1,
+        "cores": 2,
+        "multithread_benchmark": 2534,
+        "single_thread_benchmark": 1498,
+        "tdp": 15.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "AMD Ryzen 5 6600HS",
+        "clock_speed": null,
+        "num_sockets": 1,
+        "cores": 6,
+        "multithread_benchmark": 17688,
+        "single_thread_benchmark": 3084,
+        "tdp": 35.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "Intel Core i7-8550U",
+        "clock_speed": "1.80GHz",
+        "num_sockets": 1,
+        "cores": 4,
+        "multithread_benchmark": 5801,
+        "single_thread_benchmark": 2007,
+        "tdp": 15.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "Intel Core i5-4300U",
+        "clock_speed": "1.90GHz",
+        "num_sockets": 1,
+        "cores": 2,
+        "multithread_benchmark": 2488,
+        "single_thread_benchmark": 1473,
+        "tdp": 15.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "Intel Core i5-1145G7",
+        "clock_speed": "2.60GHz",
+        "num_sockets": 1,
+        "cores": 4,
+        "multithread_benchmark": 9237,
+        "single_thread_benchmark": 2669,
+        "tdp": 28.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "Intel Core i5-8265U",
+        "clock_speed": "1.60GHz",
+        "num_sockets": 1,
+        "cores": 4,
+        "multithread_benchmark": 5804,
+        "single_thread_benchmark": 2016,
+        "tdp": 15.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "Intel Core i5-1035G1",
+        "clock_speed": "1.00GHz",
+        "num_sockets": 1,
+        "cores": 4,
+        "multithread_benchmark": 7149,
+        "single_thread_benchmark": 2175,
+        "tdp": 15.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "Intel Core i7-12800HE",
+        "clock_speed": null,
+        "num_sockets": 1,
+        "cores": 14,
+        "multithread_benchmark": 26096,
+        "single_thread_benchmark": 3654,
+        "tdp": 45.0,
+        "category": "Mobile/Embedded"
+    },
+    {
+        "name": "Intel Core i7-10710U",
+        "clock_speed": "1.10GHz",
+        "num_sockets": 1,
+        "cores": 6,
+        "multithread_benchmark": 9229,
+        "single_thread_benchmark": 2279,
+        "tdp": 15.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "AMD Ryzen 5 Pro 4650U",
+        "clock_speed": null,
+        "num_sockets": 1,
+        "cores": 6,
+        "multithread_benchmark": 12063,
+        "single_thread_benchmark": 2364,
+        "tdp": 15.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "AMD Ryzen 7 4980U",
+        "clock_speed": null,
+        "num_sockets": 1,
+        "cores": 8,
+        "multithread_benchmark": 17469,
+        "single_thread_benchmark": 2752,
+        "tdp": 15.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "Intel Core i3-8130U",
+        "clock_speed": "2.20GHz",
+        "num_sockets": 1,
+        "cores": 2,
+        "multithread_benchmark": 3522,
+        "single_thread_benchmark": 1846,
+        "tdp": 15.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "Intel Core i5-7200U",
+        "clock_speed": "2.50GHz",
+        "num_sockets": 1,
+        "cores": 2,
+        "multithread_benchmark": 3371,
+        "single_thread_benchmark": 1729,
+        "tdp": 15.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "Intel Core i5-5300U",
+        "clock_speed": "2.30GHz",
+        "num_sockets": 1,
+        "cores": 2,
+        "multithread_benchmark": 2703,
+        "single_thread_benchmark": 1604,
+        "tdp": 15.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "Intel Core i7-12800HX",
+        "clock_speed": null,
+        "num_sockets": 1,
+        "cores": 16,
+        "multithread_benchmark": 31254,
+        "single_thread_benchmark": 3681,
+        "tdp": 55.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "Intel Core i5-1035G4",
+        "clock_speed": "1.10GHz",
+        "num_sockets": 1,
+        "cores": 4,
+        "multithread_benchmark": 7633,
+        "single_thread_benchmark": 2147,
+        "tdp": 15.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "Intel Core i7-1180G7",
+        "clock_speed": "1.30GHz",
+        "num_sockets": 1,
+        "cores": 4,
+        "multithread_benchmark": 7839,
+        "single_thread_benchmark": 2397,
+        "tdp": 15.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "Intel Core i7-8565U",
+        "clock_speed": "1.80GHz",
+        "num_sockets": 1,
+        "cores": 4,
+        "multithread_benchmark": 5963,
+        "single_thread_benchmark": 2104,
+        "tdp": 15.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "Intel Core i7-1265U",
+        "clock_speed": null,
+        "num_sockets": 1,
+        "cores": 10,
+        "multithread_benchmark": 13217,
+        "single_thread_benchmark": 3129,
+        "tdp": 15.0,
+        "category": "Laptop, Mobile/Embedded"
+    },
+    {
+        "name": "Intel Core i7-11850H",
+        "clock_speed": "2.50GHz",
+        "num_sockets": 1,
+        "cores": 8,
+        "multithread_benchmark": 19807,
+        "single_thread_benchmark": 3044,
+        "tdp": 45.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "Intel Core i3-10100Y",
+        "clock_speed": "1.30GHz",
+        "num_sockets": 1,
+        "cores": 2,
+        "multithread_benchmark": 2974,
+        "single_thread_benchmark": 1673,
+        "tdp": 5.0,
+        "category": "Mobile/Embedded"
+    },
+    {
+        "name": "Intel Core i9-11900H",
+        "clock_speed": "2.50GHz",
+        "num_sockets": 1,
+        "cores": 8,
+        "multithread_benchmark": 19907,
+        "single_thread_benchmark": 3085,
+        "tdp": 45.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "AMD Ryzen 7 5800HS",
+        "clock_speed": null,
+        "num_sockets": 1,
+        "cores": 8,
+        "multithread_benchmark": 19476,
+        "single_thread_benchmark": 2971,
+        "tdp": 35.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "AMD Ryzen 5 Pro 5650U",
+        "clock_speed": null,
+        "num_sockets": 1,
+        "cores": 6,
+        "multithread_benchmark": 14164,
+        "single_thread_benchmark": 2776,
+        "tdp": 15.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "AMD Ryzen 9 4900HS",
+        "clock_speed": null,
+        "num_sockets": 1,
+        "cores": 8,
+        "multithread_benchmark": 18786,
+        "single_thread_benchmark": 2580,
+        "tdp": 35.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "Intel Core i7-10870H",
+        "clock_speed": "2.20GHz",
+        "num_sockets": 1,
+        "cores": 8,
+        "multithread_benchmark": 14000,
+        "single_thread_benchmark": 2624,
+        "tdp": 45.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "Intel Core i7-1185G7",
+        "clock_speed": "3.00GHz",
+        "num_sockets": 1,
+        "cores": 4,
+        "multithread_benchmark": 9988,
+        "single_thread_benchmark": 2762,
+        "tdp": 15.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "Intel Core i5-1130G7",
+        "clock_speed": "1.10GHz",
+        "num_sockets": 1,
+        "cores": 4,
+        "multithread_benchmark": 8222,
+        "single_thread_benchmark": 2344,
+        "tdp": 15.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "Intel Core i7-1160G7",
+        "clock_speed": "1.20GHz",
+        "num_sockets": 1,
+        "cores": 4,
+        "multithread_benchmark": 8712,
+        "single_thread_benchmark": 2526,
+        "tdp": null,
+        "category": null
+    },
+    {
+        "name": "Intel Core i7-12850HX",
+        "clock_speed": null,
+        "num_sockets": 1,
+        "cores": 16,
+        "multithread_benchmark": 30671,
+        "single_thread_benchmark": 3661,
+        "tdp": 55.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "AMD Ryzen 9 5980HS",
+        "clock_speed": null,
+        "num_sockets": 1,
+        "cores": 8,
+        "multithread_benchmark": 20257,
+        "single_thread_benchmark": 3123,
+        "tdp": 35.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "Intel Core i5-1340P",
+        "clock_speed": null,
+        "num_sockets": 1,
+        "cores": 12,
+        "multithread_benchmark": 18493,
+        "single_thread_benchmark": 3426,
+        "tdp": 28.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "Intel Core i3-8145U",
+        "clock_speed": "2.10GHz",
+        "num_sockets": 1,
+        "cores": 2,
+        "multithread_benchmark": 3772,
+        "single_thread_benchmark": 2065,
+        "tdp": 15.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "AMD Ryzen 7 Pro 6850H",
+        "clock_speed": null,
+        "num_sockets": 1,
+        "cores": 8,
+        "multithread_benchmark": 23407,
+        "single_thread_benchmark": 3286,
+        "tdp": 45.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "Intel Core i5-1245U",
+        "clock_speed": null,
+        "num_sockets": 1,
+        "cores": 10,
+        "multithread_benchmark": 12914,
+        "single_thread_benchmark": 3045,
+        "tdp": 15.0,
+        "category": "Laptop, Mobile/Embedded"
+    },
+    {
+        "name": "Intel Core i7-9750H",
+        "clock_speed": "2.60GHz",
+        "num_sockets": 1,
+        "cores": 6,
+        "multithread_benchmark": 10593,
+        "single_thread_benchmark": 2391,
+        "tdp": 45.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "AMD Ryzen 9 5900HS",
+        "clock_speed": null,
+        "num_sockets": 1,
+        "cores": 8,
+        "multithread_benchmark": 21153,
+        "single_thread_benchmark": 3122,
+        "tdp": 35.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "AMD Ryzen 7 4800HS",
+        "clock_speed": null,
+        "num_sockets": 1,
+        "cores": 8,
+        "multithread_benchmark": 18021,
+        "single_thread_benchmark": 2549,
+        "tdp": 45.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "Intel Core i7-10875H",
+        "clock_speed": "2.30GHz",
+        "num_sockets": 1,
+        "cores": 8,
+        "multithread_benchmark": 14462,
+        "single_thread_benchmark": 2689,
+        "tdp": 45.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "Intel Core i9-10980HK",
+        "clock_speed": "2.40GHz",
+        "num_sockets": 1,
+        "cores": 8,
+        "multithread_benchmark": 15155,
+        "single_thread_benchmark": 2748,
+        "tdp": 45.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "AMD Ryzen 7 3750H",
+        "clock_speed": null,
+        "num_sockets": 1,
+        "cores": 4,
+        "multithread_benchmark": 7957,
+        "single_thread_benchmark": 2054,
+        "tdp": 35.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "AMD Ryzen 7 4700U",
+        "clock_speed": null,
+        "num_sockets": 1,
+        "cores": 8,
+        "multithread_benchmark": 13150,
+        "single_thread_benchmark": 2495,
+        "tdp": 15.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "Intel Core i9-12900HK",
+        "clock_speed": null,
+        "num_sockets": 1,
+        "cores": 14,
+        "multithread_benchmark": 25355,
+        "single_thread_benchmark": 3540,
+        "tdp": 45.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "Intel Core i7-7500U",
+        "clock_speed": "2.70GHz",
+        "num_sockets": 1,
+        "cores": 2,
+        "multithread_benchmark": 3633,
+        "single_thread_benchmark": 1901,
+        "tdp": 15.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "AMD Ryzen 3 4300U",
+        "clock_speed": null,
+        "num_sockets": 1,
+        "cores": 4,
+        "multithread_benchmark": 7335,
+        "single_thread_benchmark": 2293,
+        "tdp": 15.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "AMD Ryzen 7 Pro 4750U",
+        "clock_speed": null,
+        "num_sockets": 1,
+        "cores": 8,
+        "multithread_benchmark": 14719,
+        "single_thread_benchmark": 2463,
+        "tdp": 15.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "Intel Core i7-8650U",
+        "clock_speed": "1.90GHz",
+        "num_sockets": 1,
+        "cores": 4,
+        "multithread_benchmark": 6187,
+        "single_thread_benchmark": 2099,
+        "tdp": 15.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "Intel Core i5-10500H",
+        "clock_speed": "2.50GHz",
+        "num_sockets": 1,
+        "cores": 6,
+        "multithread_benchmark": 10984,
+        "single_thread_benchmark": 2549,
+        "tdp": 45.0,
+        "category": "Laptop"
+    },
+    {
+        "name": "Intel Core i7-8750H",
+        "clock_speed": "2.20GHz",
+        "num_sockets": 1,
+        "cores": 6,
+        "multithread_benchmark": 9755,
+        "single_thread_benchmark": 2268,
+        "tdp": 45.0,
+        "category": "Laptop"
+    }
+]

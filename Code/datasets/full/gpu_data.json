@@ -1,0 +1,4834 @@
+[
+    {
+        "name": "NVIDIA GeForce 240M GT",
+        "3d_benchmark": 320,
+        "2d_benchmark": 434,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce 305M",
+        "3d_benchmark": 151,
+        "2d_benchmark": 149,
+        "tdp": 14.0,
+        "vram": 512,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce 310M",
+        "3d_benchmark": 128,
+        "2d_benchmark": 21,
+        "tdp": 14.0,
+        "vram": 512,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce 315M",
+        "3d_benchmark": 120,
+        "2d_benchmark": 34,
+        "tdp": 14.0,
+        "vram": 512,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce 320M",
+        "3d_benchmark": 190,
+        "2d_benchmark": 46,
+        "tdp": 20.0,
+        "vram": 256,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce 410M",
+        "3d_benchmark": 275,
+        "2d_benchmark": 132,
+        "tdp": 12.0,
+        "vram": 512,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce 610M",
+        "3d_benchmark": 292,
+        "2d_benchmark": 114,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce 7000M",
+        "3d_benchmark": 13,
+        "2d_benchmark": 239,
+        "tdp": null,
+        "vram": 256,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce 7000M / nForce 610M",
+        "3d_benchmark": 13,
+        "2d_benchmark": 188,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce 705M",
+        "3d_benchmark": 456,
+        "2d_benchmark": 455,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce 710M",
+        "3d_benchmark": 442,
+        "2d_benchmark": 127,
+        "tdp": 12.0,
+        "vram": 2048,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce 7150M / nForce 630M",
+        "3d_benchmark": 18,
+        "2d_benchmark": 194,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce 770M",
+        "3d_benchmark": 3246,
+        "2d_benchmark": 500,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce 800M",
+        "3d_benchmark": 477,
+        "2d_benchmark": 195,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce 810M",
+        "3d_benchmark": 420,
+        "2d_benchmark": 67,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce 8200M G",
+        "3d_benchmark": 65,
+        "2d_benchmark": 34,
+        "tdp": 19.2,
+        "vram": 256,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce 820M",
+        "3d_benchmark": 480,
+        "2d_benchmark": 114,
+        "tdp": 15.0,
+        "vram": 2048,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce 825M",
+        "3d_benchmark": 761,
+        "2d_benchmark": 212,
+        "tdp": 33.0,
+        "vram": 2048,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce 830M",
+        "3d_benchmark": 1000,
+        "2d_benchmark": 135,
+        "tdp": 25.0,
+        "vram": 2048,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce 8400M G",
+        "3d_benchmark": 105,
+        "2d_benchmark": 124,
+        "tdp": 10.0,
+        "vram": 128,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce 8400M GS",
+        "3d_benchmark": 105,
+        "2d_benchmark": 27,
+        "tdp": 11.0,
+        "vram": 128,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce 8400M GT",
+        "3d_benchmark": 67,
+        "2d_benchmark": 56,
+        "tdp": 14.0,
+        "vram": 256,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce 840M",
+        "3d_benchmark": 1099,
+        "2d_benchmark": 151,
+        "tdp": 30.0,
+        "vram": 2048,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce 845M",
+        "3d_benchmark": 1501,
+        "2d_benchmark": 204,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce 8600M GS",
+        "3d_benchmark": 89,
+        "2d_benchmark": 34,
+        "tdp": 20.0,
+        "vram": 256,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce 8600M GT",
+        "3d_benchmark": 164,
+        "2d_benchmark": 24,
+        "tdp": 20.0,
+        "vram": 256,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce 8700M GT",
+        "3d_benchmark": 124,
+        "2d_benchmark": 57,
+        "tdp": 29.0,
+        "vram": 256,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce 8800M GTS",
+        "3d_benchmark": 382,
+        "2d_benchmark": 159,
+        "tdp": 50.0,
+        "vram": 512,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce 8800M GTX",
+        "3d_benchmark": 462,
+        "2d_benchmark": 175,
+        "tdp": 65.0,
+        "vram": 512,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce 9100M G",
+        "3d_benchmark": 83,
+        "2d_benchmark": 42,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce 910M",
+        "3d_benchmark": 598,
+        "2d_benchmark": 112,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce 9200M GE",
+        "3d_benchmark": 144,
+        "2d_benchmark": 61,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce 9200M GS",
+        "3d_benchmark": 129,
+        "2d_benchmark": 46,
+        "tdp": 13.0,
+        "vram": 256,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce 920M",
+        "3d_benchmark": 716,
+        "2d_benchmark": 120,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce 9300M G",
+        "3d_benchmark": 85,
+        "2d_benchmark": 242,
+        "tdp": 13.0,
+        "vram": 256,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce 9300M GS",
+        "3d_benchmark": 128,
+        "2d_benchmark": 23,
+        "tdp": 13.0,
+        "vram": 256,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce 930M",
+        "3d_benchmark": 1012,
+        "2d_benchmark": 147,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce 930MX",
+        "3d_benchmark": 1276,
+        "2d_benchmark": 194,
+        "tdp": 17.0,
+        "vram": 2048,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce 9400M",
+        "3d_benchmark": 101,
+        "2d_benchmark": 55,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce 9400M G",
+        "3d_benchmark": 148,
+        "2d_benchmark": 39,
+        "tdp": 12.0,
+        "vram": 256,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce 940M",
+        "3d_benchmark": 1133,
+        "2d_benchmark": 153,
+        "tdp": 33.0,
+        "vram": 2048,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce 945M",
+        "3d_benchmark": 2138,
+        "2d_benchmark": 237,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce 9500M",
+        "3d_benchmark": 104,
+        "2d_benchmark": 320,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce 9500M G",
+        "3d_benchmark": 122,
+        "2d_benchmark": 172,
+        "tdp": 20.0,
+        "vram": 512,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce 9500M GS",
+        "3d_benchmark": 133,
+        "2d_benchmark": 54,
+        "tdp": 20.0,
+        "vram": 512,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce 9600M GS",
+        "3d_benchmark": 131,
+        "2d_benchmark": 58,
+        "tdp": 20.0,
+        "vram": 1024,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce 9600M GT",
+        "3d_benchmark": 163,
+        "2d_benchmark": 25,
+        "tdp": 23.0,
+        "vram": 512,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce 9600M GT / GeForce GT 220M",
+        "3d_benchmark": 293,
+        "2d_benchmark": 291,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce 9650M GS",
+        "3d_benchmark": 270,
+        "2d_benchmark": 328,
+        "tdp": 29.0,
+        "vram": 512,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce 9650M GT",
+        "3d_benchmark": 137,
+        "2d_benchmark": 57,
+        "tdp": 23.0,
+        "vram": 1024,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce 9700M GT",
+        "3d_benchmark": 327,
+        "2d_benchmark": 97,
+        "tdp": 45.0,
+        "vram": 512,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce 9700M GTS",
+        "3d_benchmark": 312,
+        "2d_benchmark": 33,
+        "tdp": 60.0,
+        "vram": 512,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce 9800M GS",
+        "3d_benchmark": 517,
+        "2d_benchmark": 44,
+        "tdp": 60.0,
+        "vram": 512,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce 9800M GT",
+        "3d_benchmark": 381,
+        "2d_benchmark": 81,
+        "tdp": 65.0,
+        "vram": 512,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce 9800M GTS",
+        "3d_benchmark": 357,
+        "2d_benchmark": 72,
+        "tdp": 75.0,
+        "vram": 512,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce 9800M GTX",
+        "3d_benchmark": 454,
+        "2d_benchmark": 89,
+        "tdp": 75.0,
+        "vram": 1024,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce FX Go 5200",
+        "3d_benchmark": 8,
+        "2d_benchmark": 190,
+        "tdp": null,
+        "vram": 32,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce FX Go 5600",
+        "3d_benchmark": 18,
+        "2d_benchmark": 186,
+        "tdp": null,
+        "vram": 32,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce G 103M",
+        "3d_benchmark": 63,
+        "2d_benchmark": 34,
+        "tdp": 14.0,
+        "vram": 512,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce G 105M",
+        "3d_benchmark": 92,
+        "2d_benchmark": 20,
+        "tdp": 14.0,
+        "vram": 512,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce G102M",
+        "3d_benchmark": 168,
+        "2d_benchmark": 59,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce G105M",
+        "3d_benchmark": 133,
+        "2d_benchmark": 31,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce G205M",
+        "3d_benchmark": 125,
+        "2d_benchmark": 105,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce G210M",
+        "3d_benchmark": 129,
+        "2d_benchmark": 18,
+        "tdp": 14.0,
+        "vram": 512,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce Go 6200",
+        "3d_benchmark": 15,
+        "2d_benchmark": 204,
+        "tdp": null,
+        "vram": 16,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce Go 6400",
+        "3d_benchmark": 24,
+        "2d_benchmark": 212,
+        "tdp": null,
+        "vram": 16,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce Go 6600",
+        "3d_benchmark": 69,
+        "2d_benchmark": 209,
+        "tdp": null,
+        "vram": 128,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce Go 6800",
+        "3d_benchmark": 106,
+        "2d_benchmark": 205,
+        "tdp": null,
+        "vram": 128,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce Go 6800 Ultra",
+        "3d_benchmark": 138,
+        "2d_benchmark": 198,
+        "tdp": null,
+        "vram": 256,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce Go 7200",
+        "3d_benchmark": 45,
+        "2d_benchmark": 199,
+        "tdp": null,
+        "vram": 64,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce Go 7300",
+        "3d_benchmark": 52,
+        "2d_benchmark": 114,
+        "tdp": null,
+        "vram": 512,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce Go 7400",
+        "3d_benchmark": 66,
+        "2d_benchmark": 112,
+        "tdp": null,
+        "vram": 256,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce Go 7600",
+        "3d_benchmark": 128,
+        "2d_benchmark": 220,
+        "tdp": null,
+        "vram": 512,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce Go 7600 GT",
+        "3d_benchmark": 210,
+        "2d_benchmark": 125,
+        "tdp": null,
+        "vram": 256,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce Go 7700",
+        "3d_benchmark": 148,
+        "2d_benchmark": 232,
+        "tdp": null,
+        "vram": 512,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce Go 7800",
+        "3d_benchmark": 115,
+        "2d_benchmark": 209,
+        "tdp": 35.0,
+        "vram": 256,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce Go 7800 GTX",
+        "3d_benchmark": 210,
+        "2d_benchmark": 239,
+        "tdp": 65.0,
+        "vram": 256,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce Go 7900 GS",
+        "3d_benchmark": 178,
+        "2d_benchmark": 88,
+        "tdp": 20.0,
+        "vram": 256,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce Go 7900 GTX",
+        "3d_benchmark": 270,
+        "2d_benchmark": 264,
+        "tdp": 45.0,
+        "vram": 256,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce Go 7950 GTX",
+        "3d_benchmark": 264,
+        "2d_benchmark": 283,
+        "tdp": 45.0,
+        "vram": 512,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce",
+        "3d_benchmark": 1154,
+        "2d_benchmark": 156,
+        "tdp": null,
+        "vram": 1024,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce GT 120M",
+        "3d_benchmark": 151,
+        "2d_benchmark": 32,
+        "tdp": 23.0,
+        "vram": 1024,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce GT 130M",
+        "3d_benchmark": 170,
+        "2d_benchmark": 27,
+        "tdp": 23.0,
+        "vram": 1024,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce GT 220M",
+        "3d_benchmark": 208,
+        "2d_benchmark": 53,
+        "tdp": 14.0,
+        "vram": 1024,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce GT 230M",
+        "3d_benchmark": 221,
+        "2d_benchmark": 38,
+        "tdp": 23.0,
+        "vram": 1024,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce GT 240M",
+        "3d_benchmark": 212,
+        "2d_benchmark": 48,
+        "tdp": 23.0,
+        "vram": 1024,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce GT 320M",
+        "3d_benchmark": 114,
+        "2d_benchmark": 32,
+        "tdp": 14.0,
+        "vram": 1024,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce GT 325M",
+        "3d_benchmark": 170,
+        "2d_benchmark": 49,
+        "tdp": 23.0,
+        "vram": 1024,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce GT 330M",
+        "3d_benchmark": 219,
+        "2d_benchmark": 39,
+        "tdp": 23.0,
+        "vram": 1024,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce GT 335M",
+        "3d_benchmark": 366,
+        "2d_benchmark": 27,
+        "tdp": 28.0,
+        "vram": 1024,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce GT 415M",
+        "3d_benchmark": 286,
+        "2d_benchmark": 221,
+        "tdp": 12.0,
+        "vram": 512,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce GT 420M",
+        "3d_benchmark": 392,
+        "2d_benchmark": 92,
+        "tdp": 23.0,
+        "vram": 512,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce GT 425M",
+        "3d_benchmark": 499,
+        "2d_benchmark": 170,
+        "tdp": 23.0,
+        "vram": 1024,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce GT 435M",
+        "3d_benchmark": 536,
+        "2d_benchmark": 176,
+        "tdp": 35.0,
+        "vram": 2048,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce GT 445M",
+        "3d_benchmark": 811,
+        "2d_benchmark": 203,
+        "tdp": 35.0,
+        "vram": 1536,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce GT 520M",
+        "3d_benchmark": 285,
+        "2d_benchmark": 77,
+        "tdp": 12.0,
+        "vram": 1024,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce GT 520MX",
+        "3d_benchmark": 289,
+        "2d_benchmark": 54,
+        "tdp": 20.0,
+        "vram": 1024,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce GT 525M",
+        "3d_benchmark": 448,
+        "2d_benchmark": 98,
+        "tdp": 20.0,
+        "vram": 1024,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce GT 540M",
+        "3d_benchmark": 472,
+        "2d_benchmark": 90,
+        "tdp": 32.0,
+        "vram": 1024,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce GT 550M",
+        "3d_benchmark": 553,
+        "2d_benchmark": 116,
+        "tdp": 32.0,
+        "vram": 1024,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce GT 555M",
+        "3d_benchmark": 646,
+        "2d_benchmark": 110,
+        "tdp": 30.0,
+        "vram": 1024,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce GT 610M / GT 620M / GT 710M / GT 720M / GT",
+        "3d_benchmark": 369,
+        "2d_benchmark": 824,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce GT 620M",
+        "3d_benchmark": 430,
+        "2d_benchmark": 126,
+        "tdp": 15.0,
+        "vram": 2048,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce GT 625M",
+        "3d_benchmark": 485,
+        "2d_benchmark": 139,
+        "tdp": 15.0,
+        "vram": 2048,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce GT 630M",
+        "3d_benchmark": 519,
+        "2d_benchmark": 151,
+        "tdp": 33.0,
+        "vram": 2048,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce GT 635M",
+        "3d_benchmark": 536,
+        "2d_benchmark": 171,
+        "tdp": 35.0,
+        "vram": 1536,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce GT 640M",
+        "3d_benchmark": 888,
+        "2d_benchmark": 204,
+        "tdp": 32.0,
+        "vram": 2048,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce GT 640M LE",
+        "3d_benchmark": 689,
+        "2d_benchmark": 170,
+        "tdp": 32.0,
+        "vram": 2048,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce GT 645M",
+        "3d_benchmark": 945,
+        "2d_benchmark": 168,
+        "tdp": 32.0,
+        "vram": 2048,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce GT 650M",
+        "3d_benchmark": 1181,
+        "2d_benchmark": 238,
+        "tdp": 45.0,
+        "vram": 2048,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce GT 710M",
+        "3d_benchmark": 427,
+        "2d_benchmark": 117,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce GT 720M",
+        "3d_benchmark": 438,
+        "2d_benchmark": 119,
+        "tdp": null,
+        "vram": 2048,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce GT 730M",
+        "3d_benchmark": 807,
+        "2d_benchmark": 172,
+        "tdp": 33.0,
+        "vram": 2048,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce GT 735M",
+        "3d_benchmark": 660,
+        "2d_benchmark": 130,
+        "tdp": null,
+        "vram": 2048,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce GT 740M",
+        "3d_benchmark": 778,
+        "2d_benchmark": 148,
+        "tdp": null,
+        "vram": 2048,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce GT 745M",
+        "3d_benchmark": 1078,
+        "2d_benchmark": 176,
+        "tdp": 45.0,
+        "vram": 2048,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce GT 750M",
+        "3d_benchmark": 1331,
+        "2d_benchmark": 242,
+        "tdp": 50.0,
+        "vram": 2048,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce GT 755M",
+        "3d_benchmark": 1725,
+        "2d_benchmark": 333,
+        "tdp": 50.0,
+        "vram": 2048,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce GT 820M",
+        "3d_benchmark": 538,
+        "2d_benchmark": 143,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce GT625M",
+        "3d_benchmark": 422,
+        "2d_benchmark": 113,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce GTS 150M",
+        "3d_benchmark": 504,
+        "2d_benchmark": 407,
+        "tdp": null,
+        "vram": 1024,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce GTS 160M",
+        "3d_benchmark": 679,
+        "2d_benchmark": 308,
+        "tdp": 60.0,
+        "vram": 1024,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce GTS 250M",
+        "3d_benchmark": 520,
+        "2d_benchmark": 37,
+        "tdp": 28.0,
+        "vram": 1024,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce GTS 350M",
+        "3d_benchmark": 381,
+        "2d_benchmark": 69,
+        "tdp": 28.0,
+        "vram": 1024,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce GTS 360M",
+        "3d_benchmark": 631,
+        "2d_benchmark": 49,
+        "tdp": 38.0,
+        "vram": 1024,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce GTX 1050",
+        "3d_benchmark": 4463,
+        "2d_benchmark": 292,
+        "tdp": null,
+        "vram": 4096,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce GTX 1050 Ti",
+        "3d_benchmark": 5918,
+        "2d_benchmark": 323,
+        "tdp": null,
+        "vram": 4096,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce GTX 1050 Ti",
+        "3d_benchmark": 5309,
+        "2d_benchmark": 338,
+        "tdp": null,
+        "vram": 4096,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce GTX 1050",
+        "3d_benchmark": 3918,
+        "2d_benchmark": 277,
+        "tdp": null,
+        "vram": 4096,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce GTX 1060",
+        "3d_benchmark": 8160,
+        "2d_benchmark": 444,
+        "tdp": 80.0,
+        "vram": 6144,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce GTX 1060",
+        "3d_benchmark": 7834,
+        "2d_benchmark": 397,
+        "tdp": 80.0,
+        "vram": 6144,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce GTX 1070",
+        "3d_benchmark": 10465,
+        "2d_benchmark": 603,
+        "tdp": null,
+        "vram": 8192,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce GTX 1070",
+        "3d_benchmark": 9774,
+        "2d_benchmark": 413,
+        "tdp": 90.0,
+        "vram": 8192,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce GTX 1080",
+        "3d_benchmark": 11615,
+        "2d_benchmark": 720,
+        "tdp": 110.0,
+        "vram": 8192,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce GTX 1650",
+        "3d_benchmark": 6968,
+        "2d_benchmark": 384,
+        "tdp": 50.0,
+        "vram": 4096,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce GTX 1650 Ti",
+        "3d_benchmark": 7537,
+        "2d_benchmark": 372,
+        "tdp": 55.0,
+        "vram": 4096,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce GTX 1650 Ti",
+        "3d_benchmark": 6609,
+        "2d_benchmark": 335,
+        "tdp": 35.0,
+        "vram": 4096,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce GTX 1650",
+        "3d_benchmark": 6340,
+        "2d_benchmark": 333,
+        "tdp": 35.0,
+        "vram": 4096,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce GTX 1660 Ti",
+        "3d_benchmark": 10099,
+        "2d_benchmark": 473,
+        "tdp": 80.0,
+        "vram": 6144,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce GTX 1660 Ti",
+        "3d_benchmark": 8615,
+        "2d_benchmark": 356,
+        "tdp": 60.0,
+        "vram": 6144,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce GTX 260M",
+        "3d_benchmark": 382,
+        "2d_benchmark": 38,
+        "tdp": 65.0,
+        "vram": 1024,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce GTX 280M",
+        "3d_benchmark": 576,
+        "2d_benchmark": 153,
+        "tdp": 75.0,
+        "vram": 1024,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce GTX 285M",
+        "3d_benchmark": 584,
+        "2d_benchmark": 106,
+        "tdp": 75.0,
+        "vram": 1024,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce GTX 460M",
+        "3d_benchmark": 1218,
+        "2d_benchmark": 257,
+        "tdp": 50.0,
+        "vram": 1536,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce GTX 470M",
+        "3d_benchmark": 1953,
+        "2d_benchmark": 413,
+        "tdp": 50.0,
+        "vram": 1536,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce GTX 480M",
+        "3d_benchmark": 1653,
+        "2d_benchmark": 430,
+        "tdp": 100.0,
+        "vram": 2048,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce GTX 485M",
+        "3d_benchmark": 2360,
+        "2d_benchmark": 479,
+        "tdp": 100.0,
+        "vram": 2048,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce GTX 560M",
+        "3d_benchmark": 1280,
+        "2d_benchmark": 271,
+        "tdp": 75.0,
+        "vram": 3072,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce GTX 570M",
+        "3d_benchmark": 1862,
+        "2d_benchmark": 363,
+        "tdp": 75.0,
+        "vram": 1536,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce GTX 580M",
+        "3d_benchmark": 1772,
+        "2d_benchmark": 321,
+        "tdp": 100.0,
+        "vram": 2048,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce GTX 660M",
+        "3d_benchmark": 1448,
+        "2d_benchmark": 276,
+        "tdp": 50.0,
+        "vram": 2048,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce GTX 670M",
+        "3d_benchmark": 1725,
+        "2d_benchmark": 311,
+        "tdp": 75.0,
+        "vram": 3072,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce GTX 670MX",
+        "3d_benchmark": 1978,
+        "2d_benchmark": 333,
+        "tdp": 75.0,
+        "vram": 3072,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce GTX 675M",
+        "3d_benchmark": 1857,
+        "2d_benchmark": 276,
+        "tdp": 100.0,
+        "vram": 2048,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce GTX 675MX",
+        "3d_benchmark": 3083,
+        "2d_benchmark": 390,
+        "tdp": 100.0,
+        "vram": 4096,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce GTX 680M",
+        "3d_benchmark": 3277,
+        "2d_benchmark": 354,
+        "tdp": 100.0,
+        "vram": 4096,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce GTX 680M KY_Bullet Edition",
+        "3d_benchmark": 3569,
+        "2d_benchmark": 581,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce GTX 680MX",
+        "3d_benchmark": 3799,
+        "2d_benchmark": 458,
+        "tdp": 122.0,
+        "vram": 4096,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce GTX 760M",
+        "3d_benchmark": 1742,
+        "2d_benchmark": 232,
+        "tdp": 55.0,
+        "vram": 2048,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce GTX 765M",
+        "3d_benchmark": 2005,
+        "2d_benchmark": 284,
+        "tdp": 65.0,
+        "vram": 2048,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce GTX 770M",
+        "3d_benchmark": 2790,
+        "2d_benchmark": 335,
+        "tdp": 75.0,
+        "vram": 3072,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce GTX 775M",
+        "3d_benchmark": 3940,
+        "2d_benchmark": 537,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce GTX 780M",
+        "3d_benchmark": 3890,
+        "2d_benchmark": 423,
+        "tdp": 122.0,
+        "vram": 4096,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce GTX 850M",
+        "3d_benchmark": 2541,
+        "2d_benchmark": 228,
+        "tdp": 40.0,
+        "vram": 2048,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce GTX 850M - MODDED",
+        "3d_benchmark": 1092,
+        "2d_benchmark": 819,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce GTX 860M",
+        "3d_benchmark": 3088,
+        "2d_benchmark": 229,
+        "tdp": 45.0,
+        "vram": 2048,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce GTX 870M",
+        "3d_benchmark": 3547,
+        "2d_benchmark": 280,
+        "tdp": 110.0,
+        "vram": 6144,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce GTX 880M",
+        "3d_benchmark": 3841,
+        "2d_benchmark": 334,
+        "tdp": 130.0,
+        "vram": 8192,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce GTX 950M",
+        "3d_benchmark": 2574,
+        "2d_benchmark": 216,
+        "tdp": 75.0,
+        "vram": 2048,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce GTX 960M",
+        "3d_benchmark": 3373,
+        "2d_benchmark": 244,
+        "tdp": 65.0,
+        "vram": 4096,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce GTX 965M",
+        "3d_benchmark": 3867,
+        "2d_benchmark": 350,
+        "tdp": 60.0,
+        "vram": 4096,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce GTX 970M",
+        "3d_benchmark": 5711,
+        "2d_benchmark": 374,
+        "tdp": 75.0,
+        "vram": 3072,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce GTX 980M",
+        "3d_benchmark": 7383,
+        "2d_benchmark": 495,
+        "tdp": 100.0,
+        "vram": 4096,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce MX150",
+        "3d_benchmark": 2255,
+        "2d_benchmark": 211,
+        "tdp": 25.0,
+        "vram": 2048,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce MX230",
+        "3d_benchmark": 1822,
+        "2d_benchmark": 213,
+        "tdp": 10.0,
+        "vram": 2048,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce MX250",
+        "3d_benchmark": 2375,
+        "2d_benchmark": 238,
+        "tdp": 25.0,
+        "vram": 2048,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce RTX 2050",
+        "3d_benchmark": 7714,
+        "2d_benchmark": 480,
+        "tdp": 45.0,
+        "vram": 4096,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce RTX 2060",
+        "3d_benchmark": 11353,
+        "2d_benchmark": 540,
+        "tdp": 80.0,
+        "vram": 6144,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce RTX 2060",
+        "3d_benchmark": 9626,
+        "2d_benchmark": 402,
+        "tdp": 65.0,
+        "vram": 6144,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce RTX 2070",
+        "3d_benchmark": 12357,
+        "2d_benchmark": 602,
+        "tdp": 115.0,
+        "vram": 8192,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce RTX 2070 Super",
+        "3d_benchmark": 13413,
+        "2d_benchmark": 595,
+        "tdp": 80.0,
+        "vram": 8192,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce RTX 2070",
+        "3d_benchmark": 11405,
+        "2d_benchmark": 455,
+        "tdp": 80.0,
+        "vram": 8192,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce RTX 2080",
+        "3d_benchmark": 15014,
+        "2d_benchmark": 804,
+        "tdp": 150.0,
+        "vram": 8192,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce RTX 2080 Super",
+        "3d_benchmark": 13519,
+        "2d_benchmark": 561,
+        "tdp": 80.0,
+        "vram": 8192,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce RTX 2080",
+        "3d_benchmark": 12731,
+        "2d_benchmark": 507,
+        "tdp": 90.0,
+        "vram": 8192,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce RTX 3050 4GB",
+        "3d_benchmark": 9492,
+        "2d_benchmark": 490,
+        "tdp": 75.0,
+        "vram": 4096,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce RTX 3050 6GB",
+        "3d_benchmark": 10130,
+        "2d_benchmark": 564,
+        "tdp": 80.0,
+        "vram": 6144,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce RTX 3050 A",
+        "3d_benchmark": 11126,
+        "2d_benchmark": 566,
+        "tdp": 35.0,
+        "vram": 4096,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce RTX 3050",
+        "3d_benchmark": 12003,
+        "2d_benchmark": 826,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce RTX 3050 Ti",
+        "3d_benchmark": 10089,
+        "2d_benchmark": 498,
+        "tdp": 80.0,
+        "vram": 4096,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce RTX 3060",
+        "3d_benchmark": 13152,
+        "2d_benchmark": 585,
+        "tdp": 115.0,
+        "vram": 6144,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce RTX 3070",
+        "3d_benchmark": 15122,
+        "2d_benchmark": 631,
+        "tdp": 115.0,
+        "vram": 8192,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce RTX 3070 Ti",
+        "3d_benchmark": 17513,
+        "2d_benchmark": 774,
+        "tdp": 115.0,
+        "vram": 8192,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce RTX 3080",
+        "3d_benchmark": 16149,
+        "2d_benchmark": 631,
+        "tdp": 115.0,
+        "vram": 8192,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce RTX 3080 Ti",
+        "3d_benchmark": 18970,
+        "2d_benchmark": 818,
+        "tdp": 115.0,
+        "vram": 16384,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce RTX 4050",
+        "3d_benchmark": 14328,
+        "2d_benchmark": 631,
+        "tdp": 115.0,
+        "vram": 6144,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce RTX 4060",
+        "3d_benchmark": 17399,
+        "2d_benchmark": 731,
+        "tdp": 115.0,
+        "vram": 8192,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce RTX 4070",
+        "3d_benchmark": 19542,
+        "2d_benchmark": 767,
+        "tdp": 115.0,
+        "vram": 8192,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce RTX 4080",
+        "3d_benchmark": 24745,
+        "2d_benchmark": 923,
+        "tdp": 150.0,
+        "vram": 12288,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce RTX 4090",
+        "3d_benchmark": 27126,
+        "2d_benchmark": 990,
+        "tdp": 150.0,
+        "vram": 16384,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce RTX 5050",
+        "3d_benchmark": 14445,
+        "2d_benchmark": 755,
+        "tdp": 100.0,
+        "vram": 8192,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce RTX 5060",
+        "3d_benchmark": 16970,
+        "2d_benchmark": 855,
+        "tdp": 100.0,
+        "vram": 8192,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce RTX 5070",
+        "3d_benchmark": 19255,
+        "2d_benchmark": 886,
+        "tdp": 100.0,
+        "vram": 8192,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce RTX 5070 Ti",
+        "3d_benchmark": 22659,
+        "2d_benchmark": 967,
+        "tdp": 115.0,
+        "vram": 12288,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce RTX 5080",
+        "3d_benchmark": 26530,
+        "2d_benchmark": 1094,
+        "tdp": 150.0,
+        "vram": 16384,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce RTX 5090",
+        "3d_benchmark": 28497,
+        "2d_benchmark": 1087,
+        "tdp": 150.0,
+        "vram": 24576,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce2 Go",
+        "3d_benchmark": 4,
+        "2d_benchmark": 95,
+        "tdp": null,
+        "vram": 32,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce4 420 Go",
+        "3d_benchmark": 3,
+        "2d_benchmark": 147,
+        "tdp": null,
+        "vram": 32,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce4 4200 Go",
+        "3d_benchmark": 4,
+        "2d_benchmark": 173,
+        "tdp": null,
+        "vram": 64,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce4 440 Go",
+        "3d_benchmark": 4,
+        "2d_benchmark": 140,
+        "tdp": null,
+        "vram": 64,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce9400M",
+        "3d_benchmark": 106,
+        "2d_benchmark": 161,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Mobility Radeon HD 2300",
+        "3d_benchmark": 51,
+        "2d_benchmark": 211,
+        "tdp": null,
+        "vram": 512,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Mobility Radeon HD 2400",
+        "3d_benchmark": 90,
+        "2d_benchmark": 212,
+        "tdp": null,
+        "vram": 256,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Mobility Radeon HD 2400 XT",
+        "3d_benchmark": 102,
+        "2d_benchmark": 246,
+        "tdp": null,
+        "vram": 256,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Mobility Radeon HD 2600",
+        "3d_benchmark": 168,
+        "2d_benchmark": 267,
+        "tdp": null,
+        "vram": 256,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Mobility Radeon HD 2600 XT",
+        "3d_benchmark": 192,
+        "2d_benchmark": 329,
+        "tdp": null,
+        "vram": 256,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Mobility Radeon HD 3410",
+        "3d_benchmark": 63,
+        "2d_benchmark": 130,
+        "tdp": null,
+        "vram": 512,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Mobility Radeon HD 3430",
+        "3d_benchmark": 98,
+        "2d_benchmark": 260,
+        "tdp": null,
+        "vram": 256,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Mobility Radeon HD 3450",
+        "3d_benchmark": 91,
+        "2d_benchmark": 247,
+        "tdp": null,
+        "vram": 256,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Mobility Radeon HD 3470",
+        "3d_benchmark": 93,
+        "2d_benchmark": 250,
+        "tdp": null,
+        "vram": 256,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Mobility Radeon HD 3650",
+        "3d_benchmark": 140,
+        "2d_benchmark": 31,
+        "tdp": null,
+        "vram": 1024,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Mobility Radeon HD 3670",
+        "3d_benchmark": 232,
+        "2d_benchmark": 331,
+        "tdp": null,
+        "vram": 1024,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Mobility Radeon HD 3850",
+        "3d_benchmark": 366,
+        "2d_benchmark": 248,
+        "tdp": null,
+        "vram": 512,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Mobility Radeon HD 3870",
+        "3d_benchmark": 548,
+        "2d_benchmark": 288,
+        "tdp": null,
+        "vram": 512,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Mobility Radeon HD 3870 X2",
+        "3d_benchmark": 478,
+        "2d_benchmark": 187,
+        "tdp": null,
+        "vram": 2,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Mobility Radeon HD 4200",
+        "3d_benchmark": 91,
+        "2d_benchmark": 260,
+        "tdp": null,
+        "vram": 512,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Mobility Radeon HD 4225",
+        "3d_benchmark": 66,
+        "2d_benchmark": 174,
+        "tdp": null,
+        "vram": 512,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Mobility Radeon HD 4250",
+        "3d_benchmark": 98,
+        "2d_benchmark": 280,
+        "tdp": null,
+        "vram": 512,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Mobility Radeon HD 4270",
+        "3d_benchmark": 93,
+        "2d_benchmark": 282,
+        "tdp": null,
+        "vram": 512,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Mobility Radeon HD 4330",
+        "3d_benchmark": 135,
+        "2d_benchmark": 377,
+        "tdp": null,
+        "vram": 512,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Mobility Radeon HD 4550",
+        "3d_benchmark": 191,
+        "2d_benchmark": 290,
+        "tdp": null,
+        "vram": 512,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Mobility Radeon HD 4570",
+        "3d_benchmark": 150,
+        "2d_benchmark": 19,
+        "tdp": null,
+        "vram": 512,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Mobility Radeon HD 4650",
+        "3d_benchmark": 401,
+        "2d_benchmark": 320,
+        "tdp": null,
+        "vram": 1024,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Mobility Radeon HD 4670",
+        "3d_benchmark": 463,
+        "2d_benchmark": 375,
+        "tdp": null,
+        "vram": 1024,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Mobility Radeon HD 4830",
+        "3d_benchmark": 512,
+        "2d_benchmark": 285,
+        "tdp": null,
+        "vram": 1024,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Mobility Radeon HD 4850",
+        "3d_benchmark": 866,
+        "2d_benchmark": 472,
+        "tdp": null,
+        "vram": 1024,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Mobility Radeon HD 4870",
+        "3d_benchmark": 720,
+        "2d_benchmark": 416,
+        "tdp": null,
+        "vram": 1024,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Mobility Radeon HD 5165",
+        "3d_benchmark": 284,
+        "2d_benchmark": 362,
+        "tdp": 35.0,
+        "vram": 1024,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Mobility Radeon HD 530v",
+        "3d_benchmark": 175,
+        "2d_benchmark": 353,
+        "tdp": null,
+        "vram": 1024,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Mobility Radeon HD 5430",
+        "3d_benchmark": 181,
+        "2d_benchmark": 330,
+        "tdp": 7.0,
+        "vram": 1024,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Mobility Radeon HD 5450",
+        "3d_benchmark": 214,
+        "2d_benchmark": 320,
+        "tdp": 11.0,
+        "vram": 1024,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Mobility Radeon HD 545v",
+        "3d_benchmark": 200,
+        "2d_benchmark": 270,
+        "tdp": null,
+        "vram": 1024,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Mobility Radeon HD 5470",
+        "3d_benchmark": 236,
+        "2d_benchmark": 362,
+        "tdp": 13.0,
+        "vram": 512,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Mobility Radeon HD 550v",
+        "3d_benchmark": 266,
+        "2d_benchmark": 398,
+        "tdp": null,
+        "vram": 1024,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Mobility Radeon HD 560v",
+        "3d_benchmark": 318,
+        "2d_benchmark": 366,
+        "tdp": null,
+        "vram": 1024,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Mobility Radeon HD 5650",
+        "3d_benchmark": 441,
+        "2d_benchmark": 150,
+        "tdp": 15.0,
+        "vram": 1024,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Mobility Radeon HD 565v",
+        "3d_benchmark": 353,
+        "2d_benchmark": 318,
+        "tdp": null,
+        "vram": 1024,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Mobility Radeon HD 5730",
+        "3d_benchmark": 507,
+        "2d_benchmark": 153,
+        "tdp": 26.0,
+        "vram": 1024,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Mobility Radeon HD 5850",
+        "3d_benchmark": 763,
+        "2d_benchmark": 403,
+        "tdp": 31.0,
+        "vram": 1024,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Mobility Radeon HD 5870",
+        "3d_benchmark": 1075,
+        "2d_benchmark": 222,
+        "tdp": 50.0,
+        "vram": 1024,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Mobility Radeon X1300",
+        "3d_benchmark": 40,
+        "2d_benchmark": 222,
+        "tdp": null,
+        "vram": 128,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Mobility Radeon X1350",
+        "3d_benchmark": 40,
+        "2d_benchmark": 274,
+        "tdp": null,
+        "vram": 128,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Mobility Radeon X1400",
+        "3d_benchmark": 43,
+        "2d_benchmark": 226,
+        "tdp": null,
+        "vram": 128,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Mobility Radeon X1450",
+        "3d_benchmark": 33,
+        "2d_benchmark": 205,
+        "tdp": null,
+        "vram": 128,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Mobility Radeon X1600",
+        "3d_benchmark": 92,
+        "2d_benchmark": 236,
+        "tdp": null,
+        "vram": 256,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Mobility Radeon X1700",
+        "3d_benchmark": 105,
+        "2d_benchmark": 228,
+        "tdp": null,
+        "vram": 256,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Mobility Radeon X1900",
+        "3d_benchmark": 135,
+        "2d_benchmark": 287,
+        "tdp": null,
+        "vram": 256,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Mobility Radeon X2300",
+        "3d_benchmark": 48,
+        "2d_benchmark": 263,
+        "tdp": null,
+        "vram": 128,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Mobility Radeon X2500",
+        "3d_benchmark": 82,
+        "2d_benchmark": 235,
+        "tdp": null,
+        "vram": 256,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Mobility Radeon. HD 5470",
+        "3d_benchmark": 215,
+        "2d_benchmark": 398,
+        "tdp": 13.0,
+        "vram": 512,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA MONSTER GeForce GTX 675M",
+        "3d_benchmark": 2637,
+        "2d_benchmark": 686,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA Quadro RTX 3000",
+        "3d_benchmark": 10724,
+        "2d_benchmark": 478,
+        "tdp": 80.0,
+        "vram": 6144,
+        "category": "Mobile, Workstation"
+    },
+    {
+        "name": "NVIDIA Quadro RTX 3000",
+        "3d_benchmark": 8169,
+        "2d_benchmark": 333,
+        "tdp": 60.0,
+        "vram": 6144,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA Quadro RTX 4000",
+        "3d_benchmark": 11687,
+        "2d_benchmark": 507,
+        "tdp": 110.0,
+        "vram": 8192,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA Quadro RTX 4000",
+        "3d_benchmark": 12083,
+        "2d_benchmark": 499,
+        "tdp": 80.0,
+        "vram": 8192,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA Quadro RTX 5000",
+        "3d_benchmark": 14832,
+        "2d_benchmark": 705,
+        "tdp": 110.0,
+        "vram": 16384,
+        "category": "Mobile, Workstation"
+    },
+    {
+        "name": "NVIDIA Quadro RTX 5000",
+        "3d_benchmark": 12636,
+        "2d_benchmark": 516,
+        "tdp": 80.0,
+        "vram": 16384,
+        "category": "Mobile, Workstation"
+    },
+    {
+        "name": "AMD Radeon 610M",
+        "3d_benchmark": 1233,
+        "2d_benchmark": 274,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon 610M Ryzen 7 7840HX",
+        "3d_benchmark": 20904,
+        "2d_benchmark": 558,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon 610M Ryzen 7 8745HX",
+        "3d_benchmark": 1336,
+        "2d_benchmark": 368,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon 610M Ryzen 9 7845HX",
+        "3d_benchmark": 5948,
+        "2d_benchmark": 586,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon 610M Ryzen 9 7940HX",
+        "3d_benchmark": 1594,
+        "2d_benchmark": 530,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon 610M Ryzen 9 7945HX",
+        "3d_benchmark": 1817,
+        "2d_benchmark": 535,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon 610M Ryzen 9 7945HX3D",
+        "3d_benchmark": 1660,
+        "2d_benchmark": 534,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon 610M Ryzen 9 8940HX",
+        "3d_benchmark": 4012,
+        "2d_benchmark": 443,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon 610M Ryzen 9 8945HX",
+        "3d_benchmark": 3032,
+        "2d_benchmark": 542,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon 6600M",
+        "3d_benchmark": 533,
+        "2d_benchmark": 181,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon 660M",
+        "3d_benchmark": 3221,
+        "2d_benchmark": 643,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon 660M Ryzen 3 7335U",
+        "3d_benchmark": 2157,
+        "2d_benchmark": 685,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon 660M Ryzen 5 6600H",
+        "3d_benchmark": 3207,
+        "2d_benchmark": 645,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon 660M Ryzen 5 7533HS",
+        "3d_benchmark": 2938,
+        "2d_benchmark": 746,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon 660M Ryzen 5 7535HS",
+        "3d_benchmark": 3081,
+        "2d_benchmark": 740,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon 660M Ryzen 5 Pro 7535U",
+        "3d_benchmark": 4025,
+        "2d_benchmark": 858,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon 6750M",
+        "3d_benchmark": 911,
+        "2d_benchmark": 570,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon 680M Ryzen 7 7735HS",
+        "3d_benchmark": 4330,
+        "2d_benchmark": 744,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon 680M Ryzen 7 Pro 7735U",
+        "3d_benchmark": 3531,
+        "2d_benchmark": 819,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon 680M Ryzen 9 6900HX",
+        "3d_benchmark": 5493,
+        "2d_benchmark": 858,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon 740M",
+        "3d_benchmark": 3001,
+        "2d_benchmark": 787,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon 760M",
+        "3d_benchmark": 5400,
+        "2d_benchmark": 895,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon 780M",
+        "3d_benchmark": 6868,
+        "2d_benchmark": 890,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon 820M",
+        "3d_benchmark": 2135,
+        "2d_benchmark": 746,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon 840M",
+        "3d_benchmark": 3847,
+        "2d_benchmark": 875,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon 860M",
+        "3d_benchmark": 4887,
+        "2d_benchmark": 920,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon 880M",
+        "3d_benchmark": 7677,
+        "2d_benchmark": 970,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon 890M",
+        "3d_benchmark": 8152,
+        "2d_benchmark": 979,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 6250",
+        "3d_benchmark": 94,
+        "2d_benchmark": 30,
+        "tdp": 35.0,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 6290",
+        "3d_benchmark": 105,
+        "2d_benchmark": 32,
+        "tdp": 45.0,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 6290M",
+        "3d_benchmark": 140,
+        "2d_benchmark": 92,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 6300M",
+        "3d_benchmark": 144,
+        "2d_benchmark": 107,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 6310",
+        "3d_benchmark": 122,
+        "2d_benchmark": 35,
+        "tdp": 45.0,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 6320",
+        "3d_benchmark": 147,
+        "2d_benchmark": 43,
+        "tdp": 45.0,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 6320M",
+        "3d_benchmark": 198,
+        "2d_benchmark": 151,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 6370M",
+        "3d_benchmark": 276,
+        "2d_benchmark": 401,
+        "tdp": 11.0,
+        "vram": 1024,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 6380G",
+        "3d_benchmark": 201,
+        "2d_benchmark": 91,
+        "tdp": 35.0,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 6430M",
+        "3d_benchmark": 193,
+        "2d_benchmark": 106,
+        "tdp": null,
+        "vram": 1024,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 6470M",
+        "3d_benchmark": 225,
+        "2d_benchmark": 105,
+        "tdp": null,
+        "vram": 1024,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 6480G",
+        "3d_benchmark": 258,
+        "2d_benchmark": 81,
+        "tdp": 45.0,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 6480M",
+        "3d_benchmark": 353,
+        "2d_benchmark": 282,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 6490M",
+        "3d_benchmark": 378,
+        "2d_benchmark": 514,
+        "tdp": null,
+        "vram": 512,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 6520G",
+        "3d_benchmark": 300,
+        "2d_benchmark": 82,
+        "tdp": 45.0,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 6610M",
+        "3d_benchmark": 565,
+        "2d_benchmark": 527,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 6620G",
+        "3d_benchmark": 341,
+        "2d_benchmark": 103,
+        "tdp": 45.0,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 6630M",
+        "3d_benchmark": 685,
+        "2d_benchmark": 390,
+        "tdp": null,
+        "vram": 1024,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 6650M",
+        "3d_benchmark": 773,
+        "2d_benchmark": 238,
+        "tdp": null,
+        "vram": 1024,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 6700M",
+        "3d_benchmark": 1017,
+        "2d_benchmark": 523,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 6750M",
+        "3d_benchmark": 937,
+        "2d_benchmark": 487,
+        "tdp": null,
+        "vram": 1024,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 6770M",
+        "3d_benchmark": 964,
+        "2d_benchmark": 572,
+        "tdp": null,
+        "vram": 1024,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 6800M",
+        "3d_benchmark": 749,
+        "2d_benchmark": 222,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 6900M",
+        "3d_benchmark": 1695,
+        "2d_benchmark": 375,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 6970M",
+        "3d_benchmark": 2270,
+        "2d_benchmark": 656,
+        "tdp": 75.0,
+        "vram": 2048,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 7290M",
+        "3d_benchmark": 123,
+        "2d_benchmark": 90,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 7310M",
+        "3d_benchmark": 166,
+        "2d_benchmark": 127,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 7340M",
+        "3d_benchmark": 221,
+        "2d_benchmark": 160,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 7450M",
+        "3d_benchmark": 330,
+        "2d_benchmark": 441,
+        "tdp": 7.0,
+        "vram": 1024,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 7470M",
+        "3d_benchmark": 408,
+        "2d_benchmark": 393,
+        "tdp": 7.0,
+        "vram": 1024,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 7500G + 7500M/7600M Dual",
+        "3d_benchmark": 617,
+        "2d_benchmark": 308,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 7500G + 7550M Dual",
+        "3d_benchmark": 497,
+        "2d_benchmark": 263,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 7500G + HD 7500M/7600M Dual",
+        "3d_benchmark": 356,
+        "2d_benchmark": 265,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 7520G + 7400M Dual",
+        "3d_benchmark": 487,
+        "2d_benchmark": 280,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 7520G + 7470M Dual",
+        "3d_benchmark": 543,
+        "2d_benchmark": 345,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 7520G + 7600M Dual",
+        "3d_benchmark": 591,
+        "2d_benchmark": 362,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 7520G + 7610M Dual",
+        "3d_benchmark": 588,
+        "2d_benchmark": 317,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 7520G + 7650M Dual",
+        "3d_benchmark": 453,
+        "2d_benchmark": 345,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 7520G + 7670M Dual",
+        "3d_benchmark": 523,
+        "2d_benchmark": 323,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 7520G + 7700M Dual",
+        "3d_benchmark": 1061,
+        "2d_benchmark": 331,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 7520G + 8600/8700M Dual",
+        "3d_benchmark": 311,
+        "2d_benchmark": 329,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 7520G + 8750M Dual",
+        "3d_benchmark": 377,
+        "2d_benchmark": 388,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 7520G + HD 7400M Dual",
+        "3d_benchmark": 545,
+        "2d_benchmark": 315,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 7520G + HD 7600M Dual",
+        "3d_benchmark": 447,
+        "2d_benchmark": 150,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 7520G + HD 7670M Dual",
+        "3d_benchmark": 495,
+        "2d_benchmark": 295,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 7520G + HD 7700M Dual",
+        "3d_benchmark": 575,
+        "2d_benchmark": 389,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 7520G + HD 8600/8700M Dual",
+        "3d_benchmark": 624,
+        "2d_benchmark": 291,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 7520G + HD 8750M Dual",
+        "3d_benchmark": 651,
+        "2d_benchmark": 289,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 7520G N HD 7520G + HD 7600M N HD 7600M D",
+        "3d_benchmark": 365,
+        "2d_benchmark": 263,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 7550M",
+        "3d_benchmark": 465,
+        "2d_benchmark": 403,
+        "tdp": 13.0,
+        "vram": 1024,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 7550M/7650M",
+        "3d_benchmark": 729,
+        "2d_benchmark": 524,
+        "tdp": 13.0,
+        "vram": 1024,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 7570M",
+        "3d_benchmark": 418,
+        "2d_benchmark": 185,
+        "tdp": 13.0,
+        "vram": 1024,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 7570M/HD 7670M",
+        "3d_benchmark": 699,
+        "2d_benchmark": 555,
+        "tdp": 25.0,
+        "vram": 1024,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 7600G + 6400M Dual",
+        "3d_benchmark": 377,
+        "2d_benchmark": 257,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 7600G + 7450M Dual",
+        "3d_benchmark": 390,
+        "2d_benchmark": 221,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 7600G + 7500M/7600M Dual",
+        "3d_benchmark": 406,
+        "2d_benchmark": 210,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 7600G + 7550M Dual",
+        "3d_benchmark": 423,
+        "2d_benchmark": 247,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 7600G + 8500M/8700M Dual",
+        "3d_benchmark": 334,
+        "2d_benchmark": 131,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 7600G + HD 7400M Dual",
+        "3d_benchmark": 329,
+        "2d_benchmark": 147,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 7600G + HD 7500M/7600M Dual",
+        "3d_benchmark": 477,
+        "2d_benchmark": 126,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 7600G + HD 7550M Dual",
+        "3d_benchmark": 509,
+        "2d_benchmark": 202,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 7600G + HD 8670M Dual",
+        "3d_benchmark": 544,
+        "2d_benchmark": 241,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 7600M + 7600M Dual",
+        "3d_benchmark": 773,
+        "2d_benchmark": 317,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 7610M",
+        "3d_benchmark": 632,
+        "2d_benchmark": 479,
+        "tdp": 20.0,
+        "vram": 1024,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 7620G + 8600M Dual",
+        "3d_benchmark": 509,
+        "2d_benchmark": 294,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 7620G + 8670M Dual",
+        "3d_benchmark": 577,
+        "2d_benchmark": 322,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 7620G + HD 8600M Dual",
+        "3d_benchmark": 443,
+        "2d_benchmark": 267,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 7620G + HD 8670M Dual",
+        "3d_benchmark": 507,
+        "2d_benchmark": 267,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 7620G N HD 7620G + HD 8600M N HD 8600M D",
+        "3d_benchmark": 452,
+        "2d_benchmark": 238,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 7640G + 6400M Dual",
+        "3d_benchmark": 527,
+        "2d_benchmark": 279,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 7640G + 7400M Dual",
+        "3d_benchmark": 637,
+        "2d_benchmark": 286,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 7640G + 7450M Dual",
+        "3d_benchmark": 754,
+        "2d_benchmark": 353,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 7640G + 7470M Dual",
+        "3d_benchmark": 595,
+        "2d_benchmark": 301,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 7640G + 7500M/7600M Dual",
+        "3d_benchmark": 776,
+        "2d_benchmark": 317,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 7640G + 7600M Dual",
+        "3d_benchmark": 706,
+        "2d_benchmark": 294,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 7640G + 7610M Dual",
+        "3d_benchmark": 510,
+        "2d_benchmark": 309,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 7640G + 7650M Dual",
+        "3d_benchmark": 747,
+        "2d_benchmark": 188,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 7640G + 7670M Dual",
+        "3d_benchmark": 645,
+        "2d_benchmark": 294,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 7640G + 7690M Dual",
+        "3d_benchmark": 946,
+        "2d_benchmark": 325,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 7640G + 7700M Dual",
+        "3d_benchmark": 691,
+        "2d_benchmark": 324,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 7640G + 8500M Dual",
+        "3d_benchmark": 586,
+        "2d_benchmark": 308,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 7640G + 8570M Dual",
+        "3d_benchmark": 558,
+        "2d_benchmark": 274,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 7640G + 8600/8700M Dual",
+        "3d_benchmark": 689,
+        "2d_benchmark": 308,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 7640G + 8600M Dual",
+        "3d_benchmark": 250,
+        "2d_benchmark": 217,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 7640G + 8670M Dual",
+        "3d_benchmark": 558,
+        "2d_benchmark": 316,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 7640G + 8750M Dual",
+        "3d_benchmark": 655,
+        "2d_benchmark": 305,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 7640G + HD 7400M Dual",
+        "3d_benchmark": 577,
+        "2d_benchmark": 152,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 7640G + HD 7600M Dual",
+        "3d_benchmark": 704,
+        "2d_benchmark": 277,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 7640G + HD 7600M N HD 7600M Dual",
+        "3d_benchmark": 407,
+        "2d_benchmark": 198,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 7640G + HD 7670M Dual",
+        "3d_benchmark": 519,
+        "2d_benchmark": 97,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 7640G + HD 7700M Dual",
+        "3d_benchmark": 589,
+        "2d_benchmark": 277,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 7640G + HD 7700M N HD 7700M Dual",
+        "3d_benchmark": 631,
+        "2d_benchmark": 272,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 7640G + HD 8500M Dual",
+        "3d_benchmark": 607,
+        "2d_benchmark": 305,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 7640G + HD 8500M N HD 8500M Dual",
+        "3d_benchmark": 666,
+        "2d_benchmark": 311,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 7640G + HD 8570M Dual",
+        "3d_benchmark": 475,
+        "2d_benchmark": 196,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 7640G + HD 8600/8700M Dual",
+        "3d_benchmark": 587,
+        "2d_benchmark": 298,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 7640G + HD 8670M Dual",
+        "3d_benchmark": 677,
+        "2d_benchmark": 249,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 7640G + HD 8750M Dual",
+        "3d_benchmark": 997,
+        "2d_benchmark": 293,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 7640G N HD 7640G + HD 7600M N HD 7600M D",
+        "3d_benchmark": 824,
+        "2d_benchmark": 262,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 7640G N HD 7640G + HD 7670M Dual",
+        "3d_benchmark": 680,
+        "2d_benchmark": 305,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 7640G N HD 7640G + HD 8570M Dual",
+        "3d_benchmark": 423,
+        "2d_benchmark": 287,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 7650M",
+        "3d_benchmark": 432,
+        "2d_benchmark": 48,
+        "tdp": 20.0,
+        "vram": 1024,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 7660G + 7400M Dual",
+        "3d_benchmark": 588,
+        "2d_benchmark": 326,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 7660G + 7470M Dual",
+        "3d_benchmark": 631,
+        "2d_benchmark": 351,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 7660G + 7600M Dual",
+        "3d_benchmark": 832,
+        "2d_benchmark": 341,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 7660G + 7610M Dual",
+        "3d_benchmark": 746,
+        "2d_benchmark": 323,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 7660G + 7670M Dual",
+        "3d_benchmark": 743,
+        "2d_benchmark": 347,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 7660G + 7700M Dual",
+        "3d_benchmark": 757,
+        "2d_benchmark": 311,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 7660G + 7730M Dual",
+        "3d_benchmark": 931,
+        "2d_benchmark": 392,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 7660G + 8600M Dual",
+        "3d_benchmark": 446,
+        "2d_benchmark": 360,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 7660G + 8670M Dual",
+        "3d_benchmark": 588,
+        "2d_benchmark": 333,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 7660G + HD 7500M/7600M Dual",
+        "3d_benchmark": 999,
+        "2d_benchmark": 323,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 7660G + HD 7600M Dual",
+        "3d_benchmark": 568,
+        "2d_benchmark": 90,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 7660G + HD 7600M N HD 7600M Dual",
+        "3d_benchmark": 460,
+        "2d_benchmark": 297,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 7660G + HD 7670M Dual",
+        "3d_benchmark": 707,
+        "2d_benchmark": 317,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 7660G + HD 7700M Dual",
+        "3d_benchmark": 777,
+        "2d_benchmark": 168,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 7660G + HD 7730M Dual",
+        "3d_benchmark": 882,
+        "2d_benchmark": 329,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 7660G + HD 8500M Dual",
+        "3d_benchmark": 758,
+        "2d_benchmark": 355,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 7660G + HD 8600/8700M Dual",
+        "3d_benchmark": 747,
+        "2d_benchmark": 365,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 7660G + HD 8600M Dual",
+        "3d_benchmark": 364,
+        "2d_benchmark": 337,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 7660G + HD 8670M Dual",
+        "3d_benchmark": 711,
+        "2d_benchmark": 325,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 7660G N HD 7660G + HD 7600M N HD 7600M D",
+        "3d_benchmark": 723,
+        "2d_benchmark": 292,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 7660G N HD 7660G + HD 7670M Dual",
+        "3d_benchmark": 705,
+        "2d_benchmark": 318,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 7660G N HD 7660G + HD 7700M N HD 7700M D",
+        "3d_benchmark": 967,
+        "2d_benchmark": 351,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 7670M",
+        "3d_benchmark": 480,
+        "2d_benchmark": 86,
+        "tdp": 20.0,
+        "vram": 1024,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 7670M + 7670M Dual",
+        "3d_benchmark": 738,
+        "2d_benchmark": 294,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 7690M",
+        "3d_benchmark": 832,
+        "2d_benchmark": 354,
+        "tdp": 20.0,
+        "vram": 2048,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 7690M XT",
+        "3d_benchmark": 1009,
+        "2d_benchmark": 552,
+        "tdp": 25.0,
+        "vram": 2048,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 7730M",
+        "3d_benchmark": 786,
+        "2d_benchmark": 208,
+        "tdp": 25.0,
+        "vram": 2048,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 7750M",
+        "3d_benchmark": 1191,
+        "2d_benchmark": 693,
+        "tdp": 28.0,
+        "vram": 2048,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 7850M",
+        "3d_benchmark": 1373,
+        "2d_benchmark": 566,
+        "tdp": 40.0,
+        "vram": 2048,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 7870M",
+        "3d_benchmark": 1507,
+        "2d_benchmark": 556,
+        "tdp": 45.0,
+        "vram": 2048,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 7970M",
+        "3d_benchmark": 3663,
+        "2d_benchmark": 471,
+        "tdp": 75.0,
+        "vram": 4096,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 8350G",
+        "3d_benchmark": 267,
+        "2d_benchmark": 124,
+        "tdp": 35.0,
+        "vram": 0,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 8450G + 8600/8700M Dual",
+        "3d_benchmark": 1070,
+        "2d_benchmark": 381,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 8450G + 8600M Dual",
+        "3d_benchmark": 545,
+        "2d_benchmark": 356,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 8450G + 8670M Dual",
+        "3d_benchmark": 475,
+        "2d_benchmark": 414,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 8450G + 8750M Dual",
+        "3d_benchmark": 637,
+        "2d_benchmark": 299,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 8450G + HD 8600M Dual",
+        "3d_benchmark": 452,
+        "2d_benchmark": 326,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 8450G + HD 8670M Dual",
+        "3d_benchmark": 478,
+        "2d_benchmark": 267,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 8450G + HD 8750M Dual",
+        "3d_benchmark": 504,
+        "2d_benchmark": 323,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 8500M",
+        "3d_benchmark": 449,
+        "2d_benchmark": 116,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 8500M/8700M",
+        "3d_benchmark": 853,
+        "2d_benchmark": 503,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 8510G + 8500M Dual",
+        "3d_benchmark": 596,
+        "2d_benchmark": 260,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 8510G + HD 8500M Dual",
+        "3d_benchmark": 630,
+        "2d_benchmark": 191,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 8550G + 7600M Dual",
+        "3d_benchmark": 901,
+        "2d_benchmark": 395,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 8550G + 8500M Dual",
+        "3d_benchmark": 603,
+        "2d_benchmark": 304,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 8550G + 8570M Dual",
+        "3d_benchmark": 533,
+        "2d_benchmark": 307,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 8550G + 8600/8700M Dual",
+        "3d_benchmark": 803,
+        "2d_benchmark": 336,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 8550G + 8600M Dual",
+        "3d_benchmark": 618,
+        "2d_benchmark": 321,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 8550G + 8670M Dual",
+        "3d_benchmark": 579,
+        "2d_benchmark": 334,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 8550G + 8690M Dual",
+        "3d_benchmark": 664,
+        "2d_benchmark": 260,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 8550G + 8750M Dual",
+        "3d_benchmark": 796,
+        "2d_benchmark": 321,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 8550G + HD 7600M Dual",
+        "3d_benchmark": 548,
+        "2d_benchmark": 181,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 8550G + HD 8500M Dual",
+        "3d_benchmark": 559,
+        "2d_benchmark": 301,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 8550G + HD 8570M Dual",
+        "3d_benchmark": 529,
+        "2d_benchmark": 260,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 8550G + HD 8600/8700M Dual",
+        "3d_benchmark": 655,
+        "2d_benchmark": 170,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 8550G + HD 8600M Dual",
+        "3d_benchmark": 594,
+        "2d_benchmark": 322,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 8550G + HD 8670M Dual",
+        "3d_benchmark": 546,
+        "2d_benchmark": 315,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 8550G + HD 8750M Dual",
+        "3d_benchmark": 819,
+        "2d_benchmark": 336,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 8550G N HD 8550G + HD 8600M N HD 8600M D",
+        "3d_benchmark": 612,
+        "2d_benchmark": 116,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 8570M",
+        "3d_benchmark": 450,
+        "2d_benchmark": 164,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 8600/8700M",
+        "3d_benchmark": 1030,
+        "2d_benchmark": 554,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 8610G + 8500M Dual",
+        "3d_benchmark": 610,
+        "2d_benchmark": 298,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 8610G + 8600M Dual",
+        "3d_benchmark": 589,
+        "2d_benchmark": 320,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 8610G + 8670M Dual",
+        "3d_benchmark": 600,
+        "2d_benchmark": 356,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 8610G + HD 8500M Dual",
+        "3d_benchmark": 646,
+        "2d_benchmark": 274,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 8610G + HD 8600M Dual",
+        "3d_benchmark": 481,
+        "2d_benchmark": 156,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 8610G + HD 8670M Dual",
+        "3d_benchmark": 578,
+        "2d_benchmark": 282,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 8650G + 7600M Dual",
+        "3d_benchmark": 742,
+        "2d_benchmark": 404,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 8650G + 7670M Dual",
+        "3d_benchmark": 884,
+        "2d_benchmark": 379,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 8650G + 7700M Dual",
+        "3d_benchmark": 1126,
+        "2d_benchmark": 399,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 8650G + 8500M Dual",
+        "3d_benchmark": 627,
+        "2d_benchmark": 351,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 8650G + 8570M Dual",
+        "3d_benchmark": 654,
+        "2d_benchmark": 282,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 8650G + 8600/8700M Dual",
+        "3d_benchmark": 832,
+        "2d_benchmark": 374,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 8650G + 8600M Dual",
+        "3d_benchmark": 613,
+        "2d_benchmark": 370,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 8650G + 8670M Dual",
+        "3d_benchmark": 635,
+        "2d_benchmark": 355,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 8650G + 8750M Dual",
+        "3d_benchmark": 787,
+        "2d_benchmark": 381,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 8650G + HD 7600M Dual",
+        "3d_benchmark": 820,
+        "2d_benchmark": 346,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 8650G + HD 7670M Dual",
+        "3d_benchmark": 634,
+        "2d_benchmark": 305,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 8650G + HD 8570M Dual",
+        "3d_benchmark": 716,
+        "2d_benchmark": 317,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 8650G + HD 8600/8700M Dual",
+        "3d_benchmark": 764,
+        "2d_benchmark": 356,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 8650G + HD 8600M Dual",
+        "3d_benchmark": 606,
+        "2d_benchmark": 378,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 8650G + HD 8600M N HD 8600M Dual",
+        "3d_benchmark": 758,
+        "2d_benchmark": 413,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 8650G + HD 8670M Dual",
+        "3d_benchmark": 585,
+        "2d_benchmark": 320,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 8650G + HD 8750M Dual",
+        "3d_benchmark": 652,
+        "2d_benchmark": 233,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 8650G + HD 8790M Dual",
+        "3d_benchmark": 800,
+        "2d_benchmark": 404,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 8650G N HD 8650G + HD 8570M Dual",
+        "3d_benchmark": 773,
+        "2d_benchmark": 368,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 8650G N HD 8650G + HD 8600/8700M Dual",
+        "3d_benchmark": 796,
+        "2d_benchmark": 322,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 8650G N HD 8650G + HD 8600M N HD 8600M D",
+        "3d_benchmark": 680,
+        "2d_benchmark": 347,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 8670M",
+        "3d_benchmark": 520,
+        "2d_benchmark": 488,
+        "tdp": null,
+        "vram": 1024,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 8690M",
+        "3d_benchmark": 984,
+        "2d_benchmark": 768,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 8730M",
+        "3d_benchmark": 833,
+        "2d_benchmark": 174,
+        "tdp": null,
+        "vram": 2048,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 8750M",
+        "3d_benchmark": 1062,
+        "2d_benchmark": 201,
+        "tdp": null,
+        "vram": 2048,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 8790M",
+        "3d_benchmark": 1306,
+        "2d_benchmark": 751,
+        "tdp": null,
+        "vram": 2048,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 8790M / R9 M290X",
+        "3d_benchmark": 1211,
+        "2d_benchmark": 694,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 8850M",
+        "3d_benchmark": 973,
+        "2d_benchmark": 502,
+        "tdp": null,
+        "vram": 2048,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 8850M / R9 M265X",
+        "3d_benchmark": 1140,
+        "2d_benchmark": 741,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 8870M",
+        "3d_benchmark": 1638,
+        "2d_benchmark": 629,
+        "tdp": null,
+        "vram": 2048,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 8870M / R9 M270X / M370X",
+        "3d_benchmark": 1800,
+        "2d_benchmark": 679,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD 8970M",
+        "3d_benchmark": 3876,
+        "2d_benchmark": 807,
+        "tdp": 100.0,
+        "vram": 4096,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD HD7850M",
+        "3d_benchmark": 1727,
+        "2d_benchmark": 567,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD8530M",
+        "3d_benchmark": 478,
+        "2d_benchmark": 278,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon HD8970M",
+        "3d_benchmark": 3369,
+        "2d_benchmark": 663,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon IGP 320M",
+        "3d_benchmark": 4,
+        "2d_benchmark": 101,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon IGP 340M",
+        "3d_benchmark": 3,
+        "2d_benchmark": 102,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon Pro 5300M",
+        "3d_benchmark": 5816,
+        "2d_benchmark": 560,
+        "tdp": 85.0,
+        "vram": 4096,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon Pro 5500M",
+        "3d_benchmark": 6732,
+        "2d_benchmark": 644,
+        "tdp": 85.0,
+        "vram": 8192,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon Pro 5600M",
+        "3d_benchmark": 9285,
+        "2d_benchmark": 671,
+        "tdp": 50.0,
+        "vram": 8192,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon Pro W5500M",
+        "3d_benchmark": 3470,
+        "2d_benchmark": 482,
+        "tdp": 85.0,
+        "vram": 4096,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon PRO W6300",
+        "3d_benchmark": 5560,
+        "2d_benchmark": 667,
+        "tdp": 25.0,
+        "vram": 2048,
+        "category": "Mobile, Workstation"
+    },
+    {
+        "name": "AMD Radeon PRO W6600M",
+        "3d_benchmark": 11407,
+        "2d_benchmark": 777,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon Pro WX 2100",
+        "3d_benchmark": 1887,
+        "2d_benchmark": 387,
+        "tdp": 35.0,
+        "vram": 2048,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon Pro WX 3200",
+        "3d_benchmark": 2222,
+        "2d_benchmark": 379,
+        "tdp": 65.0,
+        "vram": 4096,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon Pro WX 4130",
+        "3d_benchmark": 1909,
+        "2d_benchmark": 347,
+        "tdp": 50.0,
+        "vram": 4096,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon Pro WX 4150",
+        "3d_benchmark": 2580,
+        "2d_benchmark": 367,
+        "tdp": 50.0,
+        "vram": 4096,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon Pro WX 4170",
+        "3d_benchmark": 2870,
+        "2d_benchmark": 316,
+        "tdp": 50.0,
+        "vram": 4096,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon Pro WX 7130",
+        "3d_benchmark": 6271,
+        "2d_benchmark": 434,
+        "tdp": 130.0,
+        "vram": 8192,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon Pro WX Vega M GL",
+        "3d_benchmark": 4618,
+        "2d_benchmark": 320,
+        "tdp": 65.0,
+        "vram": 4096,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon R5 M230",
+        "3d_benchmark": 427,
+        "2d_benchmark": 128,
+        "tdp": null,
+        "vram": 4096,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon R5 M255",
+        "3d_benchmark": 542,
+        "2d_benchmark": 132,
+        "tdp": null,
+        "vram": 4096,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon R5 M330",
+        "3d_benchmark": 596,
+        "2d_benchmark": 519,
+        "tdp": 18.0,
+        "vram": 4096,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon R5 M335",
+        "3d_benchmark": 549,
+        "2d_benchmark": 577,
+        "tdp": null,
+        "vram": 4096,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon R6",
+        "3d_benchmark": 610,
+        "2d_benchmark": 135,
+        "tdp": 15.0,
+        "vram": 0,
+        "category": "Desktop, Mobile"
+    },
+    {
+        "name": "AMD Radeon R7 M260",
+        "3d_benchmark": 530,
+        "2d_benchmark": 127,
+        "tdp": null,
+        "vram": 4096,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon R7 M260X",
+        "3d_benchmark": 1014,
+        "2d_benchmark": 160,
+        "tdp": null,
+        "vram": 4096,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon R7 M265",
+        "3d_benchmark": 559,
+        "2d_benchmark": 134,
+        "tdp": null,
+        "vram": 4096,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon R7 M340",
+        "3d_benchmark": 645,
+        "2d_benchmark": 150,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon R7 M360",
+        "3d_benchmark": 589,
+        "2d_benchmark": 146,
+        "tdp": null,
+        "vram": 4096,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon R7 M370",
+        "3d_benchmark": 1418,
+        "2d_benchmark": 676,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon R9 M265X",
+        "3d_benchmark": 1173,
+        "2d_benchmark": 190,
+        "tdp": null,
+        "vram": 4096,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon R9 M270X",
+        "3d_benchmark": 1204,
+        "2d_benchmark": 306,
+        "tdp": null,
+        "vram": 4096,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon R9 M275",
+        "3d_benchmark": 1115,
+        "2d_benchmark": 569,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon R9 M275X / M375",
+        "3d_benchmark": 1575,
+        "2d_benchmark": 467,
+        "tdp": 50.0,
+        "vram": 4096,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon R9 M280X",
+        "3d_benchmark": 814,
+        "2d_benchmark": 247,
+        "tdp": 75.0,
+        "vram": 4096,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon R9 M290X",
+        "3d_benchmark": 3244,
+        "2d_benchmark": 411,
+        "tdp": 100.0,
+        "vram": 4096,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon R9 M295X",
+        "3d_benchmark": 5150,
+        "2d_benchmark": 832,
+        "tdp": 125.0,
+        "vram": 4096,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon R9 M365X",
+        "3d_benchmark": 1482,
+        "2d_benchmark": 446,
+        "tdp": 50.0,
+        "vram": 4096,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon R9 M370X",
+        "3d_benchmark": 1574,
+        "2d_benchmark": 352,
+        "tdp": 50.0,
+        "vram": 4096,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon R9 M375",
+        "3d_benchmark": 1005,
+        "2d_benchmark": 160,
+        "tdp": null,
+        "vram": 4096,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon R9 M375X",
+        "3d_benchmark": 1746,
+        "2d_benchmark": 305,
+        "tdp": null,
+        "vram": 4096,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon R9 M380",
+        "3d_benchmark": 2759,
+        "2d_benchmark": 535,
+        "tdp": null,
+        "vram": 4096,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon R9 M385",
+        "3d_benchmark": 2061,
+        "2d_benchmark": 244,
+        "tdp": 70.0,
+        "vram": 4096,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon R9 M385X",
+        "3d_benchmark": 1994,
+        "2d_benchmark": 267,
+        "tdp": 75.0,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon R9 M390X",
+        "3d_benchmark": 3895,
+        "2d_benchmark": 465,
+        "tdp": 100.0,
+        "vram": 4096,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon R9 M395",
+        "3d_benchmark": 4870,
+        "2d_benchmark": 702,
+        "tdp": 125.0,
+        "vram": 2048,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon R9 M395X",
+        "3d_benchmark": 5109,
+        "2d_benchmark": 695,
+        "tdp": 125.0,
+        "vram": 4096,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon R9 M470",
+        "3d_benchmark": 2331,
+        "2d_benchmark": 307,
+        "tdp": 75.0,
+        "vram": 4096,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon R9 M470X",
+        "3d_benchmark": 3244,
+        "2d_benchmark": 426,
+        "tdp": 75.0,
+        "vram": 4096,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon RX 5300M",
+        "3d_benchmark": 5182,
+        "2d_benchmark": 385,
+        "tdp": 85.0,
+        "vram": 3072,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon RX 5500M",
+        "3d_benchmark": 5990,
+        "2d_benchmark": 414,
+        "tdp": 85.0,
+        "vram": 4096,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon RX 5600M",
+        "3d_benchmark": 8879,
+        "2d_benchmark": 486,
+        "tdp": 150.0,
+        "vram": 6144,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon RX 6300M",
+        "3d_benchmark": 6421,
+        "2d_benchmark": 384,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon RX 640",
+        "3d_benchmark": 2215,
+        "2d_benchmark": 342,
+        "tdp": 50.0,
+        "vram": 4096,
+        "category": "Desktop, Mobile"
+    },
+    {
+        "name": "AMD Radeon RX 6450M",
+        "3d_benchmark": 6601,
+        "2d_benchmark": 503,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon RX 6500M",
+        "3d_benchmark": 7332,
+        "2d_benchmark": 371,
+        "tdp": 50.0,
+        "vram": 4096,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon RX 6550M",
+        "3d_benchmark": 9638,
+        "2d_benchmark": 490,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon RX 6600M",
+        "3d_benchmark": 13912,
+        "2d_benchmark": 724,
+        "tdp": 100.0,
+        "vram": 8192,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon RX 6600S",
+        "3d_benchmark": 13016,
+        "2d_benchmark": 628,
+        "tdp": 80.0,
+        "vram": 4096,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon RX 6650M",
+        "3d_benchmark": 15179,
+        "2d_benchmark": 758,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon RX 6650M XT",
+        "3d_benchmark": 17071,
+        "2d_benchmark": 688,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon RX 6700M",
+        "3d_benchmark": 13584,
+        "2d_benchmark": 554,
+        "tdp": 135.0,
+        "vram": 10240,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon RX 6700S",
+        "3d_benchmark": 15082,
+        "2d_benchmark": 737,
+        "tdp": 80.0,
+        "vram": 8192,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon RX 6800M",
+        "3d_benchmark": 13236,
+        "2d_benchmark": 533,
+        "tdp": 145.0,
+        "vram": 12288,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon RX 6800S",
+        "3d_benchmark": 15773,
+        "2d_benchmark": 729,
+        "tdp": 100.0,
+        "vram": 8192,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon RX 6850M",
+        "3d_benchmark": 12274,
+        "2d_benchmark": 714,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon RX 6850M XT",
+        "3d_benchmark": 17198,
+        "2d_benchmark": 649,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon RX 7600M",
+        "3d_benchmark": 10999,
+        "2d_benchmark": 861,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon RX 7600M XT",
+        "3d_benchmark": 14694,
+        "2d_benchmark": 936,
+        "tdp": 120.0,
+        "vram": 8192,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon RX 7600S",
+        "3d_benchmark": 15567,
+        "2d_benchmark": 771,
+        "tdp": 75.0,
+        "vram": 8192,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon RX 7800M",
+        "3d_benchmark": 16714,
+        "2d_benchmark": 893,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon RX 7900M",
+        "3d_benchmark": 22111,
+        "2d_benchmark": 893,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon Ryzen 9 4950U",
+        "3d_benchmark": 2594,
+        "2d_benchmark": 575,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon Vega 8",
+        "3d_benchmark": 1567,
+        "2d_benchmark": 401,
+        "tdp": null,
+        "vram": 0,
+        "category": "Desktop, Mobile"
+    },
+    {
+        "name": "AMD Radeon Vega 8  Ryzen 5 3500U",
+        "3d_benchmark": 2006,
+        "2d_benchmark": 406,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon Xpress 1300M",
+        "3d_benchmark": 40,
+        "2d_benchmark": 195,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD RadeonT 610M",
+        "3d_benchmark": 1066,
+        "2d_benchmark": 253,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD RadeonT 660M",
+        "3d_benchmark": 2221,
+        "2d_benchmark": 755,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD RadeonT 660M Ryzen 5 6600H",
+        "3d_benchmark": 6700,
+        "2d_benchmark": 638,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD RadeonT 660M Ryzen 5 7535HS",
+        "3d_benchmark": 4051,
+        "2d_benchmark": 701,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD RadeonT 680M",
+        "3d_benchmark": 5680,
+        "2d_benchmark": 617,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD RadeonT 680M Ryzen 7 6800H",
+        "3d_benchmark": 2381,
+        "2d_benchmark": 521,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD RadeonT 680M Ryzen 7 7735HS",
+        "3d_benchmark": 5681,
+        "2d_benchmark": 594,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD RadeonT 760M",
+        "3d_benchmark": 5846,
+        "2d_benchmark": 760,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD RadeonT 780M",
+        "3d_benchmark": 7103,
+        "2d_benchmark": 804,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD RadeonT RX 6850M XT",
+        "3d_benchmark": 13992,
+        "2d_benchmark": 628,
+        "tdp": 165.0,
+        "vram": 12288,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA RTX 1000 Ada Generation",
+        "3d_benchmark": 13630,
+        "2d_benchmark": 562,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA RTX 2000 Ada Generation",
+        "3d_benchmark": 14869,
+        "2d_benchmark": 597,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA RTX 3000 Ada Generation",
+        "3d_benchmark": 15979,
+        "2d_benchmark": 543,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA RTX 3500 Ada Generation",
+        "3d_benchmark": 19745,
+        "2d_benchmark": 714,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA RTX 4000 Ada Generation",
+        "3d_benchmark": 22019,
+        "2d_benchmark": 724,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA RTX 500 Ada Generation",
+        "3d_benchmark": 11191,
+        "2d_benchmark": 534,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA RTX 5000 Ada Generation",
+        "3d_benchmark": 23293,
+        "2d_benchmark": 753,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA RTX A1000 6GB",
+        "3d_benchmark": 10078,
+        "2d_benchmark": 591,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA RTX A1000",
+        "3d_benchmark": 9484,
+        "2d_benchmark": 524,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA RTX A2000 8GB",
+        "3d_benchmark": 10492,
+        "2d_benchmark": 555,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA RTX A2000",
+        "3d_benchmark": 9463,
+        "2d_benchmark": 501,
+        "tdp": 95.0,
+        "vram": 4096,
+        "category": "Mobile, Workstation"
+    },
+    {
+        "name": "NVIDIA RTX A3000 12GB",
+        "3d_benchmark": 13913,
+        "2d_benchmark": 610,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA RTX A3000",
+        "3d_benchmark": 12662,
+        "2d_benchmark": 559,
+        "tdp": 130.0,
+        "vram": 6144,
+        "category": "Mobile, Workstation"
+    },
+    {
+        "name": "NVIDIA RTX A4000",
+        "3d_benchmark": 14794,
+        "2d_benchmark": 585,
+        "tdp": 140.0,
+        "vram": 16384,
+        "category": "Mobile, Workstation"
+    },
+    {
+        "name": "NVIDIA RTX A4500",
+        "3d_benchmark": 16746,
+        "2d_benchmark": 713,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA RTX A500",
+        "3d_benchmark": 6581,
+        "2d_benchmark": 416,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA RTX A5000",
+        "3d_benchmark": 16418,
+        "2d_benchmark": 664,
+        "tdp": 165.0,
+        "vram": 16384,
+        "category": "Mobile, Workstation"
+    },
+    {
+        "name": "NVIDIA RTX A5500",
+        "3d_benchmark": 17128,
+        "2d_benchmark": 712,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA RTX PRO 1000 Blackwell Generation",
+        "3d_benchmark": 14974,
+        "2d_benchmark": 754,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA RTX PRO 2000 Blackwell Generation",
+        "3d_benchmark": 16828,
+        "2d_benchmark": 773,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA RTX PRO 3000 Blackwell Generation",
+        "3d_benchmark": 22406,
+        "2d_benchmark": 857,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA RTX PRO 500 Blackwell Generation",
+        "3d_benchmark": 13284,
+        "2d_benchmark": 704,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Ryzen 7 8845HS with Radeon 780M",
+        "3d_benchmark": 7766,
+        "2d_benchmark": 1036,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    }
+]

@@ -1,0 +1,314 @@
+[
+    {
+        "name": "NVIDIA GeForce GTX 1650",
+        "3d_benchmark": 6340,
+        "2d_benchmark": 333,
+        "tdp": 35.0,
+        "vram": 4096,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon RX 5500M",
+        "3d_benchmark": 5990,
+        "2d_benchmark": 414,
+        "tdp": 85.0,
+        "vram": 4096,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce RTX 3050",
+        "3d_benchmark": 12003,
+        "2d_benchmark": 826,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce RTX 3050 Ti",
+        "3d_benchmark": 10089,
+        "2d_benchmark": 498,
+        "tdp": 80.0,
+        "vram": 4096,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon RX 6650M",
+        "3d_benchmark": 15179,
+        "2d_benchmark": 758,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce RTX 3060",
+        "3d_benchmark": 13152,
+        "2d_benchmark": 585,
+        "tdp": 115.0,
+        "vram": 6144,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon RX 6500M",
+        "3d_benchmark": 7332,
+        "2d_benchmark": 371,
+        "tdp": 50.0,
+        "vram": 4096,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce RTX 3070 Ti",
+        "3d_benchmark": 17513,
+        "2d_benchmark": 774,
+        "tdp": 115.0,
+        "vram": 8192,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce RTX 3070",
+        "3d_benchmark": 15122,
+        "2d_benchmark": 631,
+        "tdp": 115.0,
+        "vram": 8192,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon RX 6700S",
+        "3d_benchmark": 15082,
+        "2d_benchmark": 737,
+        "tdp": 80.0,
+        "vram": 8192,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon RX 6600M",
+        "3d_benchmark": 13912,
+        "2d_benchmark": 724,
+        "tdp": 100.0,
+        "vram": 8192,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon RX 6700M",
+        "3d_benchmark": 13584,
+        "2d_benchmark": 554,
+        "tdp": 135.0,
+        "vram": 10240,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce RTX 3080",
+        "3d_benchmark": 16149,
+        "2d_benchmark": 631,
+        "tdp": 115.0,
+        "vram": 8192,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon RX 6800S",
+        "3d_benchmark": 15773,
+        "2d_benchmark": 729,
+        "tdp": 100.0,
+        "vram": 8192,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon RX 6800M",
+        "3d_benchmark": 13236,
+        "2d_benchmark": 533,
+        "tdp": 145.0,
+        "vram": 12288,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce RTX 4060",
+        "3d_benchmark": 17399,
+        "2d_benchmark": 731,
+        "tdp": 115.0,
+        "vram": 8192,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce RTX 4050",
+        "3d_benchmark": 14328,
+        "2d_benchmark": 631,
+        "tdp": 115.0,
+        "vram": 6144,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce RTX 4070",
+        "3d_benchmark": 19542,
+        "2d_benchmark": 767,
+        "tdp": 115.0,
+        "vram": 8192,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce RTX 2050",
+        "3d_benchmark": 7714,
+        "2d_benchmark": 480,
+        "tdp": 45.0,
+        "vram": 4096,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce RTX 4080",
+        "3d_benchmark": 24745,
+        "2d_benchmark": 923,
+        "tdp": 150.0,
+        "vram": 12288,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce RTX 4090",
+        "3d_benchmark": 27126,
+        "2d_benchmark": 990,
+        "tdp": 150.0,
+        "vram": 16384,
+        "category": "Mobile"
+    },
+    {
+        "name": "AMD Radeon RX 7600S",
+        "3d_benchmark": 15567,
+        "2d_benchmark": 771,
+        "tdp": 75.0,
+        "vram": 8192,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce GTX 1660 Ti",
+        "3d_benchmark": 8615,
+        "2d_benchmark": 356,
+        "tdp": 60.0,
+        "vram": 6144,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce GTX 1650 Ti",
+        "3d_benchmark": 6609,
+        "2d_benchmark": 335,
+        "tdp": 35.0,
+        "vram": 4096,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA RTX A1000",
+        "3d_benchmark": 9484,
+        "2d_benchmark": 524,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA RTX 3000 Ada Generation",
+        "3d_benchmark": 15979,
+        "2d_benchmark": 543,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce RTX 3080 Ti",
+        "3d_benchmark": 18970,
+        "2d_benchmark": 818,
+        "tdp": 115.0,
+        "vram": 16384,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA RTX A5500",
+        "3d_benchmark": 17128,
+        "2d_benchmark": 712,
+        "tdp": null,
+        "vram": null,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA RTX A3000",
+        "3d_benchmark": 12662,
+        "2d_benchmark": 559,
+        "tdp": 130.0,
+        "vram": 6144,
+        "category": "Mobile, Workstation"
+    },
+    {
+        "name": "NVIDIA RTX A2000",
+        "3d_benchmark": 9463,
+        "2d_benchmark": 501,
+        "tdp": 95.0,
+        "vram": 4096,
+        "category": "Mobile, Workstation"
+    },
+    {
+        "name": "NVIDIA GeForce RTX 2070",
+        "3d_benchmark": 11405,
+        "2d_benchmark": 455,
+        "tdp": 80.0,
+        "vram": 8192,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce RTX 2080",
+        "3d_benchmark": 12731,
+        "2d_benchmark": 507,
+        "tdp": 90.0,
+        "vram": 8192,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce RTX 2060",
+        "3d_benchmark": 9626,
+        "2d_benchmark": 402,
+        "tdp": 65.0,
+        "vram": 6144,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce RTX 2080 Super",
+        "3d_benchmark": 13519,
+        "2d_benchmark": 561,
+        "tdp": 80.0,
+        "vram": 8192,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce RTX 2070 Super",
+        "3d_benchmark": 13413,
+        "2d_benchmark": 595,
+        "tdp": 80.0,
+        "vram": 8192,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce GTX 1050",
+        "3d_benchmark": 3918,
+        "2d_benchmark": 277,
+        "tdp": null,
+        "vram": 4096,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA RTX A4000",
+        "3d_benchmark": 14794,
+        "2d_benchmark": 585,
+        "tdp": 140.0,
+        "vram": 16384,
+        "category": "Mobile, Workstation"
+    },
+    {
+        "name": "AMD Radeon RX 5600M",
+        "3d_benchmark": 8879,
+        "2d_benchmark": 486,
+        "tdp": 150.0,
+        "vram": 6144,
+        "category": "Mobile"
+    },
+    {
+        "name": "NVIDIA GeForce GTX 1070",
+        "3d_benchmark": 9774,
+        "2d_benchmark": 413,
+        "tdp": 90.0,
+        "vram": 8192,
+        "category": "Mobile"
+    }
+]
