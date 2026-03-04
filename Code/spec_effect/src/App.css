@@ -28,7 +28,7 @@
   min-height: 11vh;
   display: flex;
   flex-direction: row;
-  gap: 35vmin;
+  gap: 40vmin;
   align-items: center;
   justify-content: center;
   font-size: calc(5px + 2vmin);
@@ -53,8 +53,7 @@
   align-items: center;
   justify-content: center;
   gap: 5vmin;
-  margin-right: 15px;
-  margin-left: 15px;
+  margin: 30px;
 }
 
 .App-colBox {
