@@ -47,6 +47,22 @@
   color: rgb(40, 44, 52);
 }
 
+.App-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 5vmin;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.App-colBox {
+  flex-direction: column;
+  outline: 2px solid #282c34;
+  padding: 16px;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

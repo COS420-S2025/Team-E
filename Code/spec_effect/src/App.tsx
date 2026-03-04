@@ -12,6 +12,15 @@ function App() {
                 <button className="App-headerButtonStyle">About</button> 
                 <button className="App-headerButtonStyle">Glossary</button>
             </header>
+            
+            <div className="App-row">
+                <div className="App-colBox">
+                    Soon to be Filter row divider
+                </div>
+                <div className="App-colBox">
+                    Soon to be Filter row divider
+                </div>
+            </div>
             <p>
                 Grace Cochran, Steven Harrington, Eliot Cole, Caramon Cotroneo
             </p>
