@@ -27,9 +27,9 @@ function App() {
                     </div>
                 </div>
             </div>
-            <p>
-                Grace Cochran, Steven Harrington, Eliot Cole, Caramon Cotroneo
-            </p>
+            <div className="App-footer">
+                Website by Grace Cochran, Eliot Cole, Steven Harrington, & Caramon Cotroneo
+            </div>
         </div>
     );
 }

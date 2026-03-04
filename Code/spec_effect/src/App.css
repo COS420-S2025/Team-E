@@ -46,6 +46,20 @@
   font-size: calc(5px + 2vmin);
 }
 
+.App-footer {
+  background-color: #282c34;
+  min-height: 9vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 3vmin;
+  font-size: calc(5px + 2vmin);
+  color: rgb(179, 172, 255);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
 .App-link {
   color: #61dafb;
 }
