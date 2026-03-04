@@ -18,7 +18,7 @@
   min-height: 9vh;
   display: flex;
   align-items: center;
-  padding-left: 5vmin;
+  padding-left: 3vmin;
   font-size: calc(17px + 2vmin);
   color: rgb(179, 172, 255);
 }
