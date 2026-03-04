@@ -60,6 +60,7 @@
   flex-direction: column;
   outline: 2px solid #282c34;
   padding: 16px;
+  margin-bottom: 16px;
 }
 
 @keyframes App-logo-spin {
