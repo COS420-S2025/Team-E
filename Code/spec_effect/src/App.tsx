@@ -14,15 +14,16 @@ function App() {
             </header>
             
             <div className="App-row">
-                <div className="App-colBox">
-                    Soon to be Filter row divider
+                <div className="App-box">
+                    <header className="App-filterHeader">Filters</header>
+                    more text 
                 </div>
                 <div>
-                    <div className="App-colBox">
-                        Soon to be Search Bar divider
+                    <div className="App-colSearch" style={{height: '7px'}}>
+                        Soon to be Search Bar
                     </div>
-                    <div className="App-colBox">
-                        Soon to be Search results divider
+                    <div className="App-colSearch"style={{overflowY: 'scroll'}}>
+                        Soon to be Search results
                     </div>
                 </div>
             </div>
