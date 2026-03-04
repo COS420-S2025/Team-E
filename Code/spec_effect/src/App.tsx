@@ -17,8 +17,13 @@ function App() {
                 <div className="App-colBox">
                     Soon to be Filter row divider
                 </div>
-                <div className="App-colBox">
-                    Soon to be Filter row divider
+                <div>
+                    <div className="App-colBox">
+                        Soon to be Search Bar divider
+                    </div>
+                    <div className="App-colBox">
+                        Soon to be Search results divider
+                    </div>
                 </div>
             </div>
             <p>
