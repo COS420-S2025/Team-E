@@ -72,6 +72,10 @@
   color: rgb(40, 44, 52);
 }
 
+.App-headerButtonStyle:hover {
+  cursor:pointer;
+}
+
 .App-row {
   display: flex;
   flex-direction: row;
@@ -91,7 +95,8 @@
   align-self: flex-start;
 }
 
-.App-colSearch {
+.App-colBox {
+/* .App-colSearch { */
   flex-direction: column;
   align-self: flex-start;
   width: 50vw;
