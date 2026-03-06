@@ -35,6 +35,31 @@
   color: rgb(40, 44, 52);
 }
 
+.App-filterHeader {
+  background-color: #b3acff;
+  margin: -16px;
+  margin-bottom: 15px;
+  min-height: 6vh;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-size: calc(5px + 2vmin);
+}
+
+.App-footer {
+  background-color: #282c34;
+  min-height: 9vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 3vmin;
+  font-size: calc(5px + 2vmin);
+  color: rgb(179, 172, 255);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
 .App-link {
   color: #61dafb;
 }
@@ -54,10 +79,22 @@
   justify-content: center;
   gap: 5vmin;
   margin: 30px;
+
 }
 
-.App-colBox {
+.App-box {
+  outline: 2px solid #282c34;
+  padding: 16px;
+  margin-bottom: 16px;
+  background-color: #e7eaff;
+  width: 30vw;
+  align-self: flex-start;
+}
+
+.App-colSearch {
   flex-direction: column;
+  align-self: flex-start;
+  width: 50vw;
   outline: 2px solid #282c34;
   padding: 16px;
   margin-bottom: 16px;
