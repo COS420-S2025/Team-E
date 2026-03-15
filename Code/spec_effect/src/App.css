@@ -105,6 +105,16 @@
   margin-bottom: 16px;
 }
 
+.scroll-box {
+  height: 200px;
+  width: 300px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  border: 2px solid #282c34;
+  padding: 10px;
+  background-color: #f9f9f9;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

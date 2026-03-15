@@ -1,18 +1,22 @@
-import React from 'react';
+import React, { useState, ChangeEvent} from 'react';
 
+/** creates an interface that stores value on search */
 interface SearchBarProps {
-    query: string;
-    setQuery: (query: string) => void;
-    placeholder?: string;
+    onSearch: (query: string) => void;
 }
 
-const SearchBar: React.FC<SearchBarProps> = ({ query, setQuery, placeholder = "Search..."}) => {
-    const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        setQuery(e.target.value);
+const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
+    const [query, setQuery] = useState('');
+
+
+    const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
+        const newQuery = event.target.value;
+        setQuery(newQuery);
+        onSearch(newQuery);
     };
     
     return (
-        <input type="text" placeholder={placeholder} value={query} onChange={handleChange}  style={{width: '500px', height: '20px'}}/>
+        <input type="text" placeholder="Search for laptop based on your needs..." value={query} onChange={handleChange}  style={{width: '900px', height: '20px'}}/>
     );
 };
 
