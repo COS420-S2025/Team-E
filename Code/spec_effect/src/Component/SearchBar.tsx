@@ -1,4 +1,4 @@
-import React, { useState, ChangeEvent} from 'react';
+import React, { useState} from 'react';
 
 /** creates an interface that stores value on search */
 interface SearchBarProps {
@@ -9,14 +9,14 @@ const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
     const [query, setQuery] = useState('');
 
 
-    const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
+    const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         const newQuery = event.target.value;
         setQuery(newQuery);
         onSearch(newQuery);
     };
     
     return (
-        <input type="text" placeholder="Search for laptop based on your needs..." value={query} onChange={handleChange}  style={{width: '900px', height: '20px'}}/>
+        <input type="text" placeholder="Search for laptop based on your needs..." value={query} onChange={handleChange}  style={{width: '900px', height: '40px', border: '2px solid #282c34', fontSize: '25px'}}/>
     );
 };
 

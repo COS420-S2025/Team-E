@@ -43,16 +43,16 @@ const Home = () => {
     /** divides the home page into three sections a filter sec, search bar and results section */
     return (<div>
         <h2>Home Page</h2>
-                <div className="App-row" style ={{width: '1200px', height: '400px'}}>
-                <div className="App-colBox" style={{width: '150px', height: '360px'}}>
+            <div className="App-row" style ={{width: '1200px', height: '400px'}}>
+                <div className="App-colBox" style={{width: '150px', height: '380px'}}>
                         Soon to be filters divider
                 </div>
                 <div style = {{width:'900px', height: '400px', verticalAlign: 'top'}}>
-                    <div className="App-colBox" style={{width: '900px', height: '20px',textAlign: 'left'}}>
+                    <div className="App-colBox" style={{width: '900px', height: '40px',textAlign: 'left'}}>
                         <SearchBar onSearch= {handleSearch}/>
                     </div>
                     <div className="scroll-box" style={{width: '910px', height: '300px',textAlign: 'left'}}>
-                        {filteredItems.map(item => (<li key={item.id} className="py-1">{item.name}</li>))}
+                        {filteredItems.map(item => (<li key={item.id} className="py-1" style={{fontSize: '30px'}}>{item.name}</li>))}
 
                         {filteredItems.length === 0 && searchQuery && <p>No result found for {searchQuery}</p>}
                     </div>
