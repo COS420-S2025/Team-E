@@ -1,9 +1,26 @@
-import React from 'react';
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import React from "react";
+import { render, screen } from "@testing-library/react";
+import { MemoryRouter } from "react-router-dom";
+import App from "./App";
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+test("renders learn react link", () => {
+    render(
+        <MemoryRouter>
+            <App />
+        </MemoryRouter>,
+    );
+    const linkElement = screen.getByText(/SpecEffect/i);
+    expect(linkElement).toBeInTheDocument();
+});
+
+describe("Some HTML Elements are added.", () => {
+    test("There is a heading", () => {
+        render(
+            <MemoryRouter>
+                <App />
+            </MemoryRouter>,
+        );
+        const header = screen.getAllByRole("heading");
+        expect(header[0]).toBeInTheDocument();
+    });
 });
