@@ -23,4 +23,14 @@ describe("Some HTML Elements are added.", () => {
         const header = screen.getAllByRole("heading");
         expect(header[0]).toBeInTheDocument();
     });
+
+    test("There is an image", () => {
+        render(
+            <MemoryRouter>
+                <App />
+            </MemoryRouter>,
+        );
+        const image = screen.getByRole("presentation");
+        expect(image).toBeInTheDocument();
+    });
 });
