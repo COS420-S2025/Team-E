@@ -21,6 +21,7 @@ jobs:
               with:
                   node-version: ${{ matrix.node-version }}
                   cache: "npm"
+                  cache-dependency-path: "Code/spec_effect/package-lock.json"
 
             - run: cd Code/spec_effect/
             - run: npm ci
