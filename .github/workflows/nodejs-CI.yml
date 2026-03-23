@@ -30,6 +30,8 @@ jobs:
           # This must be the path from the REPOSITORY ROOT
           cache-dependency-path: "Code/spec_effect/package-lock.json"
 
+      - run: npm install
+
       - name: Install dependencies
         run: npm ci
 
