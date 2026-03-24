@@ -1,3 +1,7 @@
+body {
+  margin: 0;
+}
+
 .App {
   text-align: center;
 }
@@ -28,7 +32,7 @@
   min-height: 11vh;
   display: flex;
   flex-direction: row;
-  gap: 40vmin;
+  gap: 20vmin;
   align-items: center;
   justify-content: center;
   font-size: calc(5px + 2vmin);
