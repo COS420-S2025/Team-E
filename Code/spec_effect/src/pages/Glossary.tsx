@@ -1,10 +1,11 @@
 import React from 'react';
+import GlossaryText from '../Component/GlossaryText';
 const Glossary = () => {
     return (<div>
         <h2>Glossary Page</h2>
                 <div className="App-row">
                     <div className="App-colBox" style={{width: "80vw", overflowY: "scroll",}}>
-                        put GlossaryText stuff in here  
+                        <GlossaryText></GlossaryText>
                     </div>
                 </div>
         </div>
