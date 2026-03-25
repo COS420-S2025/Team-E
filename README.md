@@ -37,6 +37,56 @@ SpecEffect is a web application that will have a searchable catalog of possible 
 4. A problem with this feature is that not many Microsoft users know of its existence, and is hard to spot/find, as the user has to open settings and scroll down to the bottom and click a small, easily missable link that says “Get Help.”
 5. How can we design an easily accessible system that provides fast assistance for everyday computer problems?
 
+# User Stories
+
+* As a student, I want to understand what makes a laptop perform well so that I can make informed purchasing decisions for equipment.
+* As a computer enthusiast, I want to be able to view a given device’s specifications to ensure that it fits my needs.
+* As a consumer, I want to view basic details and thumbnails of multiple devices at once in catalogue form, so that I can assess multiple options at once.
+* As a user, I want to be able to save certain devices so that I can easily return to them later in a different session.
+* As a grandparent, I want a place to find the definitions of terms I'm unfamiliar with so that I know what kind of laptop to get my granddaughter. 
+* As a Computer Science undergraduate, I want to search for a specific laptop by its model number so that I can make sure it suits my programming needs.  
+* As a person who likes to play video games, I want to open two different tabs so that I can compare the graphics of two different laptops. 
+* As a starting software developer, I want to search for a laptop by its release date so that I can find an older laptop that supports legacy software.
+* As a college student, I want to be able to search for and locate a laptop so that I can find a laptop that has specifications that are compatible with the programs needed to complete my degree. 
+* As a tech-beginner, I want to display descriptions within SpecEffect when clicking over complex tech-vocabulary so that I can understand what each specification means without needing prior experience.
+* As a busy desk worker, I want to filter by my need so I can find a laptop in SpecEffect without losing quality time that could be used elsewhere.
+* As a customer, I want to view a picture of the laptop in SpecEffect to see the shape and size of what I am potentially purchasing.
+* As a parent, I want to search for a laptop with a small screen size so that the laptop I get is suitable for my child’s schoolwork.
+* As a gamer, I want to find a laptop that has specifications with good graphics so that I can get a device I know can play the newest AAA titles.
+* As a consumer, I want to view a page of information about a laptop I’m considering buying so that I know whether or not the laptop is good for basic office tasks.
+* As a user, I want to filter laptops by price so I can find a laptop that fits my budget.
+
+# Functional Requirements
+* F-REQ-1.1: The system shall allow the user to type the name of a laptop model into the search bar.
+* F-REQ-1.2: The system shall display to the screen a list of laptops matching the name entered in the search box.
+* F-REQ-1.3: The user shall be able to click on any of the displayed results of a search.
+* F-REQ-2.1: The system shall allow filtering by various properties.
+* F-REQ-2.2: The user shall be able to select any number of filters and see a list of all laptops matching those filters displayed on the screen.
+* F-REQ-3.1: The system shall display on the screen a list of metrics for the selected laptop.
+* F-REQ-3.2: The user shall be able to save the selected laptop to their favorites list.
+* F-REQ-3.3: The system shall display on the screen a computed “performance score” that combines multiple metrics for the selected laptop.
+* F-REQ-4.1: The user shall be able to click on the dictionary button to change screens.
+* F-REQ-4.2: SpecEffect shall change to the dictionary screen when clicked.
+* F-REQ-4.3: The user shall be able to select a tech-vocabulary category to scroll to.
+* F-REQ-4.4: SpecEffect shall be able to scroll to the selected section automatically.
+* F-REQ-5.1: The user shall be able to move their cursor over information to show a pop up.
+* F-REQ-5.2: SpecEffect shall access the definition of the keyword from its dictionary.
+* F-REQ-5.3: SpecEffect shall pop up a text box with the definition of the hovered keyword.
+* F-REQ-5.4: SpecEffect shall remove the pop up, when it no longer detects the cursor hovering.
+
+# Non-Functional Requirements
+* NF-REQ-1.1: After clicking a category button from the Glossary page, the system shall scroll the application window to the selected section within 2.5 seconds.
+* NF-REQ-1.2: The system shall update which entries of the laptop catalog are shown within 3 seconds after a user applies or removes filters.
+* NF-REQ-1.3: The system shall load individual laptop pages to the screen within 2 seconds.
+* NF-REQ-1.4: The system shall display laptop catalog search results on the homepage screen within 3 seconds after entering.
+* NF-REQ-2.1: When an invalid search input is entered into the homepage’s search bar, the system shall display an error message below the bar instead of crashing.
+* NF-REQ-2.2: The system shall maintain a restorable backup of the catalogue database.
+* NF-REQ-3.1: The system shall not allow unauthorized users to modify or delete catalogue data.
+* NF-REQ-3.2: The system shall use HTTPS for secure data transfer.
+* NF-REQ-4.1: The system shall function on the latest versions of Chrome, Firefox and Edge.
+* NF-REQ-4.2: The system’s pages shall use consistent fonts, color schemes, and button styles.
+* NF-REQ-4.3: The system shall be usable & understandable to the point that a first-time user will be able to search for a laptop from the homepage’s search bar without instructions within 2 minutes 99% of the time.
+* NF-REQ-5.1: The system shall only allow Team Effigy members and other authorized users to edit or update laptop entries.
 
 # Build instructions:
 

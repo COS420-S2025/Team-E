@@ -1,43 +1,60 @@
 import React, { useState } from "react";
 import "./App.css";
 import seLogo from "./Images/SpecEffect_Logo.png";
-import Home from './pages/Home';
-import About from './pages/About';
-import Glossary from './pages/Glossary';
-
-
+import { Routes, Route, useNavigate } from "react-router-dom";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Glossary from "./pages/Glossary";
 
 function App() {
-    const [page, setPage] = useState<'home'|'about'|'glossary'>('home');
+    const navigate = useNavigate();
 
-    const renderPage = () => {
-        switch (page) {
-            case 'about':
-                return <About />;
-            case 'glossary':
-                return <Glossary />;
-            default:
-                return <Home />;
-        }
+    const goToAbout = () => {
+        navigate("/about");
+    };
+
+    const goToHome = () => {
+        navigate("/");
+    };
+
+    const goToGlossary = () => {
+        navigate("/glossary");
     };
 
     return (
         <div className="App">
             <header className="App-header">
-                <img src = {seLogo} alt="" style={{ width: '50px', height: 'auto', marginRight: '10px' }}/> SpecEffect
+                <img
+                    src={seLogo}
+                    alt=""
+                    style={{
+                        width: "50px",
+                        height: "auto",
+                        marginRight: "10px",
+                    }}
+                />{" "}
+                SpecEffect
             </header>
             <header className="App-subHeader">
-                <button className="App-headerButtonStyle" onClick={() => setPage('home')}>Home</button>
-                <button className="App-headerButtonStyle" onClick={() => setPage('glossary')}>Glossary</button>
-                <button className="App-headerButtonStyle" onClick={() => setPage('about')}>About</button>
+                <button className="App-headerButtonStyle" onClick={goToHome}>
+                    Home
+                </button>
+                <button
+                    className="App-headerButtonStyle"
+                    onClick={goToGlossary}>
+                    Glossary
+                </button>
+                <button className="App-headerButtonStyle" onClick={goToAbout}>
+                    About
+                </button>
             </header>
-            {renderPage()}
-            
-            
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/glossary" element={<Glossary />} />
+            </Routes>
         </div>
     );
 }
 
 export default App;
-
-            
