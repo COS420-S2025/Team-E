@@ -14,14 +14,14 @@ test("renders learn react link", () => {
 });
 
 describe("Some HTML Elements are added.", () => {
-    test("There is a heading", () => {
+    test("There is a type 3 header", () => {
         render(
             <MemoryRouter>
                 <Glossary />
             </MemoryRouter>,
         );
-        const header = screen.getAllByRole("heading");
-        expect(header[0]).toBeInTheDocument();
+        const header3 = screen.getAllByRole("heading", { level: 3 });
+        expect(header3).toBeInTheDocument();
     });
 
     test("There is an image", () => {
