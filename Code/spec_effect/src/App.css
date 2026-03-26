@@ -105,6 +105,13 @@
   margin-bottom: 16px;
 }
 
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;    
+  height: 20vh;          
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
