@@ -1,10 +1,6 @@
 import React from 'react';
+import Purpose from '../Component/PurposeMessage';
 const About = () => {
-    return <div>
-        <h2>About Page</h2>
-        <p>
-            Grace Cochran, Steven Harrington, Eliot Cole, Caramon Cotroneo
-        </p>
-        </div>;
+    return <Purpose />;
 };
 export default About;

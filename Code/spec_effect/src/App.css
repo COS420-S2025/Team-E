@@ -114,6 +114,12 @@
   padding: 10px;
   background-color: #f9f9f9;
 }
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;    
+  height: 20vh;          
+}
 
 @keyframes App-logo-spin {
   from {
