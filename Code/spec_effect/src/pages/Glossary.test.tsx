@@ -20,8 +20,8 @@ describe("Some HTML Elements are added.", () => {
                 <Glossary />
             </MemoryRouter>,
         );
-        const header3 = screen.getAllByRole("heading", { level: 3 });
-        expect(header3).toBeInTheDocument();
+        const header2 = screen.getAllByRole("heading", { level: 2 });
+        expect(header2).toBeInTheDocument();
     });
 
     test("There is an image", () => {
@@ -34,3 +34,6 @@ describe("Some HTML Elements are added.", () => {
         expect(image).toBeInTheDocument();
     });
 });
+
+// make a test that checks for existence of GlossaryText via a testID you make 
+// make GlossaryText.test.tsx, and make a test that checks for when a link is clicked, a scroll happens
