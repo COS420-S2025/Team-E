@@ -5,20 +5,20 @@ import App from "./App";
 import { renderFullApp } from "./TestRenderFullApp";
 
 test("renders learn react link", () => {
-    renderFullApp()
+    renderFullApp();
     const linkElement = screen.getByText(/SpecEffect/i);
     expect(linkElement).toBeInTheDocument();
 });
 
 describe("Some HTML Elements are added.", () => {
     test("There is a heading", () => {
-        renderFullApp()
+        renderFullApp();
         const header = screen.getAllByRole("heading");
         expect(header[0]).toBeInTheDocument();
     });
 
     test("There is an image", () => {
-        renderFullApp()
+        renderFullApp();
         const image = screen.getByRole("presentation");
         expect(image).toBeInTheDocument();
     });
