@@ -1,5 +1,6 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
+import userEvent from "@testing-library/user-event";
 import { MemoryRouter } from "react-router-dom";
 import Glossary from "./Glossary";
 
@@ -35,5 +36,15 @@ describe("Checking that certain elements are present.", () => {
     });
 });
 
-// make a test that checks for existence of GlossaryText via a testID you make 
-// make GlossaryText.test.tsx, and make a test that checks for when a link is clicked, a scroll happens
+test("Clicking a link updates the URL hash, scrolling down:", async () => {
+    render(
+        <MemoryRouter>
+            <Glossary />
+        </MemoryRouter>,
+    );
+    const cpuLink = screen.getByRole("link", { name: "CPU" });
+
+    await userEvent.click(cpuLink);
+
+    expect(cpuLink).toHaveAttribute("href", "#cpu");
+});
