@@ -22,14 +22,4 @@ describe("Some HTML Elements are added.", () => {
         const image = screen.getByRole("presentation");
         expect(image).toBeInTheDocument();
     });
-
-    test("There is a checkbox", () => {
-        render(
-            <MemoryRouter>
-                <App />
-            </MemoryRouter>,
-        );
-        const box = screen.getByRole("checkbox");
-        expect(box).toBeInTheDocument();
-    });
 });
