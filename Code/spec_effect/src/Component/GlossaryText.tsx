@@ -25,16 +25,34 @@ const mockGlossData: GlossItem[] = [
     {id: 9, term: "VRAM", def: "Short for Video Random Access Memory; a dedicated version of RAM  (short-term memory area) used specifically by the GPU to render graphics."},
     ];
 
+const createAnchor = (term: string) =>
+    term.toLowerCase().replace(/\s+/g, "-");
+
 const GlossaryText = () => {
     return (<div>
         <h3>Table of Contents</h3>
                 <div className="App-row">
                     <div className="App-colBox" style={{width: "50vw"}}>
-                        list of links goes here 
+                        <ul>
+                        {mockGlossData.map((item) => (
+                            <li key={item.id}>
+                                <a href={`#${createAnchor(item.term)}`}>
+                                    {item.term}
+                                </a>
+                            </li>
+                        ))}
+                        </ul>
                     </div>
                 </div>
-                <div>
-                    alll the text goes here
+                <div style={{ marginTop: "2rem" }}>
+                {mockGlossData.map((item) => (
+                    <div key={item.id} style={{ marginBottom: "1.5rem" }}>
+                        <h3 id={createAnchor(item.term)}>
+                            {item.term}
+                        </h3>
+                        <p>{item.def}</p>
+                    </div>
+                ))}
                 </div>
         </div>
     );
