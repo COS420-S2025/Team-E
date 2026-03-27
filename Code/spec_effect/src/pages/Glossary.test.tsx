@@ -3,35 +3,35 @@ import { render, screen } from "@testing-library/react";
 import { MemoryRouter } from "react-router-dom";
 import Glossary from "./Glossary";
 
-test("renders learn react link", () => {
-    render(
-        <MemoryRouter>
-            <Glossary />
-        </MemoryRouter>,
-    );
-    const linkElement = screen.getByText(/SpecEffect/i);
-    expect(linkElement).toBeInTheDocument();
-});
-
-describe("Some HTML Elements are added.", () => {
-    test("There is a type 3 header", () => {
+describe("Checking that certain elements are present.", () => {
+    test("There is a type 2 header:", () => {
         render(
             <MemoryRouter>
                 <Glossary />
             </MemoryRouter>,
         );
-        const header2 = screen.getAllByRole("heading", { level: 2 });
+        const header2 = screen.getByRole("heading", { level: 2 });
         expect(header2).toBeInTheDocument();
     });
 
-    test("There is an image", () => {
+    test("Divider containing GlossaryText component is present:", () => {
         render(
             <MemoryRouter>
                 <Glossary />
             </MemoryRouter>,
         );
-        const image = screen.getByRole("presentation");
-        expect(image).toBeInTheDocument();
+        const glossDiv = screen.getByTestId('glossTextHere')
+        expect(glossDiv).toBeInTheDocument();
+    });
+
+    test("Text within GlossaryText component is present:", () => {
+        render(
+            <MemoryRouter>
+                <Glossary />
+            </MemoryRouter>,
+        );
+        const glossWords = screen.getByText(/Table of Contents/i)
+        expect(glossWords).toBeInTheDocument();
     });
 });
 
