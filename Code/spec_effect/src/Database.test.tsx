@@ -5,11 +5,10 @@ import App from "./App";
 import { renderFullApp } from "./TestRenderFullApp";
 import { initializeApp } from "firebase/app";
 import { getFirestore, doc, getDoc, setDoc, collection, getCountFromServer } from "firebase/firestore";
-import { apiKey, projectId } from "./DatabaseConsts";
+import { projectId } from "./DatabaseConsts";
 
 // Replace with your actual Firebase config from the console
 const firebaseConfig = {
-  apiKey: apiKey,
   projectId: projectId
 };
 
