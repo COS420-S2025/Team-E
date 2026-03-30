@@ -3,6 +3,7 @@ import { render, screen, fireEvent } from '@testing-library/react';
 import SearchBar from './SearchBar';
 
 describe('SearchBar', () => {
+  /** make sure we have the right starting input before anything is written */
   test('renders the search input with correct placeholder', () => {
     const onSearch = jest.fn();
     render(<SearchBar onSearch={onSearch} />);
@@ -12,6 +13,7 @@ describe('SearchBar', () => {
     expect(input).toHaveAttribute('type', 'text');
   });
 
+  /** makes sure that the search start empty and fills as you type */
   test('starts with empty input and updates value when user types', () => {
     const onSearch = jest.fn();
     render(<SearchBar onSearch={onSearch} />);
@@ -23,6 +25,7 @@ describe('SearchBar', () => {
     expect(input).toHaveValue('light laptop');
   });
 
+  /** makes sure the onSearch function is called each time it is ran */
   test('calls onSearch callback after each input change', () => {
     const onSearch = jest.fn();
     render(<SearchBar onSearch={onSearch} />);
