@@ -1,11 +1,7 @@
-import React from "react";
-import { render, screen } from "@testing-library/react";
-import { MemoryRouter } from "react-router-dom";
-import App from "./App";
-import { renderFullApp } from "./TestRenderFullApp";
 import { initializeApp } from "firebase/app";
-import { getFirestore, doc, getDoc, setDoc, collection, getCountFromServer } from "firebase/firestore";
+import { getFirestore, collection, getCountFromServer } from "firebase/firestore";
 import { projectId } from "./DatabaseConsts";
+import 'setimmediate'
 
 // Replace with your actual Firebase config from the console
 const firebaseConfig = {
