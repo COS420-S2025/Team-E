@@ -43,16 +43,16 @@ const Home = () => {
     /** divides the home page into three sections a filter sec, search bar and results section */
     return (<div>
         <h2>Home Page</h2>
-            <div className="App-row" style ={{width: '1200px', height: '400px'}}>
-                <div className="App-colBox" style={{width: '150px', height: '380px'}}>
+            <div className="App-row">
+                <div className="App-colBox" style = {{ width: '25vw'}}>
                         Soon to be filters divider
                 </div>
-                <div style = {{width:'900px', height: '400px', verticalAlign: 'top'}}>
-                    <div className="App-colBox" data-testid="searchBarDiv" style={{width: '900px', height: '40px',textAlign: 'left'}}>
+                <div style = {{verticalAlign: 'top'}}>
+                    <div className="App-colBox" data-testid="searchBarDiv" style={{textAlign: 'left'}}>
                         <SearchBar onSearch= {handleSearch}/>
                     </div>
-                    <div className="scroll-box" data-testid="catalogDiv" style={{width: '910px', height: '300px',textAlign: 'left'}}>
-                        {filteredItems.map(item => (<li key={item.id} className="py-1" style={{fontSize: '30px'}}>{item.name}</li>))}
+                    <div className="scroll-box" data-testid="catalogDiv" style={{textAlign: 'left'}}>
+                        {filteredItems.map(item => (<li key={item.id} className="py-1" style={{fontSize: '20px'}}>{item.name}</li>))}
 
                         {filteredItems.length === 0 && searchQuery && <p>No result found for {searchQuery}</p>}
                     </div>

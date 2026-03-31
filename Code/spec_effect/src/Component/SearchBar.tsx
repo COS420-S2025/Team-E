@@ -16,7 +16,7 @@ const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
     };
     
     return (
-        <input type="text" placeholder="Search for laptop based on your needs..." value={query} onChange={handleChange}  style={{width: '900px', height: '40px', border: '2px solid #282c34', fontSize: '25px'}}/>
+        <input type="text" placeholder="Search for laptop based on your needs..." value={query} onChange={handleChange}  style={{width: '49vw', height: '40px', border: '2px solid #282c34', fontSize: '23px'}}/>
     );
 };
 
