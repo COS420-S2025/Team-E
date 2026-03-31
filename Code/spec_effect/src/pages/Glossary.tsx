@@ -4,7 +4,7 @@ const Glossary = () => {
     return (<div>
         <h2>Glossary Page</h2>
                 <div className="App-row">
-                    <div className="App-colBox" style={{width: "80vw", overflowY: "scroll",}} data-testid="glossTextHere">
+                    <div className="App-colBox" style={{width: "80vw"}} data-testid="glossTextHere">
                         <GlossaryText></GlossaryText>
                     </div>
                 </div>
