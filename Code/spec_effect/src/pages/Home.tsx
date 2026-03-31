@@ -48,23 +48,17 @@ const Home = () => {
                         Soon to be filters divider
                 </div>
                 <div style = {{width:'900px', height: '400px', verticalAlign: 'top'}}>
-                    <div className="App-colBox" style={{width: '900px', height: '40px',textAlign: 'left'}}>
+                    <div className="App-colBox" data-testid="searchBarDiv" style={{width: '900px', height: '40px',textAlign: 'left'}}>
                         <SearchBar onSearch= {handleSearch}/>
                     </div>
-                    <div className="scroll-box" style={{width: '910px', height: '300px',textAlign: 'left'}}>
+                    <div className="scroll-box" data-testid="catalogDiv" style={{width: '910px', height: '300px',textAlign: 'left'}}>
                         {filteredItems.map(item => (<li key={item.id} className="py-1" style={{fontSize: '30px'}}>{item.name}</li>))}
 
                         {filteredItems.length === 0 && searchQuery && <p>No result found for {searchQuery}</p>}
                     </div>
                 </div>
             </div>
-    </div>
-        
+        </div>
     );
-    
 };
 export default Home;
-
-
-
-
