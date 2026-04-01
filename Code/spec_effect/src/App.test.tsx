@@ -10,7 +10,7 @@ test("Check for SpecEffect text", () => {
     renderFullApp();
     const linkElement = screen.getByText(/SpecEffect/i);
     expect(linkElement).toBeInTheDocument();
-});
+	});
 
 describe("Launched to home page.", () => {
     test("Home Page text is present.", () => {

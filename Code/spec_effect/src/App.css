@@ -28,7 +28,7 @@
   min-height: 11vh;
   display: flex;
   flex-direction: row;
-  gap: 40vmin;
+  gap: 23vmin;
   align-items: center;
   justify-content: center;
   font-size: calc(5px + 2vmin);
@@ -103,6 +103,16 @@
   outline: 2px solid #282c34;
   padding: 16px;
   margin-bottom: 16px;
+}
+
+.scroll-box {
+  height: 300px;
+  width: 51vw;
+  overflow-y: auto;
+  overflow-x: hidden;
+  border: 2px solid #282c34;
+  padding: 10px;
+  background-color: #f9f9f9;
 }
 
 @keyframes App-logo-spin {
