@@ -51,10 +51,10 @@ describe("Some HTML Elements are added.", () => {
 });
 
 describe("Basic page navigation works", () => {
-    test("Clicking home doesn't change page.", () => {
+    test("Clicking home doesn't change page.", async () => {
         renderFullApp();
         const homeButton = screen.getByRole("button", { name: /Home/i });
-        homeButton.click();
+        await userEvent.click(homeButton);
         const homeMes = screen.getByText(/Home Page/i);
         expect(homeMes).toBeInTheDocument();
     });
