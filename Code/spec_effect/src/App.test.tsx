@@ -59,13 +59,15 @@ describe("Basic page navigation works", () => {
         expect(homeMes).toBeInTheDocument();
     });
 
-    test("Clicking Glossary changes to glossary page.", () => {
+    test("Clicking Glossary changes to glossary page.", async () => {
         renderFullApp();
         const glossaryButton = screen.getByRole("button", {
             name: /Glossary/i,
         });
+
         userEvent.click(glossaryButton);
-        expect(screen.getByText(/Glossary Page/i)).toBeInTheDocument();
+        const element: HTMLElement = await screen.findByText(/Glossary Page/i);
+        expect(element).toBeInTheDocument();
     });
 
     test("Clicking About changes to about page.", () => {
@@ -74,7 +76,8 @@ describe("Basic page navigation works", () => {
             name: /About/i,
         });
         userEvent.click(aboutButton);
-        expect(screen.getByText(/About Page/i)).toBeInTheDocument();
+        const element: HTMLElement = await screen.findByText(/About Page/i);
+        expect(element).toBeInTheDocument();
     });
 
     test("Clicking to another screen, then clicking back to home return to home.", () => {
