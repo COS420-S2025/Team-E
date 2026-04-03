@@ -6,21 +6,19 @@ import { renderFullApp } from "./TestRenderFullApp";
 import exp from "constants";
 import userEvent from "@testing-library/user-event";
 
-test("Check for SpecEffect text", () => {
-    renderFullApp();
+
+
+describe("Some HTML Elements are added.", () => {
+    test("renders learn react link", () => {
+    render(
+        <MemoryRouter>
+            <App />
+        </MemoryRouter>,
+    );
     const linkElement = screen.getByText(/SpecEffect/i);
     expect(linkElement).toBeInTheDocument();
-	});
-
-describe("Launched to home page.", () => {
-    test("Home Page text is present.", () => {
-        renderFullApp();
-        const homeMes = screen.getByText(/Home Page/i);
-        expect(homeMes).toBeInTheDocument();
     });
-});
 
-describe("Some HTML Elements are loaded.", () => {
     test("There is a heading", () => {
         renderFullApp();
         const header = screen.getAllByRole("heading");
@@ -53,10 +51,10 @@ describe("Some HTML Elements are loaded.", () => {
 });
 
 describe("Basic page navigation works", () => {
-    test("Clicking home doesn't change page.", () => {
+    test("Clicking home doesn't change page.", async () => {
         renderFullApp();
         const homeButton = screen.getByRole("button", { name: /Home/i });
-        homeButton.click();
+        await userEvent.click(homeButton);
         const homeMes = screen.getByText(/Home Page/i);
         expect(homeMes).toBeInTheDocument();
     });
