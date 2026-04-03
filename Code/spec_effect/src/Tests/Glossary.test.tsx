@@ -2,7 +2,7 @@ import React from "react";
 import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { MemoryRouter } from "react-router-dom";
-import Glossary from "./Glossary";
+import Glossary from "../pages/Glossary";
 
 describe("Checking that certain elements are present.", () => {
     test("There is a type 2 header:", () => {
@@ -21,7 +21,7 @@ describe("Checking that certain elements are present.", () => {
                 <Glossary />
             </MemoryRouter>,
         );
-        const glossDiv = screen.getByTestId('glossTextHere')
+        const glossDiv = screen.getByTestId("glossTextHere");
         expect(glossDiv).toBeInTheDocument();
     });
 
@@ -31,7 +31,7 @@ describe("Checking that certain elements are present.", () => {
                 <Glossary />
             </MemoryRouter>,
         );
-        const glossWords = screen.getByText(/Table of Contents/i)
+        const glossWords = screen.getByText(/Table of Contents/i);
         expect(glossWords).toBeInTheDocument();
     });
 });
