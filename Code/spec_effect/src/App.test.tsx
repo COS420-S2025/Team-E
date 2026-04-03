@@ -70,7 +70,7 @@ describe("Basic page navigation works", () => {
         expect(element).toBeInTheDocument();
     });
 
-    test("Clicking About changes to about page.", () => {
+    test("Clicking About changes to about page.", async () => {
         renderFullApp();
         const aboutButton = screen.getByRole("button", {
             name: /About/i,
