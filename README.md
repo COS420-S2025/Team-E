@@ -99,7 +99,7 @@ git clone https://github.com/COS420-S2025/Team-E.git
 Navigate to the react project folder:
 
 ```bash
-cd Team-E/Code/spec-effect
+cd Team-E/Code/spec_effect
 ```
 
 Install dependencies:
