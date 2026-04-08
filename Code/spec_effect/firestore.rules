@@ -1,0 +1,59 @@
+rules_version = '2';
+
+service cloud.firestore {
+  function isAdmin() {
+    return get(/databases/(default)/documents/permissions/$(request.auth.uid)).data.admin == true;
+  }
+  match /databases/{database}/documents {
+    
+    match /permissions/{userId} {
+      allow read: if request.auth != null && request.auth.uid == userId;
+      allow write: if false; 
+    }
+
+    match /cpus/{document=**} {
+      
+      allow list: if true;
+      
+      allow read: if (request.auth != null || request.query.limit <= 20);
+      
+      allow write: if isAdmin();
+    }
+    
+    match /gpus/{document=**} {
+    
+      allow list: if true;
+      
+      allow read: if (request.auth != null || request.query.limit <= 20);
+      
+      allow write: if isAdmin()
+    }
+    
+    match /glossary/{document=**} {
+      
+      allow list: if true;
+      
+      allow read: if true;
+      
+      allow write: if isAdmin()
+    }
+    
+    match /laptops/{document=**} {
+      
+      allow list: if true;
+      
+      allow read: if (request.auth != null || request.query.limit <= 20);
+      
+      allow write: if isAdmin()
+    }
+    
+    match /glossary/{document=**} {
+      
+      allow list: if true;
+      
+      allow read: if true;
+      
+      allow write: if isAdmin()
+    }
+  } 
+}
