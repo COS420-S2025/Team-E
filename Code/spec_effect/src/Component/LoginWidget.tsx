@@ -4,7 +4,7 @@ const LoginWidget = () => {
         <form className="adminLoginWidget">
             <h3>Admin Login Page</h3>
             <fieldset>
-                <p>
+                <p id="emailInputSet">
                     <label htmlFor="email">Email:</label>
                     <input
                         type="email"
@@ -13,18 +13,18 @@ const LoginWidget = () => {
                         autoFocus
                         required></input>
                 </p>
-                <p>
+                <p id="passwordInputSet">
                     <label htmlFor="password">Password:</label>
                     <input
-                        type="text"
+                        type="password"
                         id="password"
                         name="password"
                         required></input>
                 </p>
+                <button type="submit" id="loginButton">
+                    Login
+                </button>
             </fieldset>
-            <button type="submit" id="loginButton">
-                Login
-            </button>
         </form>
     );
 };
