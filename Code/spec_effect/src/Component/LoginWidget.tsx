@@ -4,7 +4,7 @@ const LoginWidget = () => {
         <form className="adminLoginWidget">
             <h3>Admin Login Page</h3>
             <fieldset>
-                <p id="emailInputSet">
+                <p>
                     <label htmlFor="email">Email:</label>
                     <input
                         type="email"
