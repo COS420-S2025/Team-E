@@ -6,27 +6,35 @@ import exp from "constants";
 import userEvent from "@testing-library/user-event";
 import AdminLogin from "../pages/AdminLogin";
 
+function renderLoginPage() {
+    render(
+        <MemoryRouter>
+            <AdminLogin />
+        </MemoryRouter>,
+    );
+}
+
 describe("The page is visually loaded.", () => {
     test("Check for login widget", () => {
-        renderFullApp();
-        const loginWidget = screen.getByText(/Admin Panel Login/i);
+        renderLoginPage();
+        const loginWidget = screen.getByText(/Admin Login Page/i);
         expect(loginWidget).toBeInTheDocument();
     });
 
     test("An input field is present", () => {
-        renderFullApp();
-        const emailInp = screen.getByLabelText(/Email/i);
+        renderLoginPage();
+        const emailInp = screen.getByLabelText(/Email:/i);
         expect(emailInp).toBeInTheDocument();
     });
 
     test("A password field is present", () => {
-        renderFullApp();
-        const passInp = screen.getByLabelText(/Password/i);
+        renderLoginPage();
+        const passInp = screen.getByLabelText(/Password:/i);
         expect(passInp).toBeInTheDocument();
     });
 
     test("Login button is present", () => {
-        renderFullApp();
+        renderLoginPage();
         const loginButton = screen.getByRole("button", { name: /Login/i });
         expect(loginButton).toBeInTheDocument();
     });
