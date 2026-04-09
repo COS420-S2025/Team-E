@@ -12,6 +12,14 @@ function renderLoginPage() {
     );
 }
 
+function renderLoginPage() {
+    render(
+        <MemoryRouter>
+            <AdminLogin />
+        </MemoryRouter>,
+    );
+}
+
 describe("The page is visually loaded.", () => {
     test("Check for login widget", () => {
         renderLoginPage();
