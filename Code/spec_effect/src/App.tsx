@@ -26,6 +26,9 @@ function App() {
         navigate("/glossary");
     };
 
+    const goToAdminLogin = () => {
+        navigate("/adminlogin");
+    };
 
     return (
         <div className="App">
@@ -58,12 +61,9 @@ function App() {
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/glossary" element={<Glossary />} />
-                <Route path="/choose-database" element={<ChooseDatabase />} />
-                <Route path="/glossary-database" element={<GlossaryDatabase />} />
-                <Route path="/laptop-database" element={<LaptopDatabase />} />
-                <Route path="/AddToLaptopDatabase" element={<AddToLaptopDatabase />} />
-                <Route path="/AddToGlossaryDatabase" element={<AddToGlossaryDatabase />} />
+                <Route path="/adminlogin" element={<AdminLogin />} />
             </Routes>
+            <button onClick={goToAdminLogin}>Login</button>
         </div>
     );
 }
