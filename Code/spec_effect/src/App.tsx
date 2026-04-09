@@ -5,6 +5,7 @@ import { Routes, Route, useNavigate } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Glossary from "./pages/Glossary";
+import AdminLogin from "./pages/AdminLogin";
 
 function App() {
     const navigate = useNavigate();
@@ -19,6 +20,10 @@ function App() {
 
     const goToGlossary = () => {
         navigate("/glossary");
+    };
+
+    const goToAdminLogin = () => {
+        navigate("/adminlogin");
     };
 
     return (
@@ -52,7 +57,9 @@ function App() {
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/glossary" element={<Glossary />} />
+                <Route path="/adminlogin" element={<AdminLogin />} />
             </Routes>
+            <button onClick={goToAdminLogin}>Login</button>
         </div>
     );
 }
