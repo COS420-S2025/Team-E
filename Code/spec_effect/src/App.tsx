@@ -5,11 +5,7 @@ import { Routes, Route, useNavigate } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Glossary from "./pages/Glossary";
-import ChooseDatabase from "./pages/ChooseEditor";
-import GlossaryDatabase from "./pages/GlossaryEditor";
-import LaptopDatabase from "./pages/LaptopEditor";
-import AddToLaptopDatabase from "./pages/AddToLaptopEditor";
-import AddToGlossaryDatabase from "./pages/AddToGlossaryEditor";
+import AdminLogin from "./pages/AdminLogin";
 
 function App() {
     const navigate = useNavigate();
@@ -68,6 +64,7 @@ function App() {
                 <Route path="/glossary" element={<Glossary />} />
                 <Route path="/adminlogin" element={<AdminLogin />} />
             </Routes>
+            <button onClick={goToAdminLogin}>Login</button>
         </div>
     );
 }
