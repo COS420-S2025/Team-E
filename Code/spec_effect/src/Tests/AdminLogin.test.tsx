@@ -1,29 +1,15 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
 import { MemoryRouter } from "react-router-dom";
-import AdminLogin from "../pages/AdminLogin";
+import { renderFullApp } from "../TestRenderFullApp";
+import exp from "constants";
 import userEvent from "@testing-library/user-event";
-
-function renderLoginPage() {
-    render(
-        <MemoryRouter>
-            <AdminLogin />
-        </MemoryRouter>,
-    );
-}
-
-function renderLoginPage() {
-    render(
-        <MemoryRouter>
-            <AdminLogin />
-        </MemoryRouter>,
-    );
-}
+import AdminLogin from "../pages/AdminLogin";
 
 describe("The page is visually loaded.", () => {
     test("Check for login widget", () => {
-        renderLoginPage();
-        const loginWidget = screen.getByText(/Admin Login Page/i);
+        renderFullApp();
+        const loginWidget = screen.getByText(/Admin Panel Login/i);
         expect(loginWidget).toBeInTheDocument();
     });
 
