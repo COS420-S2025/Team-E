@@ -63,7 +63,7 @@ function App() {
                 <Route path="/glossary" element={<Glossary />} />
                 <Route path="/adminlogin" element={<AdminLogin />} />
             </Routes>
-            <button onClick={goToAdminLogin}>Go to admin login page</button>
+            <button onClick={goToAdminLogin}>Login</button>
         </div>
     );
 }
