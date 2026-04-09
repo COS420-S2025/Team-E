@@ -6,10 +6,18 @@ import exp from "constants";
 import userEvent from "@testing-library/user-event";
 import AdminLogin from "../pages/AdminLogin";
 
+function renderLoginPage() {
+    render(
+        <MemoryRouter>
+            <AdminLogin />
+        </MemoryRouter>,
+    );
+}
+
 describe("The page is visually loaded.", () => {
     test("Check for login widget", () => {
-        renderFullApp();
-        const loginWidget = screen.getByText(/Admin Panel Login/i);
+        renderLoginPage();
+        const loginWidget = screen.getByText(/Admin Login Page/i);
         expect(loginWidget).toBeInTheDocument();
     });
 
