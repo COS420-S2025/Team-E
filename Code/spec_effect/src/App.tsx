@@ -5,6 +5,11 @@ import { Routes, Route, useNavigate } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Glossary from "./pages/Glossary";
+import ChooseDatabase from "./pages/ChooseDatabase";
+import GlossaryDatabase from "./pages/GlossaryDatabase";
+import LaptopDatabase from "./pages/LaptopDatabase";
+import AddToLaptopDatabase from "./pages/AddToLaptopDatabase";
+import AddToGlossaryDatabase from "./pages/AddToGlossaryDatabase";
 
 function App() {
     const navigate = useNavigate();
@@ -19,6 +24,10 @@ function App() {
 
     const goToGlossary = () => {
         navigate("/glossary");
+    };
+
+    const goToChooseDatabase = () => {
+        navigate("/choose-database");
     };
 
     return (
@@ -47,11 +56,19 @@ function App() {
                 <button className="App-headerButtonStyle" onClick={goToAbout}>
                     About
                 </button>
+                <button className="App-headerButtonStyle" onClick={goToChooseDatabase}>
+                    Choose Database
+                </button>
             </header>
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/glossary" element={<Glossary />} />
+                <Route path="/choose-database" element={<ChooseDatabase />} />
+                <Route path="/glossary-database" element={<GlossaryDatabase />} />
+                <Route path="/laptop-database" element={<LaptopDatabase />} />
+                <Route path="/AddToLaptopDatabase" element={<AddToLaptopDatabase />} />
+                <Route path="/AddToGlossaryDatabase" element={<AddToGlossaryDatabase />} />
             </Routes>
         </div>
     );
