@@ -1,12 +1,7 @@
-// Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getFirestore, connectFirestoreEmulator } from "firebase/firestore";
 import { getAuth, connectAuthEmulator } from "firebase/auth";
 
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
-
-// Your web app's Firebase configuration
 const firebaseConfig = {
   apiKey: "AIzaSyAQ-7-zmf-vopfjZyFQPrAOw7y8Z2_p6hI",
   authDomain: "speceffect-6f94d.firebaseapp.com",
@@ -22,6 +17,7 @@ const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 const auth  = getAuth(app);
 
+// connect to emulator if in a test
 if (process.env.NODE_ENV === 'test') {
     connectFirestoreEmulator(db, '127.0.0.1', 8080);
     connectAuthEmulator(auth, "http://127.0.0.1:9099");
