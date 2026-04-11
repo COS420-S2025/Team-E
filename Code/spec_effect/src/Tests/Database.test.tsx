@@ -8,27 +8,29 @@ import { auth, db } from "../firebase-config";
 import "setimmediate";
 import { signInWithEmailAndPassword, signOut } from "firebase/auth";
 
+const CI_MODE = process.env.CI_MODE === 'true';
+const testIfNotCI = CI_MODE ? test.skip : test;
+
 describe("Check if database collections exist", () => {
-    return;
-    test("CPU collection exists", async () => {
+    testIfNotCI("CPU collection exists", async () => {
         const cpusCollection = collection(db, "cpus");
         const snapshot = await getCountFromServer(cpusCollection);
         const totalCpus = snapshot.data().count;
         expect(totalCpus).toBeGreaterThan(0);
     });
-    test("GPU collection exists", async () => {
+    testIfNotCI("GPU collection exists", async () => {
         const gpusCollection = collection(db, "gpus");
         const snapshot = await getCountFromServer(gpusCollection);
         const totalGpus = snapshot.data().count;
         expect(totalGpus).toBeGreaterThan(0);
     });
-    test("Laptop collection exists", async () => {
+    testIfNotCI("Laptop collection exists", async () => {
         const laptopsCollection = collection(db, "laptops");
         const snapshot = await getCountFromServer(laptopsCollection);
         const totalLaptops = snapshot.data().count;
         expect(totalLaptops).toBeGreaterThan(0);
     });
-    test("Glossary collection exists", async () => {
+    testIfNotCI("Glossary collection exists", async () => {
         const glossaryCollection = collection(db, "glossary");
         const snapshot = await getCountFromServer(glossaryCollection);
         const totalGlossaryItems = snapshot.data().count;
@@ -38,8 +40,7 @@ describe("Check if database collections exist", () => {
 
 
 describe("Ensure non-admins can't write to database collections", () => {
-    return;
-    test("CPU collection disallows writing for non-admins", async () => {
+    testIfNotCI("CPU collection disallows writing for non-admins", async () => {
         const collectionToTest = collection(db, "cpus");
         const data = { "name": "TEST"};
 
@@ -50,7 +51,7 @@ describe("Ensure non-admins can't write to database collections", () => {
             })
         );
     });
-    test("GPU collection disallows writing for non-admins", async () => {
+    testIfNotCI("GPU collection disallows writing for non-admins", async () => {
         const collectionToTest = collection(db, "gpus");
         const data = { "name": "TEST"};
 
@@ -61,7 +62,7 @@ describe("Ensure non-admins can't write to database collections", () => {
             })
         );
     });
-    test("Laptops collection disallows writing for non-admins", async () => {
+    testIfNotCI("Laptops collection disallows writing for non-admins", async () => {
         const collectionToTest = collection(db, "laptops");
         const data = { "name": "TEST"};
 
@@ -72,7 +73,7 @@ describe("Ensure non-admins can't write to database collections", () => {
             })
         );
     });
-    test("Glossary collection disallows writing for non-admins", async () => {
+    testIfNotCI("Glossary collection disallows writing for non-admins", async () => {
         const collectionToTest = collection(db, "glossary");
         const data = { "term": "TEST", "definition": "test"};
 
@@ -86,7 +87,6 @@ describe("Ensure non-admins can't write to database collections", () => {
 });
 
 describe("Ensure admins can write to database collections", () => {
-    return;
     beforeAll(async () => {
         await signInWithEmailAndPassword(auth, "admin@test.com", "password");
     });
@@ -95,7 +95,7 @@ describe("Ensure admins can write to database collections", () => {
         await signOut(auth);
     });
 
-    test("CPU collection allows writing and deleting for admins", async () => {
+    testIfNotCI("CPU collection allows writing and deleting for admins", async () => {
         const collectionToTest = collection(db, "cpus");
         const data = { "name": "TEST"};
 
@@ -106,7 +106,7 @@ describe("Ensure admins can write to database collections", () => {
         await deleteDoc(docRef);
     });
 
-    test("GPU collection allows writing for admins", async () => {
+    testIfNotCI("GPU collection allows writing for admins", async () => {
         const collectionToTest = collection(db, "gpus");
         const data = { "name": "TEST"};
 
@@ -116,7 +116,7 @@ describe("Ensure admins can write to database collections", () => {
 
         await deleteDoc(docRef);
     });
-    test("Laptops collection allows writing for admins", async () => {
+    testIfNotCI("Laptops collection allows writing for admins", async () => {
         const collectionToTest = collection(db, "laptops");
         const data = { "name": "TEST"};
 
@@ -126,7 +126,7 @@ describe("Ensure admins can write to database collections", () => {
 
         await deleteDoc(docRef);
     });
-    test("Glossary collection allows writing for admins", async () => {
+    testIfNotCI("Glossary collection allows writing for admins", async () => {
         const collectionToTest = collection(db, "glossary");
         const data = { "term": "TEST", "definition": "test"};
 
