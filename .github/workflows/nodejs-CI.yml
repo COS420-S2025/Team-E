@@ -40,3 +40,5 @@ jobs:
 
       - name: Run tests
         run: npm test
+        env: 
+          CI_MODE: "true"
