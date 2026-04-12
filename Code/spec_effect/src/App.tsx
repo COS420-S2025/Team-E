@@ -52,6 +52,11 @@ function App() {
                 <button className="App-headerButtonStyle" onClick={goToAbout}>
                     About
                 </button>
+                <button
+                    className="App-headerButtonStyle"
+                    onClick={goToAdminLogin}>
+                    Admin Login
+                </button>
             </header>
             <Routes>
                 <Route path="/" element={<Home />} />
@@ -59,7 +64,6 @@ function App() {
                 <Route path="/glossary" element={<Glossary />} />
                 <Route path="/adminlogin" element={<AdminLogin />} />
             </Routes>
-            <button onClick={goToAdminLogin}>Go to admin login page</button>
         </div>
     );
 }
