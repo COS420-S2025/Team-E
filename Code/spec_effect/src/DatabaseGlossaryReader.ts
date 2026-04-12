@@ -9,7 +9,7 @@ import { db } from "./firebase-config"; // Your initialized Firestore instance
 interface GlossaryEntry {
   id: string;
   term: string;
-  definition: number;
+  definition: string;
 }
 
 const glossaryEntryConverter = {
