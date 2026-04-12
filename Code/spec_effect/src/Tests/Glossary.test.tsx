@@ -36,15 +36,15 @@ describe("Checking that certain elements are present.", () => {
     });
 });
 
-test("Clicking a link updates the URL hash, scrolling down:", async () => {
-    render(
-        <MemoryRouter>
-            <Glossary />
-        </MemoryRouter>,
-    );
-    const cpuLink = screen.getByRole("link", { name: "CPU" });
+    test("Clicking a link updates the URL hash, scrolling down:", async () => {
+        render(
+            <MemoryRouter>
+                <Glossary />
+            </MemoryRouter>,
+        );
+        const cpuLink = await screen.findByRole("link", { name: "RAM" });
 
-    await userEvent.click(cpuLink);
+        await userEvent.click(cpuLink);
 
-    expect(cpuLink).toHaveAttribute("href", "#cpu");
-});
+        expect(window.location.hash).toBe("#ram");
+    });
