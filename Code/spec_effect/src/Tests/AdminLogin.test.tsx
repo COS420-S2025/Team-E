@@ -1,9 +1,6 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
 import { MemoryRouter } from "react-router-dom";
-import { renderFullApp } from "../TestRenderFullApp";
-import exp from "constants";
-import userEvent from "@testing-library/user-event";
 import AdminLogin from "../pages/AdminLogin";
 
 function renderLoginPage() {
