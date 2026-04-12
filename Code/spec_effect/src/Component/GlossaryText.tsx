@@ -1,4 +1,7 @@
 import React from "react";
+// import from eliot's firbase class and look at the domain model diagram for what you'll have to work with
+// also get firebase emulator working with app after eliot's database stuffs been pulled into main
+// for now, just download it and do the activity on the web textbook
 
 interface GlossItem {
     id: number;
