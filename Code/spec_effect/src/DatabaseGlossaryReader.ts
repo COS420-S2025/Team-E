@@ -6,7 +6,7 @@ import {
 } from "firebase/firestore";
 import { db } from "./firebase-config"; // Your initialized Firestore instance
 
-interface GlossaryEntry {
+export interface GlossaryEntry {
   id: string;
   term: string;
   definition: string;

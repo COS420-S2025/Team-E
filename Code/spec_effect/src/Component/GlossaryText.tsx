@@ -1,28 +1,32 @@
-import React from "react";
-import { GlossaryEntry } from "./DatabaseGlossaryReader.ts"
-
-// import from firebase and relevant classes along with getAllEntries(): GlossaryEntry[]
-// also get firebase emulator working with app after eliot's database stuffs been pulled into main
-// for now, just download it and do the activity on the web textbook
-
-interface GlossItem {
-    id: string;
-    term: string;
-    def: string;
-}
-
-getAllEntries(): GlossaryEntry[]
+import React, { useEffect, useState } from "react";
+import { getAllEntries, GlossaryEntry } from "../DatabaseGlossaryReader";
 
 const createAnchor = (term: string) =>
     term.toLowerCase().replace(/\s+/g, "-");
 
 const GlossaryText = () => {
+    const [glossList, setGlossList] = useState<GlossaryEntry[]>([]);
+
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const data = await getAllEntries();
+                setGlossList(data);
+            } catch (error) {
+                console.error("Error fetching glossary entries:", error);
+            }
+        };
+
+        fetchData();
+    }, []);
+
+
     return (<div>
         <h3>Table of Contents</h3>
                 <div className="App-row">
                     <div className="App-colBox" style={{width: "50vw", textAlign: "left"}}>
                         <ul style={{paddingLeft: "20vw"}}>
-                        {mockGlossData.map((item) => (
+                        {glossList.map((item) => (
                             <li key={item.id}>
                                 <a href={`#${createAnchor(item.term)}`}>
                                     {item.term}
@@ -33,12 +37,12 @@ const GlossaryText = () => {
                     </div>
                 </div>
                 <div style={{ marginTop: "2rem" }}>
-                {mockGlossData.map((item) => (
+                {glossList.map((item) => (
                     <div key={item.id}>
                         <h3 id={createAnchor(item.term)}>
                             {item.term}
                         </h3>
-                        <p style={{whiteSpace: "pre-line"}}>{item.def}</p>
+                        <p style={{whiteSpace: "pre-line"}}>{item.definition}</p>
                     </div>
                 ))}
                 </div>
