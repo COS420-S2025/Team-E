@@ -1,6 +1,6 @@
 import React from 'react';
-import Purpose from '../Component/PurposeMessage';
+import GlossaryText from '../Component/GlossaryText';
 const About = () => {
-    return <Purpose />;
+    return </GlossaryText>;
 };
 export default About;
