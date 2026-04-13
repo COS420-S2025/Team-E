@@ -1,7 +1,38 @@
-import React from "react";
+import React, { useState } from "react";
+import { auth } from "../firebase-config";
+import { signInWithEmailAndPassword } from "firebase/auth";
+
+// This file was created by hand at first, then modified with AI to fit React and Firebase.
+// GitHub Copilot Chat Feature
+
 const LoginWidget = () => {
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+    const [error, setError] = useState<string | null>(null);
+
+    const handleEmailChange = (e: React.ChangeEvent<HTMLInputElement>) =>
+        setEmail(e.target.value);
+    const handlePasswordChange = (e: React.ChangeEvent<HTMLInputElement>) =>
+        setPassword(e.target.value);
+
+    const handleSubmit = async (e: React.FormEvent) => {
+        e.preventDefault();
+        setError(null);
+        try {
+            const userCred = await signInWithEmailAndPassword(
+                auth,
+                email,
+                password,
+            );
+            console.log("Signed in with email:", userCred.user);
+        } catch (err: any) {
+            console.error(err);
+            setError(err.message || "Email sign-in failed");
+        }
+    };
+
     return (
-        <form className="adminLoginWidget">
+        <form className="adminLoginWidget" onSubmit={handleSubmit}>
             <h3>Admin Login Page</h3>
             <fieldset>
                 <p id="emailInputSet">
@@ -11,7 +42,10 @@ const LoginWidget = () => {
                         id="email"
                         name="email"
                         autoFocus
-                        required></input>
+                        required
+                        value={email}
+                        onChange={handleEmailChange}
+                    />
                 </p>
                 <p id="passwordInputSet">
                     <label htmlFor="password">Password:</label>
@@ -19,8 +53,12 @@ const LoginWidget = () => {
                         type="password"
                         id="password"
                         name="password"
-                        required></input>
+                        required
+                        value={password}
+                        onChange={handlePasswordChange}
+                    />
                 </p>
+                {error && <p style={{ color: "red" }}>{error}</p>}
                 <button type="submit" id="loginButton">
                     Login
                 </button>
@@ -28,4 +66,5 @@ const LoginWidget = () => {
         </form>
     );
 };
+
 export default LoginWidget;
