@@ -1,6 +1,6 @@
 import { render, screen } from "@testing-library/react";
 import { MemoryRouter } from "react-router-dom";
-import GlossaryDatabase from "../pages/GlossaryDatabase";
+import GlossaryDatabase from "../pages/GlossaryEditor";
 
 describe("GlossaryDatabase", () => {
     test("renders the Glossary Database heading", () => {

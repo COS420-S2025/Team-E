@@ -1,6 +1,6 @@
 import { render, screen } from "@testing-library/react";
 import { MemoryRouter } from "react-router-dom";
-import ChooseDatabase from "../pages/ChooseDatabase";
+import ChooseDatabase from "../pages/ChooseEditor";
 
 describe("ChooseDatabase", () => {
     test("renders the Choose a Database heading", () => {

@@ -1,6 +1,6 @@
 import { render, screen } from "@testing-library/react";
 import { MemoryRouter } from "react-router-dom";
-import AddToLaptopDatabase from "../pages/AddToLaptopDatabase";
+import AddToLaptopDatabase from "../pages/AddToLaptopEditor";
 
 describe("AddToLaptopDatabase", () => {
     test("renders the Add to Laptop Database heading", () => {

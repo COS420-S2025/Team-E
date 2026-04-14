@@ -5,11 +5,11 @@ import { Routes, Route, useNavigate } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Glossary from "./pages/Glossary";
-import ChooseDatabase from "./pages/ChooseDatabase";
-import GlossaryDatabase from "./pages/GlossaryDatabase";
-import LaptopDatabase from "./pages/LaptopDatabase";
-import AddToLaptopDatabase from "./pages/AddToLaptopDatabase";
-import AddToGlossaryDatabase from "./pages/AddToGlossaryDatabase";
+import ChooseDatabase from "./pages/ChooseEditor";
+import GlossaryDatabase from "./pages/GlossaryEditor";
+import LaptopDatabase from "./pages/LaptopEditor";
+import AddToLaptopDatabase from "./pages/AddToLaptopEditor";
+import AddToGlossaryDatabase from "./pages/AddToGlossaryEditor";
 
 function App() {
     const navigate = useNavigate();
