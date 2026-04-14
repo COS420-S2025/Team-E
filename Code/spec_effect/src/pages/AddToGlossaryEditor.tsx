@@ -1,16 +1,15 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import {GlossaryEntry} from "../DatabaseGlossaryReader";
 
 
-interface GlossaryEntry {
-    term: string;
-    definition: string;
-}
+
 
 
 const AddToGlossaryDatabase = () => {
     const navigate = useNavigate();
     const [formData, setFormData] = useState<GlossaryEntry>({
+        id:"",
         term: "",
         definition: "",
     });

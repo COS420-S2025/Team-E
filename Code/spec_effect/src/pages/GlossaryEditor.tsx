@@ -1,12 +1,27 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import DatabaseList from "../Component/DatabaseList";
+import DatabaseList from "../Component/GlossaryDatabaseList";
+import { getAllEntries, GlossaryEntry } from "../DatabaseGlossaryReader";
 
 
 const GlossaryDatabase = () => {
     const navigate = useNavigate();
     /**This will store the list of glossary database items currently shown to the client */
-    const [glossaryItems, setGlossaryItems] = useState(["cpu", "gpu"]);
+    const [glossaryItems, setGlossaryItems] = useState<GlossaryEntry[]>([]);
+
+    useEffect(() => {
+        const fetchGlossaryItems = async () => {
+            try{
+                const entries = await getAllEntries();
+                setGlossaryItems(entries);
+            } catch (error) {
+                console.error("Error fetching glossary items:", error);
+            }
+            
+        };
+
+        fetchGlossaryItems();
+    }, []);
 
     /**moves to the add page*/
     const handleAddGlossary = () => {
@@ -15,7 +30,7 @@ const GlossaryDatabase = () => {
 
     /**probably will change this to do it on the database side */
     const handleRemove = (item: string) => {
-        setGlossaryItems(glossaryItems.filter((glossary) => glossary !== item));
+        setGlossaryItems(glossaryItems.filter((glossary) => glossary.term !== item));
     };
 
     /**shows a button to add a new glossary term, and the list of existing terms */
