@@ -4,6 +4,9 @@ import userEvent from "@testing-library/user-event";
 import { MemoryRouter } from "react-router-dom";
 import Glossary from "../pages/Glossary";
 
+const CI_MODE = process.env.CI_MODE === 'true';
+const testIfNotCI = CI_MODE ? test.skip : test;
+
 describe("Checking that certain elements are present.", () => {
     test("There is a type 2 header:", () => {
         render(
@@ -36,14 +39,12 @@ describe("Checking that certain elements are present.", () => {
     });
 });
 
-test("Clicking a link updates the URL hash, scrolling down:", async () => {
+testIfNotCI("Clicking a link updates the URL hash (requires database):", async () => {
     render(
         <MemoryRouter>
             <Glossary />
         </MemoryRouter>,
     );
-
-    await new Promise((resolve) => setTimeout(resolve, 1500));
     
     const cpuLink = await screen.findByRole("link", { name: "RAM" });
 
