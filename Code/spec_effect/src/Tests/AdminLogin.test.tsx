@@ -4,8 +4,6 @@ import { MemoryRouter } from "react-router-dom";
 import AdminLogin from "../pages/AdminLogin";
 import userEvent from "@testing-library/user-event";
 
-const user = userEvent.setup();
-
 function renderLoginPage() {
     render(
         <MemoryRouter>
