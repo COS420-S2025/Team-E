@@ -36,15 +36,18 @@ describe("Checking that certain elements are present.", () => {
     });
 });
 
-    test("Clicking a link updates the URL hash, scrolling down:", async () => {
-        render(
-            <MemoryRouter>
-                <Glossary />
-            </MemoryRouter>,
-        );
-        const cpuLink = await screen.findByRole("link", { name: "RAM" });
+test("Clicking a link updates the URL hash, scrolling down:", async () => {
+    render(
+        <MemoryRouter>
+            <Glossary />
+        </MemoryRouter>,
+    );
 
-        await userEvent.click(cpuLink);
+    await new Promise((resolve) => setTimeout(resolve, 1500));
+    
+    const cpuLink = await screen.findByRole("link", { name: "RAM" });
 
-        expect(window.location.hash).toBe("#ram");
-    });
+    await userEvent.click(cpuLink);
+
+    expect(window.location.hash).toBe("#ram");
+});
