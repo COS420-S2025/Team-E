@@ -6,6 +6,9 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Glossary from "./pages/Glossary";
 import AdminLogin from "./pages/AdminLogin";
+import ChooseEditor from "./pages/ChooseEditor";
+import GlossaryDatabase from "./pages/GlossaryEditor";
+import LaptopDatabase from "./pages/LaptopEditor";
 
 function App() {
     const navigate = useNavigate();
@@ -63,6 +66,12 @@ function App() {
                 <Route path="/about" element={<About />} />
                 <Route path="/glossary" element={<Glossary />} />
                 <Route path="/adminlogin" element={<AdminLogin />} />
+                <Route path="/choose-editor" element={<ChooseEditor />} />
+                <Route
+                    path="/glossary-database"
+                    element={<GlossaryDatabase />}
+                />
+                <Route path="/laptop-database" element={<LaptopDatabase />} />
             </Routes>
         </div>
     );
