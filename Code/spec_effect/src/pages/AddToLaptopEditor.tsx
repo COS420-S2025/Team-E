@@ -177,17 +177,7 @@ const AddToLaptopDatabase = () => {
                 <button
                     type="button"
                     onClick={handleAdd}
-                    style={{
-                        padding: "1rem 2rem",
-                        backgroundColor: "#28a745",
-                        color: "white",
-                        border: "none",
-                        borderRadius: "4px",
-                        cursor: "pointer",
-                        fontSize: "1.1rem",
-                        fontWeight: "bold",
-                        marginTop: "1rem"
-                    }}
+                    className = "add-button"
                 >
                     Add Laptop
                 </button>
