@@ -26,9 +26,6 @@ function App() {
         navigate("/glossary");
     };
 
-    const goToChooseDatabase = () => {
-        navigate("/choose-database");
-    };
 
     return (
         <div className="App">
@@ -55,9 +52,6 @@ function App() {
                 </button>
                 <button className="App-headerButtonStyle" onClick={goToAbout}>
                     About
-                </button>
-                <button className="App-headerButtonStyle" onClick={goToChooseDatabase}>
-                    Choose Database
                 </button>
             </header>
             <Routes>
