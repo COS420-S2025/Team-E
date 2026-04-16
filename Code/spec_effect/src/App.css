@@ -171,9 +171,15 @@ h3 {
 #passwordInputSet {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     gap: 5px;
     font-size: 20px;
+    width: 80%;
+}
+
+#emailInputSet input,
+#passwordInputSet input {
+    width: 100%;
 }
 
 #loginButton {

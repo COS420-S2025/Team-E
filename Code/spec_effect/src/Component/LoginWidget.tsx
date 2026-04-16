@@ -25,6 +25,7 @@ const LoginWidget = () => {
                 password,
             );
             console.log("Signed in with email:", userCred.user);
+            setError("Email Sign-in successful!");
         } catch (err: any) {
             console.error(err);
             setError(err.message || "Email sign-in failed");
