@@ -1,6 +1,6 @@
 import React from 'react';
-import Purpose from '../Component/PurposeMessage';
+import PurposeMessage from '../Component/PurposeMessage';
 const About = () => {
-    return <Purpose />;
+    return <PurposeMessage />;
 };
 export default About;
