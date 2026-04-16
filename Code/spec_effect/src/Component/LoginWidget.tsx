@@ -2,12 +2,15 @@ import React, { useState } from "react";
 import { auth } from "../firebase-config";
 import { signInWithEmailAndPassword } from "firebase/auth";
 
-// This file was created by hand at first, then modified with AI to fit React and Firebase.
-// GitHub Copilot Chat Feature
+// This file was created by hand at first, then modified with AI to fit React
+// and Firebase by the GitHub Copilot Chat Feature
+
+// Once the user is able to login successfully, they will be redirected to the
+// admin panel page. This part is not implemented yet, but will be soon.
 
 const LoginWidget = () => {
-    const [email, setEmail] = useState("");
-    const [password, setPassword] = useState("");
+    const [email, setEmail] = useState<string>("");
+    const [password, setPassword] = useState<string>("");
     const [error, setError] = useState<string | null>(null);
 
     const handleEmailChange = (e: React.ChangeEvent<HTMLInputElement>) =>
