@@ -1,7 +1,8 @@
 import React, {useState, useMemo} from 'react';
+import { Routes, Route, useNavigate } from "react-router-dom";
 import SearchBar from '../Component/SearchBar'
 import { Item } from '../types';
-
+import LaptopPage from './LaptopPage';
 
 /** fluff data to test out the search bar */
 const mockData: Item[] = [
@@ -28,6 +29,13 @@ const mockData: Item[] = [
     ];
 
 const Home = () => {
+    // Creating navigation to laptop page 
+    const navigate = useNavigate();
+    
+        const goToLaptopPage = () => {
+            navigate("/laptoppage");
+        };
+    
     /** creates a variable to hold the search */
     const [searchQuery, setSearchQuery] = useState('');
 
