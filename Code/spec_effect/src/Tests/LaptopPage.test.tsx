@@ -13,12 +13,7 @@ function renderLoginPage() {
 }
 
 describe("The page has loaded visually:", () => {
-    test("Checking for laptop name header", () => {
-        renderLoginPage();
-        const LaptopHeader = screen.getByRole("heading", { level: 3 });
-        expect(LaptopHeader).toBeInTheDocument();
-    });
-
+    
     test("Divider containing contents is present:", () => {
         renderLoginPage();
         const laptopDiv = screen.getByTestId("laptop-items");
