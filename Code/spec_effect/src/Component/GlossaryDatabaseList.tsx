@@ -1,6 +1,6 @@
 import React from "react";
 import DatabaseListItem from "./DatabaseListItem";
-import { GlossaryEntry } from "../DatabaseGlossaryReader";
+import { GlossaryEntry } from "../DatabaseManager";
 
 /** keep tracks of what items are being kept by the database*/
 interface DatabaseListProps {

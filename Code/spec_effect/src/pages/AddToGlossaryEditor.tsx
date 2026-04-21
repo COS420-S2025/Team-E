@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import {GlossaryEntry} from "../DatabaseGlossaryReader";
+import {GlossaryEntry} from "../DatabaseManager";
 
 
 

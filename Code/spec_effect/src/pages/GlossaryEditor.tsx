@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import DatabaseList from "../Component/GlossaryDatabaseList";
-import { getAllEntries, GlossaryEntry } from "../DatabaseGlossaryReader";
+import { getAllGlossaryEntries, GlossaryEntry } from "../DatabaseManager";
 
 
 const GlossaryDatabase = () => {
@@ -12,7 +12,7 @@ const GlossaryDatabase = () => {
     useEffect(() => {
         const fetchGlossaryItems = async () => {
             try{
-                const entries = await getAllEntries();
+                const entries = await getAllGlossaryEntries();
                 setGlossaryItems(entries);
             } catch (error) {
                 console.error("Error fetching glossary items:", error);
