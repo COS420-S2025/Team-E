@@ -7,7 +7,7 @@ import {
 import { auth, db } from "../firebase-config";
 import "setimmediate";
 import { signInWithEmailAndPassword, signOut } from "firebase/auth";
-import { getAllGlossaryEntries, getAllLaptops } from "../DatabaseManager";
+import { getAllGlossaryEntries, getAllLaptops, getLaptopById } from "../DatabaseManager";
 
 const CI_MODE = process.env.CI_MODE === 'true';
 const testIfNotCI = CI_MODE ? test.skip : test;
@@ -72,14 +72,16 @@ describe("Ensure admins can write to database collections", () => {
 describe("Ensure that database functions work", () => {
     testIfNotCI("test getAllGlossaryEntries", async () => {
         const glossaryEntries = await getAllGlossaryEntries();
-        console.log("655234250");
         console.log(glossaryEntries);
         expect(glossaryEntries.length).toBeGreaterThan(0);
     });
     testIfNotCI("test getAllLaptops", async () => {
         const laptops = await getAllLaptops();
-        console.log("655234251");
         console.log(laptops);
         expect(laptops.length).toBeGreaterThan(0);
+    });
+    testIfNotCI("test getLaptopById", async () => {
+        const nonexistent_laptop = await getLaptopById("NONEXISTENT_ID");
+        expect(nonexistent_laptop).toBeNull();
     });
 });
