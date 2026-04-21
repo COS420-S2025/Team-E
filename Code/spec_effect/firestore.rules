@@ -38,7 +38,7 @@ service cloud.firestore {
       allow write: if isAdmin()
     }
     
-    match /laptops/{document=**} {
+    match /laptops-squashed/{document=**} {
       
       allow list: if true;
       

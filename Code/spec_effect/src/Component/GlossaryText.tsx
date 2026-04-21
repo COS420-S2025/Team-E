@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { getAllEntries, GlossaryEntry } from "../DatabaseGlossaryReader";
+import { getAllGlossaryEntries, GlossaryEntry } from "../DatabaseManager";
 
 const createAnchor = (term: string) =>
     term.toLowerCase().replace(/\s+/g, "-");
@@ -10,7 +10,7 @@ const GlossaryText = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const data = await getAllEntries();
+                const data = await getAllGlossaryEntries();
                 setGlossList(data);
             } catch (error) {
                 console.error("Error fetching glossary entries:", error);

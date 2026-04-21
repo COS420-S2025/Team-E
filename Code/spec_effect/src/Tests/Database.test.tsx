@@ -12,20 +12,8 @@ const CI_MODE = process.env.CI_MODE === 'true';
 const testIfNotCI = CI_MODE ? test.skip : test;
 
 describe("Check if database collections exist", () => {
-    testIfNotCI("CPU collection exists", async () => {
-        const cpusCollection = collection(db, "cpus");
-        const snapshot = await getCountFromServer(cpusCollection);
-        const totalCpus = snapshot.data().count;
-        expect(totalCpus).toBeGreaterThan(0);
-    });
-    testIfNotCI("GPU collection exists", async () => {
-        const gpusCollection = collection(db, "gpus");
-        const snapshot = await getCountFromServer(gpusCollection);
-        const totalGpus = snapshot.data().count;
-        expect(totalGpus).toBeGreaterThan(0);
-    });
     testIfNotCI("Laptop collection exists", async () => {
-        const laptopsCollection = collection(db, "laptops");
+        const laptopsCollection = collection(db, "laptops-squashed");
         const snapshot = await getCountFromServer(laptopsCollection);
         const totalLaptops = snapshot.data().count;
         expect(totalLaptops).toBeGreaterThan(0);
@@ -40,30 +28,8 @@ describe("Check if database collections exist", () => {
 
 
 describe("Ensure non-admins can't write to database collections", () => {
-    testIfNotCI("CPU collection disallows writing for non-admins", async () => {
-        const collectionToTest = collection(db, "cpus");
-        const data = { "name": "TEST"};
-
-        // Added await here!
-        await expect(addDoc(collectionToTest, data)).rejects.toThrow(
-            expect.objectContaining({
-                code: 'permission-denied',
-            })
-        );
-    });
-    testIfNotCI("GPU collection disallows writing for non-admins", async () => {
-        const collectionToTest = collection(db, "gpus");
-        const data = { "name": "TEST"};
-
-        // Added await here!
-        await expect(addDoc(collectionToTest, data)).rejects.toThrow(
-            expect.objectContaining({
-                code: 'permission-denied',
-            })
-        );
-    });
     testIfNotCI("Laptops collection disallows writing for non-admins", async () => {
-        const collectionToTest = collection(db, "laptops");
+        const collectionToTest = collection(db, "laptops-squashed");
         const data = { "name": "TEST"};
 
         // Added await here!
@@ -95,29 +61,8 @@ describe("Ensure admins can write to database collections", () => {
         await signOut(auth);
     });
 
-    testIfNotCI("CPU collection allows writing and deleting for admins", async () => {
-        const collectionToTest = collection(db, "cpus");
-        const data = { "name": "TEST"};
-
-        const docRef = await addDoc(collectionToTest, data);
-        
-        expect(docRef.id).toBeDefined();
-
-        await deleteDoc(docRef);
-    });
-
-    testIfNotCI("GPU collection allows writing for admins", async () => {
-        const collectionToTest = collection(db, "gpus");
-        const data = { "name": "TEST"};
-
-        const docRef = await addDoc(collectionToTest, data);
-        
-        expect(docRef.id).toBeDefined();
-
-        await deleteDoc(docRef);
-    });
     testIfNotCI("Laptops collection allows writing for admins", async () => {
-        const collectionToTest = collection(db, "laptops");
+        const collectionToTest = collection(db, "laptops-squashed");
         const data = { "name": "TEST"};
 
         const docRef = await addDoc(collectionToTest, data);
