@@ -1,4 +1,5 @@
 import React from 'react';
+
 const LaptopPage = () => {
     return (<div>
         <h2>Laptop Name Here</h2>
