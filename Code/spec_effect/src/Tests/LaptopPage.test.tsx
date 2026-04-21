@@ -13,7 +13,6 @@ function renderLoginPage() {
 }
 
 describe("The page has loaded visually:", () => {
-
     test("Divider containing contents is present:", () => {
         renderLoginPage();
         const laptopDiv = screen.getByTestId("laptop-items");
