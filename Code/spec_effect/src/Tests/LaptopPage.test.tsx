@@ -15,13 +15,19 @@ function renderLoginPage() {
 describe("The page has loaded visually:", () => {
     test("Checking for laptop name header", () => {
         renderLoginPage();
-        const LaptopHeader = screen.getByRole("heading", { level: 2 });
+        const LaptopHeader = screen.getByRole("heading", { level: 3 });
         expect(LaptopHeader).toBeInTheDocument();
     });
 
     test("Divider containing contents is present:", () => {
         renderLoginPage();
-        const laptopDiv = screen.getByTestId("laptop-items-here");
+        const laptopDiv = screen.getByTestId("laptop-items");
         expect(laptopDiv).toBeInTheDocument();
+    });
+
+    test("Text within GlossaryText component is present:", () => {
+        renderLoginPage();
+        const lapPageWords = screen.getByText(/Specs/i);
+        expect(lapPageWords).toBeInTheDocument();
     });
 });
