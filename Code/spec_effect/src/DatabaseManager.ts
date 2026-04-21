@@ -1,5 +1,7 @@
 import {
   collection,
+  doc,
+  getDoc,
   getDocs,
   limit,
   query,
@@ -102,4 +104,17 @@ export async function getAllLaptops(): Promise<Laptop[]> {
   const items = querySnapshot.docs.map((doc) => doc.data());
 
   return items;
+}
+
+export async function getLaptopById(id: string): Promise<Laptop | null> {
+  const docRef = doc(db, "laptops-squashed", id).withConverter(laptopConverter);
+
+
+  const docSnap = await getDoc(docRef)
+
+  if (docSnap.exists())
+  {
+    return docSnap.data();
+  }
+  return null;
 }
