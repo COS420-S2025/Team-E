@@ -72,7 +72,7 @@ const laptopConverter = {
       cpuCoreCount: data.cpuCoreCount,
       cpuBenchmarkSingleThread: data.cpuBenchmarkSingleThread,
       cpuBenchmarkMultiThread: data.cpuBenchmarkMultiThread,
-      gpuName: data.gpuName,
+      gpuName: data.gpuName ?? "",
       gpuVramMb: data.gpuVramMb,
       gpuBenchmark2d: data.gpuBenchmark2d,
       gpuBenchmark3d: data.gpuBenchmark3d
