@@ -72,12 +72,10 @@ describe("Ensure admins can write to database collections", () => {
 describe("Ensure that database functions work", () => {
     testIfNotCI("test getAllGlossaryEntries", async () => {
         const glossaryEntries = await getAllGlossaryEntries();
-        console.log(glossaryEntries);
         expect(glossaryEntries.length).toBeGreaterThan(0);
     });
     testIfNotCI("test getAllLaptops", async () => {
         const laptops = await getAllLaptops();
-        console.log(laptops);
         expect(laptops.length).toBeGreaterThan(0);
     });
     testIfNotCI("test getLaptopById", async () => {
