@@ -7,24 +7,10 @@ import {
 import { auth, db } from "../firebase-config";
 import "setimmediate";
 import { signInWithEmailAndPassword, signOut } from "firebase/auth";
+import { getAllGlossaryEntries, getAllLaptops } from "../DatabaseManager";
 
 const CI_MODE = process.env.CI_MODE === 'true';
 const testIfNotCI = CI_MODE ? test.skip : test;
-
-describe("Check if database collections exist", () => {
-    testIfNotCI("Laptop collection exists", async () => {
-        const laptopsCollection = collection(db, "laptops-squashed");
-        const snapshot = await getCountFromServer(laptopsCollection);
-        const totalLaptops = snapshot.data().count;
-        expect(totalLaptops).toBeGreaterThan(0);
-    });
-    testIfNotCI("Glossary collection exists", async () => {
-        const glossaryCollection = collection(db, "glossary");
-        const snapshot = await getCountFromServer(glossaryCollection);
-        const totalGlossaryItems = snapshot.data().count;
-        expect(totalGlossaryItems).toBeGreaterThan(0);
-    });
-});
 
 
 describe("Ensure non-admins can't write to database collections", () => {
@@ -80,5 +66,20 @@ describe("Ensure admins can write to database collections", () => {
         expect(docRef.id).toBeDefined();
 
         await deleteDoc(docRef);
+    });
+});
+
+describe("Ensure that database functions work", () => {
+    testIfNotCI("test getAllGlossaryEntries", async () => {
+        const glossaryEntries = await getAllGlossaryEntries();
+        console.log("655234250");
+        console.log(glossaryEntries);
+        expect(glossaryEntries.length).toBeGreaterThan(0);
+    });
+    testIfNotCI("test getAllLaptops", async () => {
+        const laptops = await getAllLaptops();
+        console.log("655234251");
+        console.log(laptops);
+        expect(laptops.length).toBeGreaterThan(0);
     });
 });

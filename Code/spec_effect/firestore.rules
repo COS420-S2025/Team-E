@@ -13,20 +13,20 @@ service cloud.firestore {
 
     match /cpus/{document=**} {
       
-      allow list: if true;
-      
-      allow read: if (request.auth != null || request.query.limit <= 20);
+      allow list: if (request.auth != null && isAdmin()) || request.query.limit <= 20;
+  
+      allow get: if true; 
       
       allow write: if isAdmin();
     }
     
     match /gpus/{document=**} {
     
-      allow list: if true;
+      allow list: if (request.auth != null && isAdmin()) || request.query.limit <= 20;
+  
+      allow get: if true; 
       
-      allow read: if (request.auth != null || request.query.limit <= 20);
-      
-      allow write: if isAdmin()
+      allow write: if isAdmin();
     }
     
     match /glossary/{document=**} {
@@ -40,11 +40,11 @@ service cloud.firestore {
     
     match /laptops-squashed/{document=**} {
       
-      allow list: if true;
+      allow list: if (request.auth != null && isAdmin()) || request.query.limit <= 20;
+  
+      allow get: if true; 
       
-      allow read: if (request.auth != null || request.query.limit <= 20);
-      
-      allow write: if isAdmin()
+      allow write: if isAdmin();
     }
     
     match /glossary/{document=**} {
