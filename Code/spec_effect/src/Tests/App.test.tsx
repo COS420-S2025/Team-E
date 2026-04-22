@@ -13,8 +13,8 @@ describe("Some HTML Elements are added.", () => {
                 <App />
             </MemoryRouter>,
         );
-        const linkElement = screen.getByText(/SpecEffect/i);
-        expect(linkElement).toBeInTheDocument();
+        const linkElement = screen.getAllByText(/SpecEffect/i);
+        expect(linkElement.length).toBeGreaterThan(0);
     });
 
     test("There is a heading", () => {

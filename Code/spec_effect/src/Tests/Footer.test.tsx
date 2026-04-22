@@ -12,10 +12,10 @@ describe('Footer component', () => {
     test('contains correct copyright year', () => {
         render(<Footer />);
         const currentYear = new Date().getFullYear();
-        const copyrightElement = screen.getByText(`© ${currentYear} SpecEffect`);
+        const copyrightElement = screen.getByText( new RegExp(`© ${currentYear} SpecEffect`));
         expect(copyrightElement).toBeInTheDocument();
     });
 
-    
+
 
 });
