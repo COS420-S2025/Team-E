@@ -9,6 +9,7 @@ import AdminLogin from "./pages/AdminLogin";
 import ChooseEditor from "./pages/ChooseEditor";
 import GlossaryDatabase from "./pages/GlossaryEditor";
 import LaptopDatabase from "./pages/LaptopEditor";
+import LaptopPage from "./pages/LaptopPage";
 import AddToGlossaryDatabase from "./pages/AddToGlossaryEditor";
 import AddToLaptopDatabase from "./pages/AddToLaptopEditor";
 
@@ -75,6 +76,7 @@ function App() {
                     element={<GlossaryDatabase />}
                 />
                 <Route path="/laptop-database" element={<LaptopDatabase />} />
+                <Route path="/LaptopPage" element={<LaptopPage />} />
                 <Route path="/AddToGlossaryDatabase" element={<AddToGlossaryDatabase />} />
                 <Route path="/AddToLaptopDatabase" element={<AddToLaptopDatabase />} />
             </Routes>

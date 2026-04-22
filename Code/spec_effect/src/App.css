@@ -149,6 +149,15 @@ h3 {
     margin-top: 1rem;
 }
 
+.search-entry-button {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    font-size: 20px;
+    border: None;
+    background: none;
+    text-align: left;
+}
+
 @keyframes App-logo-spin {
     from {
         transform: rotate(0deg);

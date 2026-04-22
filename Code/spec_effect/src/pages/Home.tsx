@@ -1,7 +1,7 @@
 import React, {useState, useMemo} from 'react';
+import { useNavigate } from "react-router-dom";
 import SearchBar from '../Component/SearchBar'
 import { Item } from '../types';
-
 
 /** fluff data to test out the search bar */
 const mockData: Item[] = [
@@ -28,6 +28,13 @@ const mockData: Item[] = [
     ];
 
 const Home = () => {
+    // Creating navigation to laptop page 
+    const navigate = useNavigate();
+    
+        const goToLaptopPage = () => {
+            navigate("/LaptopPage");
+        };
+    
     /** creates a variable to hold the search */
     const [searchQuery, setSearchQuery] = useState('');
 
@@ -52,7 +59,11 @@ const Home = () => {
                         <SearchBar onSearch= {handleSearch}/>
                     </div>
                     <div className="scroll-box" data-testid="catalogDiv" style={{textAlign: 'left'}}>
-                        {filteredItems.map(item => (<li key={item.id} className="py-1" style={{fontSize: '20px'}}>{item.name}</li>))}
+                        {filteredItems.map(item => (<li key={item.id}> 
+                            <button className="search-entry-button" onClick={goToLaptopPage}>
+                                {item.name}
+                            </button>
+                        </li>))}
 
                         {filteredItems.length === 0 && searchQuery && <p>No result found for {searchQuery}</p>}
                     </div>

@@ -78,6 +78,16 @@ describe("Basic page navigation works", () => {
         expect(element).toBeInTheDocument();
     });
 
+    test("Clicking a laptop name changes to laptop page.", async () => {
+        renderFullApp();
+        const laptopEntry = screen.getByRole("button", {
+            name: /HP 15s-er1501AU/i
+        });
+        await userEvent.click(laptopEntry);
+        const element: HTMLElement = await screen.findByText(/Laptop Name Here/i);
+        expect(element).toBeInTheDocument();
+    });
+
     test("Clicking to another screen, then clicking back to home return to home.", () => {
         renderFullApp();
         const aboutButton = screen.getByRole("button", {
