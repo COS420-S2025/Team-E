@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import seLogo from "./Images/SpecEffect_Logo.png";
-import { Routes, Route, useNavigate } from "react-router-dom";
+import { Routes, Route} from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Glossary from "./pages/Glossary";
@@ -12,26 +12,13 @@ import LaptopDatabase from "./pages/LaptopEditor";
 import LaptopPage from "./pages/LaptopPage";
 import AddToGlossaryDatabase from "./pages/AddToGlossaryEditor";
 import AddToLaptopDatabase from "./pages/AddToLaptopEditor";
+import NavBar from "./Component/NavBar";
 
 
 function App() {
-    const navigate = useNavigate();
+    
 
-    const goToAbout = () => {
-        navigate("/about");
-    };
-
-    const goToHome = () => {
-        navigate("/");
-    };
-
-    const goToGlossary = () => {
-        navigate("/glossary");
-    };
-
-    const goToAdminLogin = () => {
-        navigate("/adminlogin");
-    };
+    
 
     return (
         <div className="App">
@@ -48,22 +35,7 @@ function App() {
                 SpecEffect
             </header>
             <header className="App-subHeader">
-                <button className="App-headerButtonStyle" onClick={goToHome}>
-                    Home
-                </button>
-                <button
-                    className="App-headerButtonStyle"
-                    onClick={goToGlossary}>
-                    Glossary
-                </button>
-                <button className="App-headerButtonStyle" onClick={goToAbout}>
-                    About
-                </button>
-                <button
-                    className="App-headerButtonStyle"
-                    onClick={goToAdminLogin}>
-                    Admin Login
-                </button>
+                <NavBar />
             </header>
             <Routes>
                 <Route path="/" element={<Home />} />
