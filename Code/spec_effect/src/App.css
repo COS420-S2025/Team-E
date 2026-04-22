@@ -240,3 +240,14 @@ h3 {
     border-radius: 5px;
     color: white;
 }
+
+.glossDef {
+    padding: 0 0 20px 0;
+}
+
+.glossDef p {
+    text-indent: 30px;
+}
+.glossDef h3 {
+    font-size: 30px;
+}
