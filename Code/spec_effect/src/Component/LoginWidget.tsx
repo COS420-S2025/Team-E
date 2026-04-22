@@ -5,9 +5,8 @@ import { useNavigate } from "react-router-dom";
 
 // This file was created by hand at first, then modified with AI to fit React
 // and Firebase by the GitHub Copilot Chat Feature
-
-// Once the user is able to login successfully, they will be redirected to the
-// admin panel page. This part is not implemented yet, but will be soon.
+// “Rewrite the attatched file to properly use React components and state...”
+// Github Copilot, 2026 Feb. version, Github, github.com/features/copilot. Accessed 21 Apr. 2026.
 
 const LoginWidget = () => {
     const navigate = useNavigate();
@@ -31,7 +30,6 @@ const LoginWidget = () => {
                 password,
             );
             console.log("Signed in with email:", userCred.user);
-            setError("Email Sign-in successful!");
             navigate("/choose-editor");
         } catch (err: any) {
             console.error(err);

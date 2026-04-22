@@ -3,6 +3,7 @@ import { render, screen } from "@testing-library/react";
 import { MemoryRouter } from "react-router-dom";
 import AdminLogin from "../pages/AdminLogin";
 import userEvent from "@testing-library/user-event";
+import { exp } from "firebase/firestore/pipelines";
 
 function renderLoginPage() {
     render(
@@ -64,17 +65,27 @@ describe("The page is functional.", () => {
         const emailInp = screen.getByLabelText(/Email:/i) as HTMLInputElement;
         const passInp = screen.getByLabelText(/Password:/i) as HTMLInputElement;
         const loginButton = screen.getByRole("button", { name: /Login/i });
-        emailInp.value = "test@example.com";
-        passInp.value = "wrongpassword";
+        await userEvent.type(emailInp, "test@example.com");
+        // emailInp.value = "test@example.com";
+        await userEvent.type(passInp, "wrongpassword");
+        // passInp.value = "wrongpassword";
         await userEvent.click(loginButton);
+        expect(
+            await screen.findByText(/Admin Login Page/i),
+        ).toBeInTheDocument();
     });
-    test("Displays success message on successful login", async () => {
+    test("Route to new page on successful login", async () => {
         renderLoginPage();
         const emailInp = screen.getByLabelText(/Email:/i) as HTMLInputElement;
         const passInp = screen.getByLabelText(/Password:/i) as HTMLInputElement;
         const loginButton = screen.getByRole("button", { name: /Login/i });
-        emailInp.value = "admin@test.com";
-        passInp.value = "password";
+        await userEvent.type(emailInp, "test@example.com");
+        // emailInp.value = "admin@test.com";
+        await userEvent.type(passInp, "password");
+        // passInp.value = "password";
         await userEvent.click(loginButton);
+        expect(
+            await screen.findByText(/Choose a Database/i),
+        ).toBeInTheDocument();
     });
 });
