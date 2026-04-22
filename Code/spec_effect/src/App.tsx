@@ -36,7 +36,7 @@ function App() {
             </header>
             <header className="App-subHeader">
                 <NavBar />
-            </header>
+            </header>            
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
