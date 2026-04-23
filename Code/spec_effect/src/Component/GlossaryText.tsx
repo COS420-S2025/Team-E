@@ -24,20 +24,16 @@ const GlossaryText = () => {
     return (
         <div style={{ textAlign: "left" }}>
             <h3 style={{ fontSize: "40px" }}>Table of Contents:</h3>
-            <div className="App-row">
-                <div
-                    className="App-colBox"
-                    style={{ width: "50vw", textAlign: "left" }}>
-                    <ul>
-                        {glossList.map((item) => (
-                            <li key={item.id}>
-                                <a href={`#${createAnchor(item.term)}`}>
-                                    {item.term}
-                                </a>
-                            </li>
-                        ))}
-                    </ul>
-                </div>
+            <div className="" style={{ width: "50vw", textAlign: "left" }}>
+                <ul>
+                    {glossList.map((item) => (
+                        <li key={item.id}>
+                            <a href={`#${createAnchor(item.term)}`}>
+                                {item.term}
+                            </a>
+                        </li>
+                    ))}
+                </ul>
             </div>
             <div style={{ marginTop: "2rem" }}>
                 {glossList.map((item) => (
