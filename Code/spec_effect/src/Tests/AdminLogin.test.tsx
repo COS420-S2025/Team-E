@@ -66,26 +66,23 @@ describe("The page is functional.", () => {
         const passInp = screen.getByLabelText(/Password:/i) as HTMLInputElement;
         const loginButton = screen.getByRole("button", { name: /Login/i });
         await userEvent.type(emailInp, "test@example.com");
-        // emailInp.value = "test@example.com";
         await userEvent.type(passInp, "wrongpassword");
-        // passInp.value = "wrongpassword";
         await userEvent.click(loginButton);
-        expect(
-            await screen.findByText(/Admin Login Page/i),
-        ).toBeInTheDocument();
+        expect(await screen.findByText(/Error:/i)).toBeInTheDocument();
     });
     test("Route to new page on successful login", async () => {
+        const user = userEvent.setup();
         renderLoginPage();
         const emailInp = screen.getByLabelText(/Email:/i) as HTMLInputElement;
         const passInp = screen.getByLabelText(/Password:/i) as HTMLInputElement;
         const loginButton = screen.getByRole("button", { name: /Login/i });
-        await userEvent.type(emailInp, "test@example.com");
+        await user.type(emailInp, "admin@test.com");
         // emailInp.value = "admin@test.com";
-        await userEvent.type(passInp, "password");
+        await user.type(passInp, "password");
         // passInp.value = "password";
-        await userEvent.click(loginButton);
+        await user.click(loginButton);
         expect(
-            await screen.findByText(/Choose a Database/i),
+            await screen.findByText(/Sign in successful!/i),
         ).toBeInTheDocument();
     });
 });

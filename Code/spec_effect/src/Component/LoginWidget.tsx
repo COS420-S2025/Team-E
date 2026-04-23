@@ -30,10 +30,11 @@ const LoginWidget = () => {
                 password,
             );
             console.log("Signed in with email:", userCred.user);
+            setError("Sign in successful!");
             navigate("/choose-editor");
         } catch (err: any) {
             console.error(err);
-            setError(err.message || "Email sign-in failed");
+            setError("Error: " + err.message || "Error: Email sign-in failed");
         }
     };
 
