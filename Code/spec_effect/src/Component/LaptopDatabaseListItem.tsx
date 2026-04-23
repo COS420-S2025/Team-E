@@ -1,8 +1,9 @@
 import React from "react";
+import {Laptop} from "../DatabaseManager";
 
 /**made a object to store the name of the item being shown by the database */
 interface DatabaseListItemProps {
-    item: string;
+    item: Laptop;
     onRemove: (item: string) => void;
 }
 
@@ -22,10 +23,10 @@ const DatabaseListItem: React.FC<DatabaseListItemProps> = ({ item, onRemove }) =
             }}
         >
             <span style={{ fontSize: "1.1rem", fontWeight: "500" }}>
-                {item}
+                {item.name}
             </span>
             <button
-                onClick={() => onRemove(item)}
+                onClick={() => onRemove(item.id)}
                 style={{
                     padding: "0.5rem 1rem",
                     backgroundColor: "#dc3545",

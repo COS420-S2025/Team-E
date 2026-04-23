@@ -17,8 +17,8 @@ const DatabaseList: React.FC<DatabaseListProps> = ({ items, onRemove, emptyMessa
                 <p>{emptyMessage}</p>
             ) : (
                 <ul style={{ listStyle: "none", padding: 0 }}>
-                    {items.map((item, index) => (
-                        <DatabaseListItem key={index} item={item.name} onRemove={onRemove} />
+                    {items.map((item) => (
+                        <DatabaseListItem key={item.id} item={item} onRemove={onRemove} />
                     ))}
                 </ul>
             )}

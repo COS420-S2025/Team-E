@@ -46,6 +46,7 @@ const GlossaryDatabase = () => {
     /**shows a button to add a new glossary term, and the list of existing terms */
     return (
         <div style={{ padding: "2rem" }}>
+            <button onClick={() => navigate(-1)} style={{ display: 'block', marginRight: 'auto'}}>Go Back</button>
             <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "2rem" }}>
                 <h1>Glossary Database</h1>
                 <button
