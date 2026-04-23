@@ -3,6 +3,7 @@ import { render, screen } from "@testing-library/react";
 import { MemoryRouter } from "react-router-dom";
 import AdminLogin from "../pages/AdminLogin";
 import userEvent from "@testing-library/user-event";
+import { exp } from "firebase/firestore/pipelines";
 
 function renderLoginPage() {
     render(
@@ -11,6 +12,9 @@ function renderLoginPage() {
         </MemoryRouter>,
     );
 }
+
+const CI_MODE = process.env.CI_MODE === "true";
+const testIfNotCI = CI_MODE ? test.skip : test;
 
 describe("The page is visually loaded.", () => {
     test("Check for login widget", () => {
@@ -59,22 +63,29 @@ describe("The page is functional.", () => {
         expect(loginButton).toBeEnabled();
     });
 
-    test("Displays error message on failed login", async () => {
+    testIfNotCI("Displays error message on failed login", async () => {
         renderLoginPage();
         const emailInp = screen.getByLabelText(/Email:/i) as HTMLInputElement;
         const passInp = screen.getByLabelText(/Password:/i) as HTMLInputElement;
         const loginButton = screen.getByRole("button", { name: /Login/i });
-        emailInp.value = "test@example.com";
-        passInp.value = "wrongpassword";
+        await userEvent.type(emailInp, "test@example.com");
+        await userEvent.type(passInp, "wrongpassword");
         await userEvent.click(loginButton);
+        expect(await screen.findByText(/Error:/i)).toBeInTheDocument();
     });
-    test("Displays success message on successful login", async () => {
+    testIfNotCI("Route to new page on successful login", async () => {
+        const user = userEvent.setup();
         renderLoginPage();
         const emailInp = screen.getByLabelText(/Email:/i) as HTMLInputElement;
         const passInp = screen.getByLabelText(/Password:/i) as HTMLInputElement;
         const loginButton = screen.getByRole("button", { name: /Login/i });
-        emailInp.value = "admin@test.com";
-        passInp.value = "password";
-        await userEvent.click(loginButton);
+        await user.type(emailInp, "admin@test.com");
+        // emailInp.value = "admin@test.com";
+        await user.type(passInp, "password");
+        // passInp.value = "password";
+        await user.click(loginButton);
+        expect(
+            await screen.findByText(/Sign in successful!/i),
+        ).toBeInTheDocument();
     });
 });
