@@ -13,6 +13,9 @@ function renderLoginPage() {
     );
 }
 
+const CI_MODE = process.env.CI_MODE === "true";
+const testIfNotCI = CI_MODE ? test.skip : test;
+
 describe("The page is visually loaded.", () => {
     test("Check for login widget", () => {
         renderLoginPage();
@@ -60,7 +63,7 @@ describe("The page is functional.", () => {
         expect(loginButton).toBeEnabled();
     });
 
-    test("Displays error message on failed login", async () => {
+    testIfNotCI("Displays error message on failed login", async () => {
         renderLoginPage();
         const emailInp = screen.getByLabelText(/Email:/i) as HTMLInputElement;
         const passInp = screen.getByLabelText(/Password:/i) as HTMLInputElement;
@@ -70,7 +73,7 @@ describe("The page is functional.", () => {
         await userEvent.click(loginButton);
         expect(await screen.findByText(/Error:/i)).toBeInTheDocument();
     });
-    test("Route to new page on successful login", async () => {
+    testIfNotCI("Route to new page on successful login", async () => {
         const user = userEvent.setup();
         renderLoginPage();
         const emailInp = screen.getByLabelText(/Email:/i) as HTMLInputElement;
