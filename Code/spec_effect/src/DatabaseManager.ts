@@ -4,11 +4,13 @@ import {
   getDoc,
   getDocs,
   limit,
+  Query,
   query,
   QueryDocumentSnapshot,
   SnapshotOptions,
 } from "firebase/firestore";
 import { db } from "./firebase-config"; // Your initialized Firestore instance
+import { LaptopFilter } from "./LaptopFilter";
 
 export interface GlossaryEntry {
   id: string;
@@ -98,6 +100,26 @@ export async function getAllLaptops(): Promise<Laptop[]> {
   );
 
   const q = query(colRef, limit(20));
+
+  const querySnapshot = await getDocs(q);
+
+  const items = querySnapshot.docs.map((doc) => doc.data());
+
+  return items;
+}
+
+export async function searchLaptopsWithFilters(laptopFilters: LaptopFilter[]): Promise<Laptop[]> {
+  const colRef = collection(db, "laptops-squashed").withConverter(
+    laptopConverter,
+  );
+
+  let q: Query<Laptop> = query(colRef) as Query<Laptop>;;
+
+  laptopFilters.forEach(filter => {
+    q = filter.queryModifier(q);
+  });
+
+  q = query(q, limit(20));
 
   const querySnapshot = await getDocs(q);
 
