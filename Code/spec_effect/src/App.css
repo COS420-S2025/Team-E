@@ -143,7 +143,7 @@ h3 {
     padding: 20px;
 }
 
-.footer-links{
+.footer-links {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -250,4 +250,16 @@ h3 {
 }
 .glossDef h3 {
     font-size: 30px;
+}
+
+#returnToTopGlos {
+    background-color: #675ec7;
+    height: 75px;
+    width: 75px;
+    border-radius: 40px;
+    font-size: 50px;
+    color: rgb(212, 212, 212);
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
 }
