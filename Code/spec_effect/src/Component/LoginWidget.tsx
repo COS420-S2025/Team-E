@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 
 // This file was created by hand at first, then modified with AI to fit React
 // and Firebase by the GitHub Copilot Chat Feature
+
 // “Rewrite the attatched file to properly use React components and state...”
 // Github Copilot, 2026 Feb. version, Github, github.com/features/copilot. Accessed 21 Apr. 2026.
 
