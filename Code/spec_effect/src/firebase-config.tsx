@@ -18,7 +18,7 @@ const db = getFirestore(app);
 const auth  = getAuth(app);
 
 // connect to emulator if in a test
-if (process.env.NODE_ENV === 'test') {
+if (process.env.NODE_ENV === 'test' || process.env.REACT_APP_USE_REAL_DATABASE !== 'true') {
     connectFirestoreEmulator(db, '127.0.0.1', 8080);
     connectAuthEmulator(auth, "http://127.0.0.1:9099");
 }
