@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import FormField from "../Component/FormField";
-import { Laptop } from "../DatabaseManager";
-import {collection, addDoc} from "firebase/firestore";
-import { db } from "../firebase-config";
+import { Laptop, addLaptopEntry } from "../DatabaseManager";
 
 
 /**stores the laptop inputs */
@@ -42,26 +40,7 @@ const AddToLaptopDatabase = () => {
 
     const handleAdd = async () => {
         //add database function here
-        try {
-            const docRef = await addDoc(collection(db, "laptops-squashed"), {
-                name: formData.name,
-                priceCents: formData.priceCents,
-                memoryGb: formData.memoryGb,
-                storageType: formData.storageType,
-                storageCapacityGb: formData.storageCapacityGb,
-                cpuName: formData.cpuName,
-                cpuCoreCount: formData.cpuCoreCount,
-                cpuBenchmarkSingleThread: formData.cpuBenchmarkSingleThread,
-                cpuBenchmarkMultiThread: formData.cpuBenchmarkMultiThread,
-                gpuName: formData.gpuName,
-                gpuVramMb: formData.gpuVramMb,
-                gpuBenchmark3d: formData.gpuBenchmark3d,
-                gpuBenchmark2d: formData.gpuBenchmark2d
-            });
-            console.log("Document written with ID: ", docRef.id);
-        } catch (e) {
-            console.error("Error adding document: ", e);
-        }
+        addLaptopEntry(formData);
         navigate("/laptop-database");
     };
 

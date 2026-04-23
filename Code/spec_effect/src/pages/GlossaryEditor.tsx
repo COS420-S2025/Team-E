@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import DatabaseList from "../Component/GlossaryDatabaseList";
-import { getAllGlossaryEntries, GlossaryEntry } from "../DatabaseManager";
-import {db} from "../firebase-config";
-import { doc, deleteDoc } from "firebase/firestore";
+import { getAllGlossaryEntries, GlossaryEntry, deleteGlossaryEntry } from "../DatabaseManager";
 
 
 const GlossaryDatabase = () => {
@@ -32,13 +30,9 @@ const GlossaryDatabase = () => {
 
     /**probably will change this to do it on the database side */
     const handleRemove = async (id: string) => {
-        try {
-            const docRef = doc(db, "glossary", id);
-
-            await deleteDoc(docRef);
-            console.log("Document with ID ", id, " deleted successfully.");
-        } catch (error) {
-            console.error("Error deleting document with ID ", id, ": ", error);
+        const success = await deleteGlossaryEntry(id);
+        if (success){
+            console.log("Laptop entry with ID ", id, " deleted successfully.");
         }
         navigate(0);
     };
@@ -46,7 +40,7 @@ const GlossaryDatabase = () => {
     /**shows a button to add a new glossary term, and the list of existing terms */
     return (
         <div style={{ padding: "2rem" }}>
-            <button onClick={() => navigate(-1)} style={{ display: 'block', marginRight: 'auto'}}>Go Back</button>
+            <button onClick={() => navigate("/choose-editor")} style={{ display: 'block', marginRight: 'auto'}}>Go Back</button>
             <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "2rem" }}>
                 <h1>Glossary Database</h1>
                 <button
