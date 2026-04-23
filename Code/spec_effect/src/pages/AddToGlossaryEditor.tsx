@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import {GlossaryEntry} from "../DatabaseManager";
+import {collection, addDoc} from "firebase/firestore";
+import { db } from "../firebase-config";
 
 
 
@@ -24,8 +26,17 @@ const AddToGlossaryDatabase = () => {
     };
 
 
-    const handleAdd = () => {
+    const handleAdd = async () => {
         //add the datbase function here
+        try {
+            const docRef = await addDoc(collection(db, "glossary"), {
+                term: formData.term,
+                definition: formData.definition
+            });
+            console.log("Document written with ID: ", docRef.id);
+        } catch (e) {
+            console.error("Error adding document: ", e);
+        }
         navigate("/glossary-database");
     };
 

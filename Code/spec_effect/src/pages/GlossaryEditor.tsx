@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import DatabaseList from "../Component/GlossaryDatabaseList";
 import { getAllGlossaryEntries, GlossaryEntry } from "../DatabaseManager";
+import {db} from "../firebase-config";
+import { doc, deleteDoc } from "firebase/firestore";
 
 
 const GlossaryDatabase = () => {
@@ -29,8 +31,16 @@ const GlossaryDatabase = () => {
     };
 
     /**probably will change this to do it on the database side */
-    const handleRemove = (item: string) => {
-        setGlossaryItems(glossaryItems.filter((glossary) => glossary.term !== item));
+    const handleRemove = async (id: string) => {
+        try {
+            const docRef = doc(db, "glossary", id);
+
+            await deleteDoc(docRef);
+            console.log("Document with ID ", id, " deleted successfully.");
+        } catch (error) {
+            console.error("Error deleting document with ID ", id, ": ", error);
+        }
+        navigate(0);
     };
 
     /**shows a button to add a new glossary term, and the list of existing terms */

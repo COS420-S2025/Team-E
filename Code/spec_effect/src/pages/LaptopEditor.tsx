@@ -1,11 +1,25 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import DatabaseList from "../Component/LaptopDatabaseList";
+import { getAllLaptops, Laptop } from "../DatabaseManager";
+
 
 const LaptopDatabase = () => {
     const navigate = useNavigate();
     /**This will store the list of laptop database items currently shown to the client */
-    const [laptopItems, setLaptopItems] = useState(["Dell XPS 13", "MacBook Pro", "HP Pavilion", "Lenovo ThinkPad"]);
+    const [laptopItems, setLaptopItems] = useState<Laptop[]>([]);
+
+    useEffect(() => {
+        const fetchLaptopItems = async () => {
+            try{
+                const entries = await getAllLaptops();
+                setLaptopItems(entries);
+            } catch (error) {
+                console.error("Error fetching laptop items:", error);
+            }
+        };
+        fetchLaptopItems();
+    }, []);
 
     /**moves to the add page */
     const handleAddLaptop = () => {
@@ -14,7 +28,7 @@ const LaptopDatabase = () => {
 
     /**removes, but probably have to be changed to do it on the database side */
     const handleRemove = (item: string) => {
-        setLaptopItems(laptopItems.filter((laptop) => laptop !== item));
+        setLaptopItems(laptopItems.filter((laptop) => laptop.name !== item));
     };
 
     /**shows a button to add a new laptop, and the list of existing laptops */

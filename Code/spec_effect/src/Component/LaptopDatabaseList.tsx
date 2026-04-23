@@ -1,9 +1,10 @@
 import React from "react";
-import DatabaseListItem from "./DatabaseListItem";
+import DatabaseListItem from "./LaptopDatabaseListItem";
+import { Laptop } from "../DatabaseManager";
 
 /** keep tracks of what items are being kept by the database*/
 interface DatabaseListProps {
-    items: string[];
+    items: Laptop[];
     onRemove: (item: string) => void;
     emptyMessage?: string;
 }
@@ -17,7 +18,7 @@ const DatabaseList: React.FC<DatabaseListProps> = ({ items, onRemove, emptyMessa
             ) : (
                 <ul style={{ listStyle: "none", padding: 0 }}>
                     {items.map((item, index) => (
-                        <DatabaseListItem key={index} item={item} onRemove={onRemove} />
+                        <DatabaseListItem key={index} item={item.name} onRemove={onRemove} />
                     ))}
                 </ul>
             )}
