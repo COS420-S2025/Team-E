@@ -4,7 +4,7 @@ import userEvent from "@testing-library/user-event";
 import { MemoryRouter } from "react-router-dom";
 import Glossary from "../pages/Glossary";
 
-const CI_MODE = process.env.CI_MODE === 'true';
+const CI_MODE = process.env.CI_MODE === "true";
 const testIfNotCI = CI_MODE ? test.skip : test;
 
 describe("Checking that certain elements are present.", () => {
@@ -39,16 +39,43 @@ describe("Checking that certain elements are present.", () => {
     });
 });
 
-testIfNotCI("Clicking a link updates the URL hash (requires database):", async () => {
-    render(
-        <MemoryRouter>
-            <Glossary />
-        </MemoryRouter>,
-    );
-    
-    const cpuLink = await screen.findByRole("link", { name: "RAM" });
+testIfNotCI(
+    "Clicking a link updates the URL hash (requires database):",
+    async () => {
+        render(
+            <MemoryRouter>
+                <Glossary />
+            </MemoryRouter>,
+        );
 
-    await userEvent.click(cpuLink);
+        const cpuLink = await screen.findByRole("link", { name: "RAM" });
 
-    expect(window.location.hash).toBe("#ram");
+        await userEvent.click(cpuLink);
+
+        expect(window.location.hash).toBe("#ram");
+    },
+);
+
+describe("Checking that the return to top button is present and functional.", () => {
+    test("Return to top button is present:", () => {
+        render(
+            <MemoryRouter>
+                <Glossary />
+            </MemoryRouter>,
+        );
+        const returnToTopButton = screen.getByText(/⬆/i);
+        expect(returnToTopButton).toBeInTheDocument();
+    });
+
+    test("Clicking the return to top button scrolls to the top:", () => {
+        render(
+            <MemoryRouter>
+                <Glossary />
+            </MemoryRouter>,
+        );
+        window.scrollTo(0, 1000);
+        const returnToTopButton = screen.getByText(/⬆/i);
+        userEvent.click(returnToTopButton);
+        expect(window.scrollY).toBe(0);
+    });
 });
