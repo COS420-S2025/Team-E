@@ -8,6 +8,7 @@ import {
   query,
   QueryDocumentSnapshot,
   SnapshotOptions,
+  where,
 } from "firebase/firestore";
 import { db } from "./firebase-config"; // Your initialized Firestore instance
 import { LaptopFilter } from "./LaptopFilter";
@@ -139,4 +140,13 @@ export async function getLaptopById(id: string): Promise<Laptop | null> {
     return docSnap.data();
   }
   return null;
+}
+
+export function createSearchTermFilter(searchText: string)
+{
+  const searchFilter = {name: "searchText", queryModifier: (q: Query<Laptop>): Query<Laptop> => {
+            q = query(q, where("name", ">=", searchText), where("name", "<", searchText + "\uf8ff"));
+            return q;
+        }} as LaptopFilter;
+  return searchFilter;
 }
