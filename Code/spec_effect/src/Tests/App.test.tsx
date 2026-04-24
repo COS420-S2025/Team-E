@@ -3,7 +3,6 @@ import { render, screen } from "@testing-library/react";
 import { MemoryRouter } from "react-router-dom";
 import App from "../App";
 import { renderFullApp } from "../TestRenderFullApp";
-import exp from "constants";
 import userEvent from "@testing-library/user-event";
 
 describe("Some HTML Elements are added.", () => {
