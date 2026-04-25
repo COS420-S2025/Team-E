@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import {GlossaryEntry} from "../DatabaseManager";
+import {GlossaryEntry, addGlossaryEntry} from "../DatabaseManager";
 
 
 
@@ -24,8 +24,9 @@ const AddToGlossaryDatabase = () => {
     };
 
 
-    const handleAdd = () => {
+    const handleAdd = async () => {
         //add the datbase function here
+        await addGlossaryEntry(formData);
         navigate("/glossary-database");
     };
 

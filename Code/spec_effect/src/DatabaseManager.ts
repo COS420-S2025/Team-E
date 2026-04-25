@@ -3,6 +3,8 @@ import {
   doc,
   getDoc,
   getDocs,
+  deleteDoc,
+  addDoc,
   limit,
   Query,
   query,
@@ -94,6 +96,30 @@ export async function getAllGlossaryEntries(): Promise<GlossaryEntry[]> {
   return items;
 }
 
+export async function deleteGlossaryEntry(id:string): Promise<boolean> {
+  try {
+    const docRef = doc(db, "glossary", id);
+
+    await deleteDoc(docRef);
+    return true;
+  } catch (error) {
+    return false;
+  }
+}
+
+export async function addGlossaryEntry(entry: GlossaryEntry): Promise<string> {
+  try {
+      const docRef = await addDoc(collection(db, "glossary"), {
+      term: entry.term,
+      definition: entry.definition
+      });
+      return docRef.id;
+  } catch (e) {
+      return "";
+  }
+}
+
+
 export async function getAllLaptops(): Promise<Laptop[]> {
   const colRef = collection(db, "laptops-squashed").withConverter(
     laptopConverter,
@@ -126,6 +152,41 @@ export async function searchLaptopsWithFilters(laptopFilters: LaptopFilter[]): P
   const items = querySnapshot.docs.map((doc) => doc.data());
 
   return items;
+}
+
+export async function deleteLaptopEntry(id:string): Promise<boolean> {
+  try {
+    const docRef = doc(db, "laptops-squashed", id);
+    await deleteDoc(docRef);
+    return true;
+
+  } catch (error) {
+
+    return false;
+  }
+}
+
+export async function addLaptopEntry(laptop: Laptop): Promise<string> {
+  try {
+            const docRef = await addDoc(collection(db, "laptops-squashed"), {
+                name: laptop.name,
+                priceCents: laptop.priceCents,
+                memoryGb: laptop.memoryGb,
+                storageType: laptop.storageType,
+                storageCapacityGb: laptop.storageCapacityGb,
+                cpuName: laptop.cpuName,
+                cpuCoreCount: laptop.cpuCoreCount,
+                cpuBenchmarkSingleThread: laptop.cpuBenchmarkSingleThread,
+                cpuBenchmarkMultiThread: laptop.cpuBenchmarkMultiThread,
+                gpuName: laptop.gpuName,
+                gpuVramMb: laptop.gpuVramMb,
+                gpuBenchmark3d: laptop.gpuBenchmark3d,
+                gpuBenchmark2d: laptop.gpuBenchmark2d
+            });
+            return docRef.id;
+        } catch (e) {
+            return "";
+        }
 }
 
 export async function getLaptopById(id: string): Promise<Laptop | null> {

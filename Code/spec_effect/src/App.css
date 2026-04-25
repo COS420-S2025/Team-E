@@ -121,7 +121,7 @@ h3 {
 }
 
 .scroll-box {
-    height: 300px;
+    height: 470px;
     width: 51vw;
     overflow-y: auto;
     overflow-x: hidden;
@@ -240,7 +240,6 @@ h3 {
     border-radius: 5px;
     color: white;
 }
-
 .glossDef {
     padding: 0 0 20px 0;
 }

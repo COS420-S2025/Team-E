@@ -1,5 +1,5 @@
 import React from "react";
-import DatabaseListItem from "./DatabaseListItem";
+import DatabaseListItem from "./GlossaryDatabaseListItem";
 import { GlossaryEntry } from "../DatabaseManager";
 
 /** keep tracks of what items are being kept by the database*/
@@ -17,8 +17,8 @@ const DatabaseList: React.FC<DatabaseListProps> = ({ items, onRemove, emptyMessa
                 <p>{emptyMessage}</p>
             ) : (
                 <ul style={{ listStyle: "none", padding: 0 }}>
-                    {items.map((item, index) => (
-                        <DatabaseListItem key={index} item={item.term} onRemove={onRemove} />
+                    {items.map((item) => (
+                        <DatabaseListItem key={item.id} item={item} onRemove={onRemove} />
                     ))}
                 </ul>
             )}

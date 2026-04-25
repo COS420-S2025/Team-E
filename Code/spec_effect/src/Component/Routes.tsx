@@ -23,7 +23,7 @@ const RoutesComponent: React.FC = () => {
             <Route path="/choose-editor" element={<ChooseEditor />} />
             <Route path="/glossary-database" element={<GlossaryDatabase />} />
             <Route path="/laptop-database" element={<LaptopDatabase />} />
-            <Route path="/LaptopPage" element={<LaptopPage />} />
+            <Route path="/LaptopPage/:id" element={<LaptopPage />} />
             <Route path="/AddToGlossaryDatabase" element={<AddToGlossaryDatabase />} />
             <Route path="/AddToLaptopDatabase" element={<AddToLaptopDatabase />} />
         </Route>

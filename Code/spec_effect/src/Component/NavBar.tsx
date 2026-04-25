@@ -1,7 +1,8 @@
-import React from 'react';
 import { useNavigate } from "react-router-dom";
+import { auth } from "../firebase-config";
 
 const NavBar = () => {
+
     const navigate = useNavigate();
 
     const goToAbout = () => {
@@ -17,8 +18,22 @@ const NavBar = () => {
     };
 
     const goToAdminLogin = () => {
-        navigate("/adminlogin");
+        if (auth.currentUser !== null) {
+            navigate("/choose-editor");
+        }
+        else{
+            navigate("/adminlogin");
+        }  
     };
+
+    
+    const SignOut =  async () => {
+        if (auth.currentUser !== null) {
+            await auth.signOut();
+            navigate("/");
+        }
+    };
+
 
     return (
 
@@ -35,6 +50,10 @@ const NavBar = () => {
     <button className="App-headerButtonStyle" onClick={goToAdminLogin}>
             Admin Login
     </button>
+    {(auth.currentUser !== null) && <button className="App-headerButtonStyle" onClick={SignOut}>
+                    Sign Out
+    </button>}
+    
     </div>
 
     )

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import DatabaseList from "../Component/GlossaryDatabaseList";
-import { getAllGlossaryEntries, GlossaryEntry } from "../DatabaseManager";
+import { getAllGlossaryEntries, GlossaryEntry, deleteGlossaryEntry } from "../DatabaseManager";
 
 
 const GlossaryDatabase = () => {
@@ -29,13 +29,18 @@ const GlossaryDatabase = () => {
     };
 
     /**probably will change this to do it on the database side */
-    const handleRemove = (item: string) => {
-        setGlossaryItems(glossaryItems.filter((glossary) => glossary.term !== item));
+    const handleRemove = async (id: string) => {
+        const success = await deleteGlossaryEntry(id);
+        if (success){
+            console.log("Laptop entry with ID ", id, " deleted successfully.");
+        }
+        navigate(0);
     };
 
     /**shows a button to add a new glossary term, and the list of existing terms */
     return (
         <div style={{ padding: "2rem" }}>
+            <button onClick={() => navigate("/choose-editor")} style={{ display: 'block', marginRight: 'auto'}}>Go Back</button>
             <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "2rem" }}>
                 <h1>Glossary Database</h1>
                 <button

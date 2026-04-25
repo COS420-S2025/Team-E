@@ -1,40 +1,31 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import FormField from "../Component/FormField";
+import { Laptop, addLaptopEntry } from "../DatabaseManager";
 
 
 /**stores the laptop inputs */
-interface LaptopEntry {
-    name: string;
-    memoryGb: string;
-    storageType: string;
-    storageCapacityGb: string;
-    cpuName: string;
-    coreCount: string;
-    benchSingle: string;
-    benchMulti: string;
-    gpuName: string;
-    vramMb: string;
-    benchmark3d: string;
-    benchmark2d: string;
-}
+
 
 
 const AddToLaptopDatabase = () => {
     const navigate = useNavigate();
-    const [formData, setFormData] = useState<LaptopEntry>({
+    const [formData, setFormData] = useState<Laptop>({
+        id: "",
         name: "",
-        memoryGb: "",
+        priceCents: 0,
+        memoryGb: 0,
         storageType: "",
-        storageCapacityGb: "",
+        storageCapacityGb: 0,
         cpuName: "",
-        coreCount: "",
-        benchSingle: "",
-        benchMulti: "",
+        cpuCoreCount: 0,
+        cpuBenchmarkSingleThread: 0,
+        cpuBenchmarkMultiThread: 0,
         gpuName: "",
-        vramMb: "",
-        benchmark3d: "",
-        benchmark2d: "",
+        gpuVramMb: 0,
+        gpuBenchmark3d: 0,
+        gpuBenchmark2d: 0
+
     });
 
 
@@ -47,8 +38,9 @@ const AddToLaptopDatabase = () => {
     };
 
 
-    const handleAdd = () => {
+    const handleAdd = async () => {
         //add database function here
+        addLaptopEntry(formData);
         navigate("/laptop-database");
     };
 
@@ -67,6 +59,15 @@ const AddToLaptopDatabase = () => {
                     onChange={handleChange}
                 />
 
+                <FormField
+                    id="price"
+                    label="Laptop Price"
+                    name="name"
+                    value={String(formData.priceCents)}
+                    onChange={handleChange}
+                />
+
+
                 {/* Memory and Storage */}
                 <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "1rem" }}>
                     <FormField
@@ -74,7 +75,7 @@ const AddToLaptopDatabase = () => {
                         label="Memory (GB)"
                         name="memoryGb"
                         type="number"
-                        value={formData.memoryGb}
+                        value={String(formData.memoryGb)}
                         onChange={handleChange}
                     />
                     <FormField
@@ -91,7 +92,7 @@ const AddToLaptopDatabase = () => {
                     label="Storage Capacity (GB)"
                     name="storageCapacityGb"
                     type="number"
-                    value={formData.storageCapacityGb}
+                    value={String(formData.storageCapacityGb)}
                     onChange={handleChange}
                 />
 
@@ -109,7 +110,7 @@ const AddToLaptopDatabase = () => {
                         label="Core Count"
                         name="coreCount"
                         type="number"
-                        value={formData.coreCount}
+                        value={String(formData.cpuCoreCount)}
                         onChange={handleChange}
                     />
                 </div>
@@ -121,7 +122,7 @@ const AddToLaptopDatabase = () => {
                         label="Bench Single"
                         name="benchSingle"
                         type="number"
-                        value={formData.benchSingle}
+                        value={String(formData.cpuBenchmarkSingleThread)}
                         onChange={handleChange}
                     />
                     <FormField
@@ -129,7 +130,7 @@ const AddToLaptopDatabase = () => {
                         label="Bench Multi"
                         name="benchMulti"
                         type="number"
-                        value={formData.benchMulti}
+                        value={String(formData.cpuBenchmarkMultiThread)}
                         onChange={handleChange}
                     />
                 </div>
@@ -148,7 +149,7 @@ const AddToLaptopDatabase = () => {
                         label="VRAM (MB)"
                         name="vramMb"
                         type="number"
-                        value={formData.vramMb}
+                        value={String(formData.gpuVramMb)}
                         onChange={handleChange}
                     />
                 </div>
@@ -160,7 +161,7 @@ const AddToLaptopDatabase = () => {
                         label="Benchmark 3D"
                         name="benchmark3d"
                         type="number"
-                        value={formData.benchmark3d}
+                        value={String(formData.gpuBenchmark3d)}
                         onChange={handleChange}
                     />
                     <FormField
@@ -168,7 +169,7 @@ const AddToLaptopDatabase = () => {
                         label="Benchmark 2D"
                         name="benchmark2d"
                         type="number"
-                        value={formData.benchmark2d}
+                        value={String(formData.gpuBenchmark2d)}
                         onChange={handleChange}
                     />
                 </div>
