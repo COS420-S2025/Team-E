@@ -12,6 +12,10 @@ import { useNavigate } from "react-router-dom";
 const LoginWidget = () => {
     const navigate = useNavigate();
 
+    if (auth.currentUser !== null) {
+        navigate("/choose-editor");
+    }
+
     const [email, setEmail] = useState<string>("");
     const [password, setPassword] = useState<string>("");
     const [error, setError] = useState<string | null>(null);
@@ -33,11 +37,13 @@ const LoginWidget = () => {
             console.log("Signed in with email:", userCred.user);
             setError("Sign in successful!");
             navigate("/choose-editor");
-        } catch (err: any) {
-            console.error(err);
-            setError("Error: " + err.message || "Error: Email sign-in failed");
+        } catch (Error) {
+            console.error("Error signing in with email:", Error);
+            setError("Error: " + Error || "Error: Email sign-in failed");
         }
     };
+
+    
 
     return (
         <form className="adminLoginWidget" onSubmit={handleSubmit}>

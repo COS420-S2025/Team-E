@@ -1,9 +1,9 @@
-import React, { use } from "react";
+import React from "react";
 import "./App.css";
 import seLogo from "./Images/SpecEffect_Logo.png";
 import NavBar from "./Component/NavBar";
 import RoutesComponent from "./Component/Routes";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function App() {
   return (

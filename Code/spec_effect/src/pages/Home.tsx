@@ -31,10 +31,6 @@ const Home = () => {
     // Creating navigation to laptop page 
     const navigate = useNavigate();
     
-        const goToLaptopPage = () => {
-            navigate("/LaptopPage");
-        };
-    
     /** creates a variable to hold the search */
     const [searchQuery, setSearchQuery] = useState('');
 
@@ -60,7 +56,7 @@ const Home = () => {
                     </div>
                     <div className="scroll-box" data-testid="catalogDiv" style={{textAlign: 'left'}}>
                         {filteredItems.map(item => (<li key={item.id}> 
-                            <button className="search-entry-button" onClick={goToLaptopPage}>
+                            <button className="search-entry-button" onClick={() => navigate(`/LaptopPage/${item.id}`)}>
                                 {item.name}
                             </button>
                         </li>))}
