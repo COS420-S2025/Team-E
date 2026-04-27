@@ -95,7 +95,7 @@ h3 {
 .App-row {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     gap: 5vmin;
     margin: 30px;
@@ -124,6 +124,32 @@ h3 {
     display: flex;
     flex-direction: column;
     min-height: 100%;
+    text-align: left;
+}
+
+.filter-category {
+    margin-bottom: 12px;
+}
+
+.filter-category-title {
+    display: block;
+    margin-bottom: 6px;
+}
+
+.filter-option-label {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    margin-top: 6px;
+    text-align: left;
+}
+
+.filter-option-label input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    margin: 0;
+    flex-shrink: 0;
+    margin-top: 2px;
 }
 
 .filter-panel-actions {
@@ -158,7 +184,7 @@ h3 {
 }
 
 .scroll-box {
-    height: 470px;
+    height: 612px;
     width: 51vw;
     overflow-y: auto;
     overflow-x: hidden;

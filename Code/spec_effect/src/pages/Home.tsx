@@ -59,7 +59,7 @@ const Home = () => {
             onApplyFilters={setAppliedFilterIds}
           />
         </div>
-        <div style={{height: "50vw", verticalAlign: "top" }}>
+        <div style={{height: "59vw", verticalAlign: "top" }}>
           <div className="App-colBox" data-testid="searchBarDiv" style={{ textAlign: "left" }}>
             <SearchBar onSearch={handleSearch} />
           </div>
