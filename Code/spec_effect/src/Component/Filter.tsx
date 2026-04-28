@@ -23,9 +23,9 @@ interface FilterCategory {
 }
 
 const FILTER_OPTIONS: FilterOption[] = [
-  { id: "price-under-100000", category: "Price", label: "Under 100000", filter: { name: "Under 100000", queryModifier: (q) => query(q, where("priceCents", "<=", 100000)) } },
-  { id: "price-under-150000", category: "Price", label: "Under 150000", filter: { name: "Under 150000", queryModifier: (q) => query(q, where("priceCents", "<=", 150000)) } },
-  { id: "price-under-200000", category: "Price", label: "Under 200000", filter: { name: "Under 200000", queryModifier: (q) => query(q, where("priceCents", "<=", 200000)) } },
+  { id: "price-under-1000", category: "Price", label: "Under $1000", filter: { name: "Under 1000", queryModifier: (q) => query(q, where("priceCents", "<=", 1000)) } },
+  { id: "price-under-1500", category: "Price", label: "Under $1500", filter: { name: "Under 1500", queryModifier: (q) => query(q, where("priceCents", "<=", 1500)) } },
+  { id: "price-under-2000", category: "Price", label: "Under $2000", filter: { name: "Under 2000", queryModifier: (q) => query(q, where("priceCents", "<=", 2000)) } },
   { id: "memory-0-32", category: "RAM", label: "0-32 GB RAM", filter: { name: "0-32 GB RAM", queryModifier: (q) => query(q, where("memoryGb", ">=", 0), where("memoryGb", "<=", 32)) } },
   { id: "memory-32-64", category: "RAM", label: "32-64 GB RAM", filter: { name: "32-64 GB RAM", queryModifier: (q) => query(q, where("memoryGb", ">=", 32), where("memoryGb", "<=", 64)) } },
   { id: "memory-64-96", category: "RAM", label: "64-96 GB RAM", filter: { name: "64-96 GB RAM", queryModifier: (q) => query(q, where("memoryGb", ">=", 64), where("memoryGb", "<=", 96)) } },
@@ -48,6 +48,9 @@ const FILTER_CATEGORIES: FilterCategory[] = [
   { title: "RAM", options: FILTER_OPTIONS.filter((option) => option.category === "RAM") },
   { title: "CpuCores", options: FILTER_OPTIONS.filter((option) => option.category === "CpuCores") },
 ];
+const FILTER_OPTION_BY_ID = new Map(
+  FILTER_OPTIONS.map((option) => [option.id, option] as const),
+);
 
 interface FilterProps {
   appliedFilterIds: string[];
@@ -63,11 +66,23 @@ const Filter = ({ appliedFilterIds, onApplyFilters }: FilterProps) => {
   }, [appliedFilterIds]);
 
   const toggleFilter = (id: string) => {
-    setPendingFilterIds((currentPendingIds) =>
-      currentPendingIds.includes(id)
-        ? currentPendingIds.filter((selectedId) => selectedId !== id)
-        : [...currentPendingIds, id],
-    );
+    setPendingFilterIds((currentPendingIds) => {
+      if (currentPendingIds.includes(id)) {
+        return currentPendingIds.filter((selectedId) => selectedId !== id);
+      }
+
+      const selectedOption = FILTER_OPTION_BY_ID.get(id);
+      if (!selectedOption) {
+        return currentPendingIds;
+      }
+
+      const nextPendingIds = currentPendingIds.filter((selectedId) => {
+        const pendingOption = FILTER_OPTION_BY_ID.get(selectedId);
+        return pendingOption?.category !== selectedOption.category;
+      });
+
+      return [...nextPendingIds, id];
+    });
   };
 
   return (
