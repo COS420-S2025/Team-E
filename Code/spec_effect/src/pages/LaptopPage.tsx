@@ -1,12 +1,37 @@
 import React from 'react';
+import { getLaptopById, Laptop } from '../DatabaseManager';
+import { useParams } from "react-router-dom";
+import { useEffect, useState } from 'react';
 
-// note to self: use useState so that when clicked, the star button gets filled in, and text like the login page's errors show up
 const LaptopPage = () => {
+
+    const {id} = useParams<{id: string}>();
+        const [laptop, setLaptop] = useState<Laptop | null>(null);
+
+        useEffect(() => {
+            if (!id) return;
+
+            const fetchLaptop = async () => {
+                const laptopData = await getLaptopById(id);
+                setLaptop(laptopData);
+            };
+
+            fetchLaptop();
+        }, [id]);
+
+        if (!id) {
+            return <div>No Invalid ID provided.</div>;
+        }
+
+        if (!laptop) {
+            return <div>Laptop not found</div>;
+        }
+
     return (<div>
                 <div className="App-row">
                     <div className="App-colBox" style={{width: "80vw", flexDirection: "row", display: "flex", justifyContent: "center"}} data-testid="laptop-title">
                         <div style={{flex: "1"}}></div>
-                        <h2 style={{margin: "7px", alignSelf: "center"}}>Laptop Name Here</h2>
+                        <h2 style={{margin: "7px", alignSelf: "center"}}> {laptop.name} </h2>
                         <div style={{flex: "1"}}>
                             <button style={{fontSize: "26px"}}>☆</button>
                         </div>
