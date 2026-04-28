@@ -11,8 +11,8 @@ describe("Filter checkboxes", () => {
     render(<Filter appliedFilterIds={[]} onApplyFilters={onApplyFilters} />);
 
     expect(screen.getByLabelText("Under $1000")).toBeInTheDocument();
-    expect(screen.getByLabelText("0 to 8 cores")).toBeInTheDocument();
-    expect(screen.getByLabelText("0 to 32 GB RAM")).toBeInTheDocument();
+    expect(screen.getByLabelText("0 to 8")).toBeInTheDocument();
+    expect(screen.getByLabelText("0 to 32 GB")).toBeInTheDocument();
     expect(screen.getByRole("button", { name: /Apply Filters/i })).toBeInTheDocument();
   });
 
