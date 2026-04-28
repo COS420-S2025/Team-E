@@ -10,9 +10,9 @@ describe("Filter checkboxes", () => {
 
     render(<Filter appliedFilterIds={[]} onApplyFilters={onApplyFilters} />);
 
-    expect(screen.getByLabelText("Under 100000")).toBeInTheDocument();
-    expect(screen.getByLabelText("0-8 cores")).toBeInTheDocument();
-    expect(screen.getByLabelText("0-32 GB RAM")).toBeInTheDocument();
+    expect(screen.getByLabelText("Under $1000")).toBeInTheDocument();
+    expect(screen.getByLabelText("0 to 8 cores")).toBeInTheDocument();
+    expect(screen.getByLabelText("0 to 32 GB RAM")).toBeInTheDocument();
     expect(screen.getByRole("button", { name: /Apply Filters/i })).toBeInTheDocument();
   });
 
@@ -21,11 +21,11 @@ describe("Filter checkboxes", () => {
 
     render(<Filter appliedFilterIds={[]} onApplyFilters={onApplyFilters} />);
 
-    fireEvent.click(screen.getByLabelText("Under 100000"));
+    fireEvent.click(screen.getByLabelText("Under $1000"));
 
     expect(onApplyFilters).not.toHaveBeenCalled();
     fireEvent.click(screen.getByRole("button", { name: /Apply Filters/i }));
-    expect(onApplyFilters).toHaveBeenCalledWith(["price-under-100000"]);
+    expect(onApplyFilters).toHaveBeenCalledWith(["price-under-1000"]);
   });
 
   test("removes pending checked item and applies remaining filters", () => {
@@ -33,21 +33,21 @@ describe("Filter checkboxes", () => {
 
     render(
       <Filter
-        appliedFilterIds={["price-under-100000", "memory-0-32"]}
+        appliedFilterIds={["price-under-1000", "memory-0-32"]}
         onApplyFilters={onApplyFilters}
       />,
     );
 
-    fireEvent.click(screen.getByLabelText("Under 100000"));
+    fireEvent.click(screen.getByLabelText("Under $1000"));
     fireEvent.click(screen.getByRole("button", { name: /Apply Filters/i }));
 
     expect(onApplyFilters).toHaveBeenCalledWith(["memory-0-32"]);
   });
 
   test("buildLaptopFilters returns selected filter definitions", () => {
-    const selected = buildLaptopFilters(["price-under-100000", "memory-0-32"]);
+    const selected = buildLaptopFilters(["price-under-1000", "memory-0-32"]);
 
     expect(selected).toHaveLength(2);
-    expect(selected.map((filter) => filter.name)).toEqual(["Under 100000", "0-32 GB RAM"]);
+    expect(selected.map((filter) => filter.name)).toEqual(["Under 1000", "0-32 GB RAM"]);
   });
 });

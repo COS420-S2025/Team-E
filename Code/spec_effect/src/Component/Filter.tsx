@@ -8,7 +8,7 @@ type FilterCategoryName =
   | "Price"
   | "Usecase"
   | "RAM"
-  | "CpuCores";
+  | "CPU Cores";
 
 export interface FilterOption {
   id: string;
@@ -26,13 +26,13 @@ const FILTER_OPTIONS: FilterOption[] = [
   { id: "price-under-1000", category: "Price", label: "Under $1000", filter: { name: "Under 1000", queryModifier: (q) => query(q, where("priceCents", "<=", 1000)) } },
   { id: "price-under-1500", category: "Price", label: "Under $1500", filter: { name: "Under 1500", queryModifier: (q) => query(q, where("priceCents", "<=", 1500)) } },
   { id: "price-under-2000", category: "Price", label: "Under $2000", filter: { name: "Under 2000", queryModifier: (q) => query(q, where("priceCents", "<=", 2000)) } },
-  { id: "memory-0-32", category: "RAM", label: "0-32 GB RAM", filter: { name: "0-32 GB RAM", queryModifier: (q) => query(q, where("memoryGb", ">=", 0), where("memoryGb", "<=", 32)) } },
-  { id: "memory-32-64", category: "RAM", label: "32-64 GB RAM", filter: { name: "32-64 GB RAM", queryModifier: (q) => query(q, where("memoryGb", ">=", 32), where("memoryGb", "<=", 64)) } },
-  { id: "memory-64-96", category: "RAM", label: "64-96 GB RAM", filter: { name: "64-96 GB RAM", queryModifier: (q) => query(q, where("memoryGb", ">=", 64), where("memoryGb", "<=", 96)) } },
-  { id: "memory-96-128", category: "RAM", label: "96-128 GB RAM", filter: { name: "96-128 GB RAM", queryModifier: (q) => query(q, where("memoryGb", ">=", 96), where("memoryGb", "<=", 128)) } },
-  { id: "cpu-cores-0-8", category: "CpuCores", label: "0-8 cores", filter: { name: "0-8 cores", queryModifier: (q) => query(q, where("cpuCoreCount", ">=", 0) , where("cpuCoreCount", "<=", 8)) } },
-  { id: "cpu-cores-8-16", category: "CpuCores", label: "8-16 cores", filter: { name: "8-16 cores", queryModifier: (q) => query(q, where("cpuCoreCount", ">=", 8) , where("cpuCoreCount", "<=", 16)) } },
-  { id: "cpu-cores-16-24", category: "CpuCores", label: "16-24 cores", filter: { name: "16-24 cores", queryModifier: (q) => query(q, where("cpuCoreCount", ">=", 16) , where("cpuCoreCount", "<=", 24)) } },
+  { id: "memory-0-32", category: "RAM", label: "0 to 32 GB RAM", filter: { name: "0-32 GB RAM", queryModifier: (q) => query(q, where("memoryGb", ">=", 0), where("memoryGb", "<=", 32)) } },
+  { id: "memory-32-64", category: "RAM", label: "32 to 64 GB RAM", filter: { name: "32-64 GB RAM", queryModifier: (q) => query(q, where("memoryGb", ">=", 32), where("memoryGb", "<=", 64)) } },
+  { id: "memory-64-96", category: "RAM", label: "64 to 96 GB RAM", filter: { name: "64-96 GB RAM", queryModifier: (q) => query(q, where("memoryGb", ">=", 64), where("memoryGb", "<=", 96)) } },
+  { id: "memory-96-128", category: "RAM", label: "96 to 128 GB RAM", filter: { name: "96-128 GB RAM", queryModifier: (q) => query(q, where("memoryGb", ">=", 96), where("memoryGb", "<=", 128)) } },
+  { id: "cpu-cores-0-8", category: "CPU Cores", label: "0 to 8 cores", filter: { name: "0-8 cores", queryModifier: (q) => query(q, where("cpuCoreCount", ">=", 0) , where("cpuCoreCount", "<=", 8)) } },
+  { id: "cpu-cores-8-16", category: "CPU Cores", label: "8 to 16 cores", filter: { name: "8-16 cores", queryModifier: (q) => query(q, where("cpuCoreCount", ">=", 8) , where("cpuCoreCount", "<=", 16)) } },
+  { id: "cpu-cores-16-24", category: "CPU Cores", label: "16 to 24 cores", filter: { name: "16-24 cores", queryModifier: (q) => query(q, where("cpuCoreCount", ">=", 16) , where("cpuCoreCount", "<=", 24)) } },
   { id: "Light Gaming", category: "Usecase", label: "Light Gaming", filter: { name: "Light Gaming", queryModifier: (q) => query(q, where("gpuVramMb", ">=", 4000)) } },
   { id: "Heavy Gaming", category: "Usecase", label: "Heavy Gaming", filter: { name: "Heavy Gaming", queryModifier: (q) => query(q, where("gpuVramMb", ">=", 8500)) } },
   { id: "Programming", category: "Usecase", label: "Programming", filter: { name: "Programming", queryModifier: (q) => query(q, where("cpuBenchmarkSingleThread", ">", 2000), where("memoryGb", ">=", 12), where("cpuCoreCount", ">=", 6)) } },
@@ -46,7 +46,7 @@ const FILTER_CATEGORIES: FilterCategory[] = [
   { title: "Price", options: FILTER_OPTIONS.filter((option) => option.category === "Price") },
   { title: "Usecase", options: FILTER_OPTIONS.filter((option) => option.category === "Usecase") },
   { title: "RAM", options: FILTER_OPTIONS.filter((option) => option.category === "RAM") },
-  { title: "CpuCores", options: FILTER_OPTIONS.filter((option) => option.category === "CpuCores") },
+  { title: "CPU Cores", options: FILTER_OPTIONS.filter((option) => option.category === "CPU Cores") },
 ];
 const FILTER_OPTION_BY_ID = new Map(
   FILTER_OPTIONS.map((option) => [option.id, option] as const),
