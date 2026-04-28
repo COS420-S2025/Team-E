@@ -23,9 +23,10 @@ interface FilterCategory {
 }
 
 const FILTER_OPTIONS: FilterOption[] = [
-  { id: "price-under-1000", category: "Price", label: "Under $1000", filter: { name: "Under 1000", queryModifier: (q) => query(q, where("priceCents", "<=", 1000)) } },
-  { id: "price-under-1500", category: "Price", label: "Under $1500", filter: { name: "Under 1500", queryModifier: (q) => query(q, where("priceCents", "<=", 1500)) } },
-  { id: "price-under-2000", category: "Price", label: "Under $2000", filter: { name: "Under 2000", queryModifier: (q) => query(q, where("priceCents", "<=", 2000)) } },
+  { id: "price-under-500", category: "Price", label: "Under $500", filter: { name: "Under 500", queryModifier: (q) => query(q, where("priceCents", "<=", 50000)) } },
+  { id: "price-under-1000", category: "Price", label: "Under $1000", filter: { name: "Under 1000", queryModifier: (q) => query(q, where("priceCents", "<=", 100000)) } },
+  { id: "price-under-1500", category: "Price", label: "Under $1500", filter: { name: "Under 1500", queryModifier: (q) => query(q, where("priceCents", "<=", 150000)) } },
+  { id: "price-under-2000", category: "Price", label: "Under $2000", filter: { name: "Under 2000", queryModifier: (q) => query(q, where("priceCents", "<=", 200000)) } },
   { id: "memory-0-31", category: "RAM", label: "0 to 31 GB", filter: { name: "0-31 GB RAM", queryModifier: (q) => query(q, where("memoryGb", ">=", 0), where("memoryGb", "<=", 31)) } },
   { id: "memory-32-64", category: "RAM", label: "32 to 63 GB", filter: { name: "32-63 GB RAM", queryModifier: (q) => query(q, where("memoryGb", ">=", 32), where("memoryGb", "<=", 63)) } },
   { id: "memory-64-96", category: "RAM", label: "64 to 95 GB", filter: { name: "64-95 GB RAM", queryModifier: (q) => query(q, where("memoryGb", ">=", 64), where("memoryGb", "<=", 95)) } },
