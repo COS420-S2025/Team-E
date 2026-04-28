@@ -11,8 +11,8 @@ describe("Filter checkboxes", () => {
     render(<Filter appliedFilterIds={[]} onApplyFilters={onApplyFilters} />);
 
     expect(screen.getByLabelText("Under $1000")).toBeInTheDocument();
-    expect(screen.getByLabelText("0 to 8")).toBeInTheDocument();
-    expect(screen.getByLabelText("0 to 32 GB")).toBeInTheDocument();
+    expect(screen.getByLabelText("0 to 7")).toBeInTheDocument();
+    expect(screen.getByLabelText("0 to 31 GB")).toBeInTheDocument();
     expect(screen.getByRole("button", { name: /Apply Filters/i })).toBeInTheDocument();
   });
 
@@ -33,7 +33,7 @@ describe("Filter checkboxes", () => {
 
     render(
       <Filter
-        appliedFilterIds={["price-under-1000", "memory-0-32"]}
+        appliedFilterIds={["price-under-1000", "memory-0-31"]}
         onApplyFilters={onApplyFilters}
       />,
     );
@@ -41,13 +41,13 @@ describe("Filter checkboxes", () => {
     fireEvent.click(screen.getByLabelText("Under $1000"));
     fireEvent.click(screen.getByRole("button", { name: /Apply Filters/i }));
 
-    expect(onApplyFilters).toHaveBeenCalledWith(["memory-0-32"]);
+    expect(onApplyFilters).toHaveBeenCalledWith(["memory-0-31"]);
   });
 
   test("buildLaptopFilters returns selected filter definitions", () => {
-    const selected = buildLaptopFilters(["price-under-1000", "memory-0-32"]);
+    const selected = buildLaptopFilters(["price-under-1000", "memory-0-31"]);
 
     expect(selected).toHaveLength(2);
-    expect(selected.map((filter) => filter.name)).toEqual(["Under 1000", "0-32 GB RAM"]);
+    expect(selected.map((filter) => filter.name)).toEqual(["Under 1000", "0-31 GB RAM"]);
   });
 });
