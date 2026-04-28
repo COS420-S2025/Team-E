@@ -53,7 +53,7 @@ const Home = () => {
     <div>
       <h2>Home Page</h2>
       <div className="App-row">
-        <div className="App-colBox" style={{ width: "25vw" }}>
+        <div className="App-colBox" data-testid="filterColumn" style={{ width: "25vw" }}>
           <Filter
             appliedFilterIds={appliedFilterIds}
             onApplyFilters={setAppliedFilterIds}
