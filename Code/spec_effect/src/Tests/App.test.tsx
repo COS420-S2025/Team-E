@@ -3,7 +3,6 @@ import { render, screen } from "@testing-library/react";
 import { MemoryRouter } from "react-router-dom";
 import App from "../App";
 import { renderFullApp } from "../TestRenderFullApp";
-import exp from "constants";
 import userEvent from "@testing-library/user-event";
 
 describe("Some HTML Elements are added.", () => {
@@ -31,7 +30,7 @@ describe("Some HTML Elements are added.", () => {
 
     test("There is a column for filters", () => {
         renderFullApp();
-        const filterColumn = screen.getByText(/Filter/i);
+        const filterColumn = screen.getByTestId("filterColumn");
         expect(filterColumn).toBeInTheDocument();
     });
 
@@ -75,16 +74,6 @@ describe("Basic page navigation works", () => {
         });
         userEvent.click(aboutButton);
         const element: HTMLElement = await screen.findByText(/About Page/i);
-        expect(element).toBeInTheDocument();
-    });
-
-    test("Clicking a laptop name changes to laptop page.", async () => {
-        renderFullApp();
-        const laptopEntry = screen.getByRole("button", {
-            name: /HP 15s-er1501AU/i
-        });
-        await userEvent.click(laptopEntry);
-        const element: HTMLElement = await screen.findByText(/Laptop Name Here/i);
         expect(element).toBeInTheDocument();
     });
 

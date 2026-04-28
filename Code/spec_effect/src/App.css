@@ -95,7 +95,7 @@ h3 {
 .App-row {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     gap: 5vmin;
     margin: 30px;
@@ -120,8 +120,71 @@ h3 {
     margin-bottom: 16px;
 }
 
+.filter-panel {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    text-align: left;
+}
+
+.filter-category {
+    margin-bottom: 12px;
+}
+
+.filter-category-title {
+    display: block;
+    margin-bottom: 6px;
+}
+
+.filter-option-label {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    margin-top: 6px;
+    text-align: left;
+}
+
+.filter-option-label input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    margin: 0;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.filter-panel-actions {
+    margin-top: auto;
+}
+
+.filter-apply-button {
+    width: 100%;
+    margin-top: 8px;
+    padding: 10px 12px;
+    background-color: #4e47ff;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.15s ease;
+}
+
+.filter-apply-button:hover {
+    background-color: #3e39d6;
+}
+
+.filter-apply-button:active {
+    transform: translateY(1px);
+}
+
+.filter-apply-button:focus-visible {
+    outline: 2px solid #282c34;
+    outline-offset: 2px;
+}
+
 .scroll-box {
-    height: 470px;
+    height: 612px;
     width: 51vw;
     overflow-y: auto;
     overflow-x: hidden;

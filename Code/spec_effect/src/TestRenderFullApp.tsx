@@ -5,7 +5,7 @@ import App from "./App";
 export function renderFullApp()
 {
     render(
-        <MemoryRouter>
+        <MemoryRouter initialEntries={["/"]}>
             <App />
         </MemoryRouter>,
     );
