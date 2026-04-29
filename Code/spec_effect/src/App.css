@@ -1,3 +1,7 @@
+* {
+    list-style: none;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -150,6 +154,21 @@ h3 {
     margin: 0;
     flex-shrink: 0;
     margin-top: 2px;
+    appearance: none;
+    border: 2px solid #282c34;
+    border-radius: 50%;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+.filter-option-label input[type="checkbox"]:checked {
+    background-color: #4e47ff;
+    border-color: #4e47ff;
+}
+
+.filter-option-label input[type="checkbox"]:focus-visible {
+    outline: 2px solid #4e47ff;
+    outline-offset: 2px;
 }
 
 .filter-panel-actions {
