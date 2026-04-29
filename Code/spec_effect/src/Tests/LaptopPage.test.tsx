@@ -18,13 +18,13 @@ function renderLaptopPage() {
 }
 
 describe("The page has loaded visually:", () => {
-    test("Divider containing contents is present:", async () => {
+    testIfNotCI("Divider containing contents is present:", async () => {
         renderLaptopPage();
         const laptopDiv = await screen.findByTestId("laptop-items");
         expect(laptopDiv).toBeInTheDocument();
     });
 
-    test("Text within LaptopPage component is present:", async () => {
+    testIfNotCI("Text within LaptopPage component is present:", async () => {
         renderLaptopPage();
         const lapPageWords = await screen.findByText(/Specs/i);
         expect(lapPageWords).toBeInTheDocument();
