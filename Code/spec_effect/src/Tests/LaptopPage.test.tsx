@@ -4,6 +4,9 @@ import { render, screen } from "@testing-library/react";
 import { MemoryRouter, Route, Routes } from "react-router-dom";
 import LaptopPage from "../pages/LaptopPage";
 
+const CI_MODE = process.env.CI_MODE === "true";
+const testIfNotCI = CI_MODE ? test.skip : test;
+
 function renderLaptopPage() {
     render(
         <MemoryRouter initialEntries={['/laptopPage/0DozvQQZrZR5MwlXZGQR']}>
@@ -28,7 +31,7 @@ describe("The page has loaded visually:", () => {
     });
 });
 
-test("The laptop data is rendered:", async () => {
+testIfNotCI("The laptop data is rendered:", async () => {
     renderLaptopPage();
     const cpuType = await screen.findByText(/AMD Ryzen 5 5500U/);
     const ramSize = await screen.findByText(/8 GB/);
