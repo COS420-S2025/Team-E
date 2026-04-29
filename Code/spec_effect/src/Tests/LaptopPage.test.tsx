@@ -1,27 +1,48 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
 // import userEvent from "@testing-library/user-event";
-import { MemoryRouter } from "react-router-dom";
+import { MemoryRouter, Route, Routes } from "react-router-dom";
 import LaptopPage from "../pages/LaptopPage";
 
-function renderLoginPage() {
+function renderLaptopPage() {
     render(
-        <MemoryRouter>
-            <LaptopPage />
+        <MemoryRouter initialEntries={['/laptopPage/0DozvQQZrZR5MwlXZGQR']}>
+            <Routes>
+                <Route path="/laptopPage/:id" element={<LaptopPage />} />
+            </Routes>
         </MemoryRouter>,
     );
 }
 
 describe("The page has loaded visually:", () => {
-    test("Divider containing contents is present:", () => {
-        renderLoginPage();
-        const laptopDiv = screen.getByTestId("laptop-items");
+    test("Divider containing contents is present:", async () => {
+        renderLaptopPage();
+        const laptopDiv = await screen.findByTestId("laptop-items");
         expect(laptopDiv).toBeInTheDocument();
     });
 
-    test("Text within GlossaryText component is present:", () => {
-        renderLoginPage();
-        const lapPageWords = screen.getByText(/Specs/i);
+    test("Text within LaptopPage component is present:", async () => {
+        renderLaptopPage();
+        const lapPageWords = await screen.findByText(/Specs/i);
         expect(lapPageWords).toBeInTheDocument();
     });
+});
+
+test("The laptop data is rendered:", async () => {
+    renderLaptopPage();
+    const cpuType = await screen.findByText(/AMD Ryzen 5 5500U/);
+    const ramSize = await screen.findByText(/8 GB/);
+    const gpuType = await screen.findByText(/N\/A/);
+    const gpuSize = await screen.findByText(/0 MB/);
+    const diskType = await screen.findByText(/ssd/);
+    const diskSize = await screen.findByText(/512 GB/);
+    const price = await screen.findByText(/\$356\.99/);
+
+    expect(cpuType).toBeInTheDocument();
+    expect(ramSize).toBeInTheDocument();
+    expect(gpuType).toBeInTheDocument();
+    expect(gpuSize).toBeInTheDocument();
+    expect(diskType).toBeInTheDocument();
+    expect(diskSize).toBeInTheDocument();
+    expect(price).toBeInTheDocument();
 });
