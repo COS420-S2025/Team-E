@@ -1,30 +1,35 @@
-import React, { useEffect, useMemo, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import SearchBar from "../Component/SearchBar";
 import Filter, { buildLaptopFilters } from "../Component/Filter";
-import { Laptop, searchLaptopsWithFilters } from "../DatabaseManager";
+import {
+  Laptop,
+  createSearchTermFilter,
+  searchLaptopsWithFilters,
+} from "../DatabaseManager";
 
 const Home = () => {
     // Creating navigation to laptop page 
     const navigate = useNavigate();
 
 
-  /** creates a variable to hold the search */
-  const [searchQuery, setSearchQuery] = useState("");
+  const [appliedSearchText, setAppliedSearchText] = useState("");
   const [appliedFilterIds, setAppliedFilterIds] = useState<string[]>([]);
   const [laptops, setLaptops] = useState<Laptop[]>([]);
 
   const handleSearch = (query: string) => {
-    setSearchQuery(query.toLowerCase());
+    setAppliedSearchText(query.trim());
   };
 
   useEffect(() => {
     let mounted = true;
     const loadLaptops = async () => {
       try {
-        const laptopsFromDb = await searchLaptopsWithFilters(
-          buildLaptopFilters(appliedFilterIds),
-        );
+        const filters = [...buildLaptopFilters(appliedFilterIds)];
+        if (appliedSearchText !== "") {
+          filters.push(createSearchTermFilter(appliedSearchText));
+        }
+        const laptopsFromDb = await searchLaptopsWithFilters(filters);
         if (mounted) {
           setLaptops(laptopsFromDb);
         }
@@ -39,14 +44,7 @@ const Home = () => {
     return () => {
       mounted = false;
     };
-  }, [appliedFilterIds]);
-
-  /** filters the data based on what is written in the search bar */
-  const filteredItems = useMemo(() => {
-    return laptops.filter((item) =>
-      item.name.toLowerCase().includes(searchQuery),
-    );
-  }, [laptops, searchQuery]);
+  }, [appliedFilterIds, appliedSearchText]);
 
   /** divides the home page into three sections a filter sec, search bar and results section */
   return (
@@ -64,14 +62,14 @@ const Home = () => {
             <SearchBar onSearch={handleSearch} />
           </div>
           <div className="scroll-box" data-testid="catalogDiv" style={{ textAlign: "left" }}>
-            {filteredItems.map((item) => (
+            {laptops.map((item) => (
               <li key={item.id}>
                 <button className="search-entry-button" onClick={() => navigate(`/LaptopPage/${item.id}`)}>
                   {item.name}
                 </button>
               </li>
             ))}
-            {filteredItems.length === 0 && <p>No results found.</p>}
+            {laptops.length === 0 && <p>No results found.</p>}
           </div>
         </div>
       </div>

@@ -1,48 +1,58 @@
 import React from "react";
 import { render, screen, fireEvent } from "@testing-library/react";
 import SearchBar from "../Component/SearchBar";
+import userEvent from "@testing-library/user-event";
 
 describe("SearchBar", () => {
-    /** make sure we have the right starting input before anything is written */
-    test("renders the search input with correct placeholder", () => {
-        const onSearch = jest.fn();
-        render(<SearchBar onSearch={onSearch} />);
+  test("renders the search input with correct placeholder", () => {
+    const onSearch = jest.fn();
+    render(<SearchBar onSearch={onSearch} />);
 
-        const input = screen.getByPlaceholderText(
-            /Search for laptop based on your needs/i,
-        );
-        expect(input).toBeInTheDocument();
-        expect(input).toHaveAttribute("type", "text");
-    });
+    const input = screen.getByPlaceholderText(
+      /Search/i,
+    );
+    expect(input).toBeInTheDocument();
+    expect(input).toHaveAttribute("type", "search");
+  });
 
-    /** makes sure that the search start empty and fills as you type */
-    test("starts with empty input and updates value when user types", () => {
-        const onSearch = jest.fn();
-        render(<SearchBar onSearch={onSearch} />);
+  test("starts with empty input and updates value when user types", () => {
+    const onSearch = jest.fn();
+    render(<SearchBar onSearch={onSearch} />);
 
-        const input = screen.getByPlaceholderText(
-            /Search for laptop based on your needs/i,
-        );
-        expect(input).toHaveValue("");
+    const input = screen.getByPlaceholderText(
+      /Search/i,
+    );
+    expect(input).toHaveValue("");
 
-        fireEvent.change(input, { target: { value: "light laptop" } });
-        expect(input).toHaveValue("light laptop");
-    });
+    fireEvent.change(input, { target: { value: "light laptop" } });
+    expect(input).toHaveValue("light laptop");
+    expect(onSearch).not.toHaveBeenCalled();
+  });
 
-    /** makes sure the onSearch function is called each time it is ran */
-    test("calls onSearch callback after each input change", () => {
-        const onSearch = jest.fn();
-        render(<SearchBar onSearch={onSearch} />);
+  test("calls onSearch when Search button is clicked", () => {
+    const onSearch = jest.fn();
+    render(<SearchBar onSearch={onSearch} />);
 
-        const input = screen.getByPlaceholderText(
-            /Search for laptop based on your needs/i,
-        );
+    const input = screen.getByPlaceholderText(
+      /Search/i,
+    );
+    fireEvent.change(input, { target: { value: "gaming laptop" } });
 
-        fireEvent.change(input, { target: { value: "gaming laptop" } });
-        fireEvent.change(input, { target: { value: "ultrabook" } });
+    fireEvent.click(screen.getByRole("button", { name: /Search/i }));
 
-        expect(onSearch).toHaveBeenCalledTimes(2);
-        expect(onSearch).toHaveBeenNthCalledWith(1, "gaming laptop");
-        expect(onSearch).toHaveBeenNthCalledWith(2, "ultrabook");
-    });
+    expect(onSearch).toHaveBeenCalledTimes(1);
+    expect(onSearch).toHaveBeenCalledWith("gaming laptop");
+  });
+
+  test("calls onSearch when Enter is pressed in the form", async () => {
+    const onSearch = jest.fn();
+    render(<SearchBar onSearch={onSearch} />);
+
+    const input = screen.getByPlaceholderText(/Search/i,);
+    
+    await userEvent.type(input, "ultrabook{enter}");
+
+    expect(onSearch).toHaveBeenCalledTimes(1);
+    expect(onSearch).toHaveBeenCalledWith("ultrabook");
+  });
 });
