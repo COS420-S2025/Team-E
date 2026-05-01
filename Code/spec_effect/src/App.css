@@ -1,346 +1,348 @@
 * {
-    list-style: none;
+  list-style: none;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    margin: 0;
+  margin: 0;
 }
 
 h2 {
-    font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 h3 {
-    font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .App {
-    text-align: center;
+  text-align: center;
 }
 
 .App-logo {
-    height: 40vmin;
-    pointer-events: none;
+  height: 40vmin;
+  pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-        animation: App-logo-spin infinite 20s linear;
-    }
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
 }
 
 .App-header {
-    background-color: #282c34;
-    min-height: 9vh;
-    display: flex;
-    align-items: center;
-    padding-left: 3vmin;
-    font-size: calc(17px + 2vmin);
-    color: rgb(179, 172, 255);
+  background-color: #282c34;
+  min-height: 9vh;
+  display: flex;
+  align-items: center;
+  padding-left: 3vmin;
+  font-size: calc(17px + 2vmin);
+  color: rgb(179, 172, 255);
 }
 
 .App-subHeader {
-    background-color: #b3acff;
-    min-height: 11vh;
-    display: flex;
-    flex-direction: row;
-    gap: 20vmin;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(5px + 2vmin);
-    color: rgb(40, 44, 52);
+  background-color: #b3acff;
+  min-height: 11vh;
+  display: flex;
+  flex-direction: row;
+  gap: 20vmin;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(5px + 2vmin);
+  color: rgb(40, 44, 52);
 }
 
 .App-filterHeader {
-    background-color: #b3acff;
-    margin: -16px;
-    margin-bottom: 15px;
-    min-height: 6vh;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    font-size: calc(5px + 2vmin);
+  background-color: #b3acff;
+  margin: -16px;
+  margin-bottom: 15px;
+  min-height: 6vh;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-size: calc(5px + 2vmin);
 }
 
 .App-footer {
-    background-color: #282c34;
-    min-height: 9vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-left: 3vmin;
-    font-size: calc(5px + 2vmin);
-    color: rgb(179, 172, 255);
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+  background-color: #282c34;
+  min-height: 9vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 3vmin;
+  font-size: calc(5px + 2vmin);
+  color: rgb(179, 172, 255);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 .App-link {
-    color: #61dafb;
+  color: #61dafb;
 }
 
 .App-headerButtonStyle {
-    background-color: #b3acff;
-    border: none;
-    padding: 3vmin;
-    font-size: calc(8px + 2vmin);
-    color: rgb(40, 44, 52);
+  background-color: #b3acff;
+  border: none;
+  padding: 3vmin;
+  font-size: calc(8px + 2vmin);
+  color: rgb(40, 44, 52);
 }
 
 .App-headerButtonStyle:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .App-row {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: center;
-    gap: 5vmin;
-    margin: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 5vmin;
+  margin: 30px;
 }
 
 .App-box {
-    outline: 2px solid #282c34;
-    padding: 16px;
-    margin-bottom: 16px;
-    background-color: #e7eaff;
-    width: 30vw;
-    align-self: flex-start;
+  outline: 2px solid #282c34;
+  padding: 16px;
+  margin-bottom: 16px;
+  background-color: #e7eaff;
+  width: 30vw;
+  align-self: flex-start;
 }
 
 .App-colBox {
-    /* .App-colSearch { */
-    flex-direction: column;
-    align-self: flex-start;
-    width: 50vw;
-    outline: 2px solid #282c34;
-    padding: 16px;
-    margin-bottom: 16px;
+  /* .App-colSearch { */
+  flex-direction: column;
+  align-self: flex-start;
+  width: 50vw;
+  outline: 2px solid #282c34;
+  padding: 16px;
+  margin-bottom: 16px;
 }
 
 .filter-panel {
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
-    text-align: left;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  text-align: left;
 }
 
 .filter-category {
-    margin-bottom: 12px;
+  margin-bottom: 12px;
 }
 
 .filter-category-title {
-    display: block;
-    margin-bottom: 6px;
+  display: block;
+  margin-bottom: 6px;
 }
 
 .filter-option-label {
-    display: flex;
-    align-items: flex-start;
-    gap: 8px;
-    margin-top: 6px;
-    text-align: left;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin-top: 6px;
+  text-align: left;
 }
 
 .filter-option-label input[type="checkbox"] {
-    width: 16px;
-    height: 16px;
-    margin: 0;
-    flex-shrink: 0;
-    margin-top: 2px;
-    appearance: none;
-    border: 2px solid #282c34;
-    border-radius: 50%;
-    background-color: #ffffff;
-    cursor: pointer;
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  flex-shrink: 0;
+  margin-top: 2px;
+  appearance: none;
+  border: 2px solid #282c34;
+  border-radius: 50%;
+  background-color: #ffffff;
+  cursor: pointer;
 }
 
 .filter-option-label input[type="checkbox"]:checked {
-    background-color: #4e47ff;
-    border-color: #4e47ff;
+  background-color: #4e47ff;
+  border-color: #4e47ff;
 }
 
 .filter-option-label input[type="checkbox"]:focus-visible {
-    outline: 2px solid #4e47ff;
-    outline-offset: 2px;
+  outline: 2px solid #4e47ff;
+  outline-offset: 2px;
 }
 
 .filter-panel-actions {
-    margin-top: auto;
+  margin-top: auto;
 }
 
 .filter-apply-button {
-    width: 100%;
-    margin-top: 8px;
-    padding: 10px 12px;
-    background-color: #4e47ff;
-    color: #ffffff;
-    border: none;
-    border-radius: 6px;
-    font-size: 0.95rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: background-color 0.2s ease, transform 0.15s ease;
+  width: 100%;
+  margin-top: 8px;
+  padding: 10px 12px;
+  background-color: #4e47ff;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    transform 0.15s ease;
 }
 
 .filter-apply-button:hover {
-    background-color: #3e39d6;
+  background-color: #3e39d6;
 }
 
 .filter-apply-button:active {
-    transform: translateY(1px);
+  transform: translateY(1px);
 }
 
 .filter-apply-button:focus-visible {
-    outline: 2px solid #282c34;
-    outline-offset: 2px;
+  outline: 2px solid #282c34;
+  outline-offset: 2px;
 }
 
 .scroll-box {
-    height: 645px;
-    width: 51vw;
-    overflow-y: auto;
-    overflow-x: hidden;
-    border: 2px solid #282c34;
-    padding: 10px;
-    background-color: #f9f9f9;
+  height: 645px;
+  width: 51vw;
+  overflow-y: auto;
+  overflow-x: hidden;
+  border: 2px solid #282c34;
+  padding: 10px;
+  background-color: #f9f9f9;
 }
 .center-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 20vh;
-    margin-bottom: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+  margin-bottom: 16px;
 }
 
 .site-footer {
-    background-color: #b3acff;
-    color: black;
-    padding: 20px;
+  background-color: #b3acff;
+  color: black;
+  padding: 20px;
 }
 
 .footer-links {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .page-container {
-    display: flex;
-    flex-direction: column;
-    min-height: 130vh;
+  display: flex;
+  flex-direction: column;
+  min-height: 130vh;
 }
 
 .content {
-    flex: 1;
+  flex: 1;
 }
 
 .add-button {
-    padding: 1rem 2rem;
-    background-color: #28a745;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 1.1rem;
-    font-weight: bold;
-    margin-top: 1rem;
+  padding: 1rem 2rem;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-top: 1rem;
 }
 
 .search-entry-button {
-    padding-top: 0.25rem;
-    padding-bottom: 0.25rem;
-    font-size: 20px;
-    border: None;
-    background: none;
-    text-align: left;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  font-size: 20px;
+  border: None;
+  background: none;
+  text-align: left;
 }
 
 @keyframes App-logo-spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .adminLoginWidget {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    margin: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 30px;
 }
 
 .adminLoginWidget fieldset {
-    border: 2px solid #282c34;
-    padding: 20px 10px;
-    background-color: #e7eaff;
-    border-radius: 10px;
-    min-width: 300px;
-    max-width: 600px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  border: 2px solid #282c34;
+  padding: 20px 10px;
+  background-color: #e7eaff;
+  border-radius: 10px;
+  min-width: 300px;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #emailInputSet,
 #passwordInputSet {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 5px;
-    font-size: 20px;
-    width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  font-size: 20px;
+  width: 80%;
 }
 
 #emailInputSet input,
 #passwordInputSet input {
-    width: 100%;
+  width: 100%;
 }
 
 #loginButton {
-    background: #9d00ff;
-    background: linear-gradient(
-        90deg,
-        rgba(157, 0, 255, 1) 0%,
-        rgba(78, 71, 255, 1) 0%,
-        rgba(57, 0, 122, 1) 100%
-    );
-    border: none;
-    padding: 10px 20px;
-    font-size: 20px;
-    color: rgb(40, 44, 52);
-    border-radius: 5px;
-    color: white;
+  background: #9d00ff;
+  background: linear-gradient(
+    90deg,
+    rgba(157, 0, 255, 1) 0%,
+    rgba(78, 71, 255, 1) 0%,
+    rgba(57, 0, 122, 1) 100%
+  );
+  border: none;
+  padding: 10px 20px;
+  font-size: 20px;
+  color: rgb(40, 44, 52);
+  border-radius: 5px;
+  color: white;
 }
 .glossDef {
-    padding: 0 0 20px 0;
+  padding: 0 0 20px 0;
 }
 
 .glossDef p {
-    text-indent: 30px;
+  text-indent: 30px;
 }
 .glossDef h3 {
-    font-size: 30px;
+  font-size: 30px;
 }
 
 #returnToTopGlos {
-    background-color: #675ec7;
-    height: 75px;
-    width: 75px;
-    border-radius: 40px;
-    font-size: 50px;
-    color: rgb(212, 212, 212);
-    position: fixed;
-    bottom: 50px;
-    right: 50px;
+  background-color: #675ec7;
+  height: 75px;
+  width: 75px;
+  border-radius: 40px;
+  font-size: 50px;
+  color: rgb(212, 212, 212);
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
 }

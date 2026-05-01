@@ -13,7 +13,9 @@ describe("Filter checkboxes", () => {
     expect(screen.getByLabelText("Under $1000")).toBeInTheDocument();
     expect(screen.getByLabelText("0 to 7")).toBeInTheDocument();
     expect(screen.getByLabelText("0 to 31 GB")).toBeInTheDocument();
-    expect(screen.getByRole("button", { name: /Apply Filters/i })).toBeInTheDocument();
+    expect(
+      screen.getByRole("button", { name: /Apply Filters/i }),
+    ).toBeInTheDocument();
   });
 
   test("does not apply when checkbox is clicked until apply button is pressed", () => {
@@ -48,6 +50,9 @@ describe("Filter checkboxes", () => {
     const selected = buildLaptopFilters(["price-under-1000", "memory-0-31"]);
 
     expect(selected).toHaveLength(2);
-    expect(selected.map((filter) => filter.name)).toEqual(["Under 1000", "0-31 GB RAM"]);
+    expect(selected.map((filter) => filter.name)).toEqual([
+      "Under 1000",
+      "0-31 GB RAM",
+    ]);
   });
 });

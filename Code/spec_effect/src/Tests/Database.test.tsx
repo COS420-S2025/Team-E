@@ -1,123 +1,133 @@
 import {
-    collection,
-    getCountFromServer,
-    addDoc,
-    deleteDoc
+  collection,
+  getCountFromServer,
+  addDoc,
+  deleteDoc,
 } from "firebase/firestore";
 import { auth, db } from "../firebase-config";
 import "setimmediate";
 import { signInWithEmailAndPassword, signOut } from "firebase/auth";
-import { getAllGlossaryEntries, getAllLaptops, getLaptopById, searchLaptopsWithFilters } from "../DatabaseManager";
+import {
+  getAllGlossaryEntries,
+  getAllLaptops,
+  getLaptopById,
+  searchLaptopsWithFilters,
+} from "../DatabaseManager";
 
-const CI_MODE = process.env.CI_MODE === 'true';
+const CI_MODE = process.env.CI_MODE === "true";
 const testIfNotCI = CI_MODE ? test.skip : test;
 
-
 describe("Ensure non-admins can't write to database collections", () => {
-    testIfNotCI("Laptops collection disallows writing for non-admins", async () => {
-        const collectionToTest = collection(db, "laptops-squashed");
-        const data = {
-            name: "TEST",
-            cpuName: "Intel Core i5-11300H",
-            cpuCoreCount: 4,
-            cpuBenchmarkSingleThread: 2769,
-            cpuBenchmarkMultiThread: 10768,
-            gpuName: "NVIDIA GeForce",
-            gpuVramMb: 4096,
-            gpuBenchmark2d: 500,
-            gpuBenchmark3d: 2000,
-            memoryGb: 8,
-            priceCents: 34137,
-            storageCapacityGb: 256,
-            storageType: "ssd"
-        };
+  testIfNotCI(
+    "Laptops collection disallows writing for non-admins",
+    async () => {
+      const collectionToTest = collection(db, "laptops-squashed");
+      const data = {
+        name: "TEST",
+        cpuName: "Intel Core i5-11300H",
+        cpuCoreCount: 4,
+        cpuBenchmarkSingleThread: 2769,
+        cpuBenchmarkMultiThread: 10768,
+        gpuName: "NVIDIA GeForce",
+        gpuVramMb: 4096,
+        gpuBenchmark2d: 500,
+        gpuBenchmark3d: 2000,
+        memoryGb: 8,
+        priceCents: 34137,
+        storageCapacityGb: 256,
+        storageType: "ssd",
+      };
 
-        // Added await here!
-        await expect(addDoc(collectionToTest, data)).rejects.toThrow(
-            expect.objectContaining({
-                code: 'permission-denied',
-            })
-        );
-    });
-    testIfNotCI("Glossary collection disallows writing for non-admins", async () => {
-        const collectionToTest = collection(db, "glossary");
-        const data = {
-            term: "TEST",
-            definition: "test definition"
-        };
+      // Added await here!
+      await expect(addDoc(collectionToTest, data)).rejects.toThrow(
+        expect.objectContaining({
+          code: "permission-denied",
+        }),
+      );
+    },
+  );
+  testIfNotCI(
+    "Glossary collection disallows writing for non-admins",
+    async () => {
+      const collectionToTest = collection(db, "glossary");
+      const data = {
+        term: "TEST",
+        definition: "test definition",
+      };
 
-        // Added await here!
-        await expect(addDoc(collectionToTest, data)).rejects.toThrow(
-            expect.objectContaining({
-                code: 'permission-denied',
-            })
-        );
-    });
+      // Added await here!
+      await expect(addDoc(collectionToTest, data)).rejects.toThrow(
+        expect.objectContaining({
+          code: "permission-denied",
+        }),
+      );
+    },
+  );
 });
 
 describe("Ensure admins can write to database collections", () => {
-    beforeAll(async () => {
-        await signInWithEmailAndPassword(auth, "admin@test.com", "password");
-    });
+  beforeAll(async () => {
+    await signInWithEmailAndPassword(auth, "admin@test.com", "password");
+  });
 
-    afterAll(async () => {
-        await signOut(auth);
-    });
+  afterAll(async () => {
+    await signOut(auth);
+  });
 
-    testIfNotCI("Laptops collection allows writing for admins", async () => {
-        const collectionToTest = collection(db, "laptops-squashed");
-        const data = {
-            name: "TEST",
-            cpuName: "Intel Core i5-11300H",
-            cpuCoreCount: 4,
-            cpuBenchmarkSingleThread: 2769,
-            cpuBenchmarkMultiThread: 10768,
-            gpuName: "NVIDIA GeForce",
-            gpuVramMb: 4096,
-            gpuBenchmark2d: 500,
-            gpuBenchmark3d: 2000,
-            memoryGb: 8,
-            priceCents: 34137,
-            storageCapacityGb: 256,
-            storageType: "ssd"
-        };
+  testIfNotCI("Laptops collection allows writing for admins", async () => {
+    const collectionToTest = collection(db, "laptops-squashed");
+    const data = {
+      name: "TEST",
+      cpuName: "Intel Core i5-11300H",
+      cpuCoreCount: 4,
+      cpuBenchmarkSingleThread: 2769,
+      cpuBenchmarkMultiThread: 10768,
+      gpuName: "NVIDIA GeForce",
+      gpuVramMb: 4096,
+      gpuBenchmark2d: 500,
+      gpuBenchmark3d: 2000,
+      memoryGb: 8,
+      priceCents: 34137,
+      storageCapacityGb: 256,
+      storageType: "ssd",
+    };
 
-        const docRef = await addDoc(collectionToTest, data);
-        
-        expect(docRef.id).toBeDefined();
+    const docRef = await addDoc(collectionToTest, data);
 
-        await deleteDoc(docRef);
-    });
-    testIfNotCI("Glossary collection allows writing for admins", async () => {
-        const collectionToTest = collection(db, "glossary");
-        const data = {
-            term: "TEST",
-            definition: "test definition"
-        };
+    expect(docRef.id).toBeDefined();
 
-        const docRef = await addDoc(collectionToTest, data);
-        
-        expect(docRef.id).toBeDefined();
+    await deleteDoc(docRef);
+  });
+  testIfNotCI("Glossary collection allows writing for admins", async () => {
+    const collectionToTest = collection(db, "glossary");
+    const data = {
+      term: "TEST",
+      definition: "test definition",
+    };
 
-        await deleteDoc(docRef);
-    });
+    const docRef = await addDoc(collectionToTest, data);
+
+    expect(docRef.id).toBeDefined();
+
+    await deleteDoc(docRef);
+  });
 });
 
 describe("Ensure that database functions work", () => {
-    testIfNotCI("test getAllGlossaryEntries", async () => {
-        const glossaryEntries = await getAllGlossaryEntries();
-        expect(glossaryEntries.length).toBeGreaterThan(0);
-    });
-    testIfNotCI("test getAllLaptops", async () => {
-        const laptops = await getAllLaptops();
-        expect(laptops.length).toBeGreaterThan(0);
-    });
-    testIfNotCI("test getLaptopById", async () => {
-        const nonexistent_laptop = await getLaptopById("NONEXISTENT_ID");
-        expect(nonexistent_laptop).toBeNull();
-    });
-    testIfNotCI("test searchLaptopsWithFilters", async () => {
-        const laptops = await searchLaptopsWithFilters([]);
-        expect(laptops.length).toBeGreaterThan(0);
-    });
+  testIfNotCI("test getAllGlossaryEntries", async () => {
+    const glossaryEntries = await getAllGlossaryEntries();
+    expect(glossaryEntries.length).toBeGreaterThan(0);
+  });
+  testIfNotCI("test getAllLaptops", async () => {
+    const laptops = await getAllLaptops();
+    expect(laptops.length).toBeGreaterThan(0);
+  });
+  testIfNotCI("test getLaptopById", async () => {
+    const nonexistent_laptop = await getLaptopById("NONEXISTENT_ID");
+    expect(nonexistent_laptop).toBeNull();
+  });
+  testIfNotCI("test searchLaptopsWithFilters", async () => {
+    const laptops = await searchLaptopsWithFilters([]);
+    expect(laptops.length).toBeGreaterThan(0);
+  });
 });

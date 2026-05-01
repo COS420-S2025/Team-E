@@ -80,7 +80,7 @@ const laptopConverter = {
       gpuName: data.gpuName ?? "",
       gpuVramMb: data.gpuVramMb,
       gpuBenchmark2d: data.gpuBenchmark2d,
-      gpuBenchmark3d: data.gpuBenchmark3d
+      gpuBenchmark3d: data.gpuBenchmark3d,
     } as Laptop;
   },
 };
@@ -97,7 +97,7 @@ export async function getAllGlossaryEntries(): Promise<GlossaryEntry[]> {
   return items;
 }
 
-export async function deleteGlossaryEntry(id:string): Promise<boolean> {
+export async function deleteGlossaryEntry(id: string): Promise<boolean> {
   try {
     const docRef = doc(db, "glossary", id);
 
@@ -110,16 +110,15 @@ export async function deleteGlossaryEntry(id:string): Promise<boolean> {
 
 export async function addGlossaryEntry(entry: GlossaryEntry): Promise<string> {
   try {
-      const docRef = await addDoc(collection(db, "glossary"), {
+    const docRef = await addDoc(collection(db, "glossary"), {
       term: entry.term,
-      definition: entry.definition
-      });
-      return docRef.id;
+      definition: entry.definition,
+    });
+    return docRef.id;
   } catch (e) {
-      return "";
+    return "";
   }
 }
-
 
 export async function getAllLaptops(): Promise<Laptop[]> {
   const colRef = collection(db, "laptops-squashed").withConverter(
@@ -135,14 +134,16 @@ export async function getAllLaptops(): Promise<Laptop[]> {
   return items;
 }
 
-export async function searchLaptopsWithFilters(laptopFilters: LaptopFilter[]): Promise<Laptop[]> {
+export async function searchLaptopsWithFilters(
+  laptopFilters: LaptopFilter[],
+): Promise<Laptop[]> {
   const colRef = collection(db, "laptops-squashed").withConverter(
     laptopConverter,
   );
 
-  let q: Query<Laptop> = query(colRef) as Query<Laptop>;;
+  let q: Query<Laptop> = query(colRef) as Query<Laptop>;
 
-  laptopFilters.forEach(filter => {
+  laptopFilters.forEach((filter) => {
     q = filter.queryModifier(q);
   });
 
@@ -155,59 +156,61 @@ export async function searchLaptopsWithFilters(laptopFilters: LaptopFilter[]): P
   return items;
 }
 
-export async function deleteLaptopEntry(id:string): Promise<boolean> {
+export async function deleteLaptopEntry(id: string): Promise<boolean> {
   try {
     const docRef = doc(db, "laptops-squashed", id);
     await deleteDoc(docRef);
     return true;
-
   } catch (error) {
-
     return false;
   }
 }
 
 export async function addLaptopEntry(laptop: Laptop): Promise<string> {
   try {
-            const docRef = await addDoc(collection(db, "laptops-squashed"), {
-                name: laptop.name,
-                priceCents: laptop.priceCents,
-                memoryGb: laptop.memoryGb,
-                storageType: laptop.storageType,
-                storageCapacityGb: laptop.storageCapacityGb,
-                cpuName: laptop.cpuName,
-                cpuCoreCount: laptop.cpuCoreCount,
-                cpuBenchmarkSingleThread: laptop.cpuBenchmarkSingleThread,
-                cpuBenchmarkMultiThread: laptop.cpuBenchmarkMultiThread,
-                gpuName: laptop.gpuName,
-                gpuVramMb: laptop.gpuVramMb,
-                gpuBenchmark3d: laptop.gpuBenchmark3d,
-                gpuBenchmark2d: laptop.gpuBenchmark2d
-            });
-            return docRef.id;
-        } catch (e) {
-            return "";
-        }
+    const docRef = await addDoc(collection(db, "laptops-squashed"), {
+      name: laptop.name,
+      priceCents: laptop.priceCents,
+      memoryGb: laptop.memoryGb,
+      storageType: laptop.storageType,
+      storageCapacityGb: laptop.storageCapacityGb,
+      cpuName: laptop.cpuName,
+      cpuCoreCount: laptop.cpuCoreCount,
+      cpuBenchmarkSingleThread: laptop.cpuBenchmarkSingleThread,
+      cpuBenchmarkMultiThread: laptop.cpuBenchmarkMultiThread,
+      gpuName: laptop.gpuName,
+      gpuVramMb: laptop.gpuVramMb,
+      gpuBenchmark3d: laptop.gpuBenchmark3d,
+      gpuBenchmark2d: laptop.gpuBenchmark2d,
+    });
+    return docRef.id;
+  } catch (e) {
+    return "";
+  }
 }
 
 export async function getLaptopById(id: string): Promise<Laptop | null> {
   const docRef = doc(db, "laptops-squashed", id).withConverter(laptopConverter);
 
+  const docSnap = await getDoc(docRef);
 
-  const docSnap = await getDoc(docRef)
-
-  if (docSnap.exists())
-  {
+  if (docSnap.exists()) {
     return docSnap.data();
   }
   return null;
 }
 
-export function createSearchTermFilter(searchText: string)
-{
-  const searchFilter = {name: "searchText", queryModifier: (q: Query<Laptop>): Query<Laptop> => {
-            q = query(q, where("name", ">=", searchText), where("name", "<", searchText + "\uf8ff"));
-            return q;
-        }} as LaptopFilter;
+export function createSearchTermFilter(searchText: string) {
+  const searchFilter = {
+    name: "searchText",
+    queryModifier: (q: Query<Laptop>): Query<Laptop> => {
+      q = query(
+        q,
+        where("name", ">=", searchText),
+        where("name", "<", searchText + "\uf8ff"),
+      );
+      return q;
+    },
+  } as LaptopFilter;
   return searchFilter;
 }

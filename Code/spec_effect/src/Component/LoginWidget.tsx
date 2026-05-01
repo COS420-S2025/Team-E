@@ -10,75 +10,69 @@ import { useNavigate } from "react-router-dom";
 // Github Copilot, 2026 Feb. version, Github, github.com/features/copilot. Accessed 21 Apr. 2026.
 
 const LoginWidget = () => {
-    const navigate = useNavigate();
+  const navigate = useNavigate();
 
-    if (auth.currentUser !== null) {
-        navigate("/choose-editor");
+  if (auth.currentUser !== null) {
+    navigate("/choose-editor");
+  }
+
+  const [email, setEmail] = useState<string>("");
+  const [password, setPassword] = useState<string>("");
+  const [error, setError] = useState<string | null>(null);
+
+  const handleEmailChange = (e: React.ChangeEvent<HTMLInputElement>) =>
+    setEmail(e.target.value);
+  const handlePasswordChange = (e: React.ChangeEvent<HTMLInputElement>) =>
+    setPassword(e.target.value);
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setError(null);
+    try {
+      const userCred = await signInWithEmailAndPassword(auth, email, password);
+      console.log("Signed in with email:", userCred.user);
+      setError("Sign in successful!");
+      navigate("/choose-editor");
+    } catch (Error) {
+      console.error("Error signing in with email:", Error);
+      setError("Error: " + Error || "Error: Email sign-in failed");
     }
+  };
 
-    const [email, setEmail] = useState<string>("");
-    const [password, setPassword] = useState<string>("");
-    const [error, setError] = useState<string | null>(null);
-
-    const handleEmailChange = (e: React.ChangeEvent<HTMLInputElement>) =>
-        setEmail(e.target.value);
-    const handlePasswordChange = (e: React.ChangeEvent<HTMLInputElement>) =>
-        setPassword(e.target.value);
-
-    const handleSubmit = async (e: React.FormEvent) => {
-        e.preventDefault();
-        setError(null);
-        try {
-            const userCred = await signInWithEmailAndPassword(
-                auth,
-                email,
-                password,
-            );
-            console.log("Signed in with email:", userCred.user);
-            setError("Sign in successful!");
-            navigate("/choose-editor");
-        } catch (Error) {
-            console.error("Error signing in with email:", Error);
-            setError("Error: " + Error || "Error: Email sign-in failed");
-        }
-    };
-
-    
-
-    return (
-        <form className="adminLoginWidget" onSubmit={handleSubmit}>
-            <h3>Admin Login Page</h3>
-            <fieldset>
-                <p id="emailInputSet">
-                    <label htmlFor="email">Email:</label>
-                    <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        autoFocus
-                        required
-                        value={email}
-                        onChange={handleEmailChange}
-                    />
-                </p>
-                <p id="passwordInputSet">
-                    <label htmlFor="password">Password:</label>
-                    <input
-                        type="password"
-                        id="password"
-                        name="password"
-                        required
-                        value={password}
-                        onChange={handlePasswordChange}
-                    />
-                </p>
-                {error && <p style={{ color: "red" }}>{error}</p>}
-                <button type="submit" id="loginButton">
-                    Login
-                </button>
-            </fieldset>
-        </form>
-    );
+  return (
+    <form className="adminLoginWidget" onSubmit={handleSubmit}>
+      <h3>Admin Login Page</h3>
+      <fieldset>
+        <p id="emailInputSet">
+          <label htmlFor="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            autoFocus
+            required
+            value={email}
+            onChange={handleEmailChange}
+          />
+        </p>
+        <p id="passwordInputSet">
+          <label htmlFor="password">Password:</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            required
+            value={password}
+            onChange={handlePasswordChange}
+          />
+        </p>
+        {error && <p style={{ color: "red" }}>{error}</p>}
+        <button type="submit" id="loginButton">
+          Login
+        </button>
+      </fieldset>
+    </form>
+  );
 };
 
 export default LoginWidget;

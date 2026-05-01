@@ -8,9 +8,7 @@ describe("SearchBar", () => {
     const onSearch = jest.fn();
     render(<SearchBar onSearch={onSearch} />);
 
-    const input = screen.getByPlaceholderText(
-      /Search/i,
-    );
+    const input = screen.getByPlaceholderText(/Search/i);
     expect(input).toBeInTheDocument();
     expect(input).toHaveAttribute("type", "search");
   });
@@ -19,9 +17,7 @@ describe("SearchBar", () => {
     const onSearch = jest.fn();
     render(<SearchBar onSearch={onSearch} />);
 
-    const input = screen.getByPlaceholderText(
-      /Search/i,
-    );
+    const input = screen.getByPlaceholderText(/Search/i);
     expect(input).toHaveValue("");
 
     fireEvent.change(input, { target: { value: "light laptop" } });
@@ -33,9 +29,7 @@ describe("SearchBar", () => {
     const onSearch = jest.fn();
     render(<SearchBar onSearch={onSearch} />);
 
-    const input = screen.getByPlaceholderText(
-      /Search/i,
-    );
+    const input = screen.getByPlaceholderText(/Search/i);
     fireEvent.change(input, { target: { value: "gaming laptop" } });
 
     fireEvent.click(screen.getByRole("button", { name: /Search/i }));
@@ -48,8 +42,8 @@ describe("SearchBar", () => {
     const onSearch = jest.fn();
     render(<SearchBar onSearch={onSearch} />);
 
-    const input = screen.getByPlaceholderText(/Search/i,);
-    
+    const input = screen.getByPlaceholderText(/Search/i);
+
     await userEvent.type(input, "ultrabook{enter}");
 
     expect(onSearch).toHaveBeenCalledTimes(1);

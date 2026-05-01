@@ -8,18 +8,18 @@ import { Link } from "react-router-dom";
 function App() {
   return (
     <div className="App">
-      <header >
-        <Link to="/" style={{textDecoration:"none"}} className="App-header">
-            <img
-              src={seLogo}
-              alt=""
-              style={{
-                width: "50px",
-                height: "auto",
-                marginRight: "10px",
-              }}
-            />{" "}
-            SpecEffect
+      <header>
+        <Link to="/" style={{ textDecoration: "none" }} className="App-header">
+          <img
+            src={seLogo}
+            alt=""
+            style={{
+              width: "50px",
+              height: "auto",
+              marginRight: "10px",
+            }}
+          />{" "}
+          SpecEffect
         </Link>
       </header>
       <header className="App-subHeader">
