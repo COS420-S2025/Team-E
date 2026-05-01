@@ -9,9 +9,8 @@ import {
 } from "../DatabaseManager";
 
 const Home = () => {
-    // Creating navigation to laptop page 
-    const navigate = useNavigate();
-
+  // Creating navigation to laptop page
+  const navigate = useNavigate();
 
   const [appliedSearchText, setAppliedSearchText] = useState("");
   const [appliedFilterIds, setAppliedFilterIds] = useState<string[]>([]);
@@ -51,20 +50,35 @@ const Home = () => {
     <div>
       <h2>Home Page</h2>
       <div className="App-row">
-        <div className="App-colBox" data-testid="filterColumn" style={{ width: "25vw" }}>
+        <div
+          className="App-colBox"
+          data-testid="filterColumn"
+          style={{ width: "25vw" }}
+        >
           <Filter
             appliedFilterIds={appliedFilterIds}
             onApplyFilters={setAppliedFilterIds}
           />
         </div>
-        <div style={{height: "59vw", verticalAlign: "top" }}>
-          <div className="App-colBox" data-testid="searchBarDiv" style={{ textAlign: "left" }}>
+        <div style={{ height: "59vw", verticalAlign: "top" }}>
+          <div
+            className="App-colBox"
+            data-testid="searchBarDiv"
+            style={{ textAlign: "left" }}
+          >
             <SearchBar onSearch={handleSearch} />
           </div>
-          <div className="scroll-box" data-testid="catalogDiv" style={{ textAlign: "left" }}>
+          <div
+            className="scroll-box"
+            data-testid="catalogDiv"
+            style={{ textAlign: "left" }}
+          >
             {laptops.map((item) => (
               <li key={item.id}>
-                <button className="search-entry-button" onClick={() => navigate(`/LaptopPage/${item.id}`)}>
+                <button
+                  className="search-entry-button"
+                  onClick={() => navigate(`/LaptopPage/${item.id}`)}
+                >
                   {item.name}
                 </button>
               </li>
