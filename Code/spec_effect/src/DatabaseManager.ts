@@ -38,6 +38,7 @@ export interface Laptop {
   gpuBenchmark3d: number;
 }
 
+// glossaryEntryConverter generated with gemini 3 on April 20, 2026
 const glossaryEntryConverter = {
   toFirestore: (glossaryEntry: GlossaryEntry) => {
     const { id, ...data } = glossaryEntry;
@@ -56,6 +57,7 @@ const glossaryEntryConverter = {
   },
 };
 
+// laptopConverter generated with gemini 3 on April 20, 2026
 const laptopConverter = {
   toFirestore: (laptop: Laptop) => {
     const { id, ...data } = laptop;
